@@ -1,12 +1,12 @@
 cf2rdf conversion
-date:   Tue Nov 26 14:29:28 PST 2013
+date:   Tue Nov 26 14:48:32 PST 2013
 input:  src/main/resources/cf-standard-name-table.xml
 output: src/main/resources/cf-standard-name-table.rdf
 
 from input file:
  version_number: 26; last_modified: 2013-11-08T06:09:34Z
 
-conversions stats:
+conversion stats:
 numConcepts = 2524
 numEntries = 2523
 numWithNoCanonicalUnits = 5
