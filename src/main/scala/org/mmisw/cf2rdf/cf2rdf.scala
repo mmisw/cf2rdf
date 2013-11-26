@@ -21,8 +21,8 @@ object cf2rdf extends App {
 
   /**
    * helper to process arguments and run program.
-   * @param opts
-   * @param block
+   * @param opts   map of options values
+   * @param block  block to execute
    * @return
    */
   def withOptions(opts: mutable.Map[String, String])(block : => Unit) {
@@ -88,14 +88,19 @@ object cf2rdf extends App {
     }
 
     def writeStats() {
+      val propsStr = (converter.props map (kv => s"${kv._1}: ${kv._2}")) mkString "; "
       val pw = new PrintWriter(statsFilename)
       pw.printf(
-        s"""
-           | cf2rdf conversion
-           | date:   ${new java.util.Date()}
-           | input:  $xmlFilename
-           | output: $rdfFilename
-           | ${converter.stats}
+        s"""cf2rdf conversion
+           |date:   ${new java.util.Date()}
+           |input:  $xmlFilename
+           |output: $rdfFilename
+           |
+           |from input file:
+           | $propsStr
+           |
+           |conversions stats:
+           |${converter.stats}
         """.stripMargin)
       pw.close()
     }
@@ -126,6 +131,8 @@ class Converter(xmlIn: Node, namespace: String) {
   model.add(model.createStatement(canonical_units, RDFS.domain, standardNameClass))
   model.add(model.createStatement(canonical_units, RDFS.range, XSD.xstring))
 
+  var props: Map[String,String] = Map.empty
+
   object stats {
     var numConcepts = 0
     var numEntries = 0
@@ -133,12 +140,11 @@ class Converter(xmlIn: Node, namespace: String) {
     var numWithNoDefinitions = 0
 
     override def toString =
-      s"""
-        |  numConcepts = $numConcepts
-        |  numEntries = $numEntries
-        |  numWithNoCanonicalUnits = $numWithNoCanonicalUnits
-        |  numWithNoDefinitions = $numWithNoDefinitions
-      """.stripMargin
+      s"""numConcepts = $numConcepts
+         |numEntries = $numEntries
+         |numWithNoCanonicalUnits = $numWithNoCanonicalUnits
+         |numWithNoDefinitions = $numWithNoDefinitions
+       """.stripMargin
 
   }
 
@@ -149,13 +155,12 @@ class Converter(xmlIn: Node, namespace: String) {
    */
   def convert: Model = {
 
-    // todo: generate something for the general properties of the file:
-//    val props = {
-//      val keys = List("version_number", "last_modified", "institution", "contact")
-//      keys foreach {k =>
-//        // ...
-//      }
-//    }
+    // todo: generate something for the general properties of the file.
+    props = {
+      val keys = List("version_number", "last_modified") //, "institution", "contact")
+      (keys map (k => k -> (xmlIn \ k).text.trim)).toMap
+    }
+
 
     for (entry <- xmlIn \\ "entry") {
       stats.numEntries += 1
