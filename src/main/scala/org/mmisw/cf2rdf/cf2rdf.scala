@@ -99,7 +99,7 @@ object cf2rdf extends App {
            |from input file:
            | $propsStr
            |
-           |conversions stats:
+           |conversion stats:
            |${converter.stats}
         """.stripMargin)
       pw.close()
