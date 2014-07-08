@@ -502,7 +502,8 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="atmosphere_stability_k_index">
-        <skos:definition>The atmosphere_stability_k_index is an index that indicates the potential of severe convection and is often referred to a simply the k index. The index is derived from the difference in air temperature between 850 and 500 hPa, the dew point temperature at 850 hPa, and the difference between the air temperature and the dew point temperature at 700 hPa.</skos:definition>
+        <skos:definition>The atmosphere_stability_k_index is an index that indicates the potential of severe convection and is often referred to a simply the k index. The index is derived from the difference in air temperature between 850 and 500 hPa, the dew point temperature at 850 hPa, and the difference between the air temperature and the dew point temperature at 
+700 hPa.</skos:definition>
         <canonical_units>K</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -741,12 +742,6 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_by_diatoms">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. Diatoms are single-celled phytoplankton with an external skeleton made of silica. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient lightto support photosynthesis.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="number_of_days_with_air_temperature_above_threshold">
         <skos:definition>Air temperature is the bulk temperature of the air, not the surface (skin) temperature.  A variable whose standard name has the form number_of_days_with_X_below|above_threshold is a count of the number of days on which the condition X_below|above_threshold is satisfied.  It must have a coordinate variable or scalar coordinate variable with the a standard name of X to supply the threshold(s). It must have a climatological time variable, and a cell_methods entry for within days which describes the processing of quantity X before the threshold is applied. A number_of_days is an extensive quantity in time, and the cell_methods entry for over days should be "sum".</skos:definition>
         <canonical_units>1</canonical_units>
@@ -786,6 +781,12 @@
       <Standard_Name rdf:about="northward_ocean_freshwater_transport_due_to_overturning">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Northward transport by (meridional) overturning is geometrically defined as being the part due to the vertical integral of the product of zonal means of velocity and tracer. The velocity does not include "bolus" or Gent-McWilliams velocity.</skos:definition>
         <canonical_units>kg s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="atmosphere_convective_available_potential_energy">
+        <skos:definition>Convective(ly) available potential energy (often abbreviated CAPE) is a stability measure calculated by integrating the positive temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from a given starting height to its equilibrium level. A coordinate variable of original_air_pressure_of_lifted_parcel should be specified to indicate the starting height of the lifted parcel. CAPE exists under conditions of potential instability, and measures the potential energy per unit mass that would be released by the unstable parcel if it were able to convect upwards to equilibrium.</skos:definition>
+        <canonical_units>J kg-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -1071,7 +1072,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="phase_of_global_average_sea_level_change">
-        <skos:definition>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called "eustatic", which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Phase is the initial angle of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period can be used to specify the period of the sinusoidal wave.</skos:definition>
+        <skos:definition>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called "eustatic", which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Phase is the initial angle of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period should be used to specify the period of the sinusoidal wave.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -1162,12 +1163,6 @@
       <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_aggregation">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Aggregation is the clumping together of frozen cloud particles to produce snowflakes. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="net_primary_productivity_of_carbon_accumulated_in_roots">
-        <skos:definition>Net primary productivity is the excess of gross_primary_productivity (rate of synthesis of biomass per unit area from inorganic precursors by autotrophs, or "producers", especially by photosynthesising plants using sunlight for energy) over the rate at which they themselves respire some of this biomass (plant_respiration, assuming all producers to be plants).  "Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2220,15 +2215,21 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_water_conservative_temperature">
+        <skos:definition>Conservative Temperature is defined as part of the Thermodynamic Equation of Seawater 2010 (TEOS-10) which was adopted in 2010 by the International Oceanographic Commission (IOC). Conservative Temperature is specific potential enthalpy (which has the standard name sea_water_specific_potential_enthalpy) divided by a fixed value of the specific heat capacity of sea water, namely cp_0 = 3991.86795711963 J kg-1 K-1. Conservative Temperature is a more accurate measure of the "heat content" of sea water, by a factor of one hundred, than is potential temperature. Because of this, it can be regarded as being proportional to the heat content of sea water per unit mass. Reference: www.teos-10.org; McDougall, 2003 doi: 10.1175/1520-0485(2003)033&lt;0945:PEACOV&gt;2.0.CO;2.</skos:definition>
+        <canonical_units>K</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_middle_atmosphere_moles_of_methyl_chloride">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  "middle_atmosphere_moles_of_X" means the total number of moles of X contained in the troposphere and stratosphere, i.e, summed over that part of the atmospheric column and over the entire globe.  The chemical formula of methyl chloride is CH3Cl.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="sea_water_conservative_temperature">
-        <skos:definition>Conservative Temperature is defined as part of the Thermodynamic Equation of Seawater 2010 (TEOS-10) which was adopted in 2010 by the International Oceanographic Commission (IOC). Conservative Temperature is specific potential enthalpy (which has the standard name sea_water_specific_potential_enthalpy) divided by a fixed value of the specific heat capacity of sea water, namely cp_0 = 3991.86795711963 J kg-1 K-1. Conservative Temperature is a more accurate measure of the "heat content" of sea water, by a factor of one hundred, than is potential temperature. Because of this, it can be regarded as being proportional to the heat content of sea water per unit mass. Reference: www.teos-10.org; McDougall, 2003 doi: 10.1175/1520-0485(2003)033&lt;0945:PEACOV&gt;2.0.CO;2.</skos:definition>
-        <canonical_units>K</canonical_units>
+      <Standard_Name rdf:about="net_primary_productivity_of_biomass_expressed_as_carbon">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2257,7 +2258,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. 'Miscellaneous phytoplankton' are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other seperately named components of the phytoplankton population. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "Miscellaneous phytoplankton" are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other seperately named components of the phytoplankton population. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -2496,7 +2497,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. 'Calcareous phytoplankton' are phytoplankton that produce calcite. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there issufficient light to support photosynthesis. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.   "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". "Calcareous phytoplankton" are phytoplankton that produce calcite. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -3105,7 +3106,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diazotrophs">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groups in their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groups in their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -3137,12 +3138,6 @@
       <Standard_Name rdf:about="sea_ice_speed">
         <skos:definition>Speed is the magnitude of velocity.</skos:definition>
         <canonical_units>m s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="atmosphere_specific_convective_available_potential_energy">
-        <skos:definition>"specific" means per unit mass. Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.) Convective(ly) available potential energy is often abbreviated as "CAPE".</skos:definition>
-        <canonical_units>J kg-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -3329,12 +3324,6 @@
       <Standard_Name rdf:about="water_flux_into_sea_water_from_rivers">
         <skos:definition>"Water" means water in all phases. The water flux or volume transport into sea water from rivers is the inflow to the ocean, often applied to the surface in ocean models. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_by_phytoplankton">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -3746,15 +3735,15 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mass_fraction_of_frozen_water_in_soil_moisture">
-        <skos:definition>"frozen_water" means ice. "moisture" means water in all phases contained in soil. Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).</skos:definition>
-        <canonical_units>1</canonical_units>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diatoms">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. Diatoms are single-celled phytoplankton with an external skeleton made of silica. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_by_picophytoplankton">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
+      <Standard_Name rdf:about="mass_fraction_of_frozen_water_in_soil_moisture">
+        <skos:definition>"frozen_water" means ice. "moisture" means water in all phases contained in soil. Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5004,7 +4993,10 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="temperature_difference_between_ambient_air_and_air_lifted_adiabatically">
-        <skos:definition>This quantity is defined as the temperature difference between a parcel of air lifted adiabatically from a starting air pressure to a finishing air pressure in the troposphere and the ambient air temperature at the finishing air pressure in the troposphere. It is often called the lifted index (LI) and provides a measure of the instability of the atmosphere. The air parcel is "lifted" by moving the air parcel from the starting air pressure to the Lifting Condensation Level (dry adiabatically) and then from the Lifting Condensation Level to the finishing air pressure (wet adiabatically). Air temperature is the bulk temperature of the air. Coordinate variables of original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel should be specified to indicate the specific air pressures at which the parcel lifting starts (starting air pressure) and the temperature difference is calculated at (finishing air pressure), respectively.</skos:definition>
+        <skos:definition>This quantity is defined as the temperature difference between a parcel of air lifted adiabatically from a starting air pressure to a finishing air pressure in the troposphere and the ambient air temperature at the finishing air pressure in the troposphere. It is 
+often called the lifted index (LI) and provides a measure of the instability of the atmosphere. The air parcel is "lifted" by moving the air parcel from the starting air pressure to the Lifting Condensation Level (dry adiabatically) and then from the Lifting Condensation Level to the finishing air pressure (wet adiabatically). Air temperature is 
+the bulk temperature of the air. Coordinate variables of original_air_pressure_of_lifted_parcel and 
+final_air_pressure_of_lifted_parcel should be specified to indicate the specific air pressures at which the parcel lifting starts (starting air pressure) and the temperature difference is calculated at (finishing air pressure), respectively.</skos:definition>
         <canonical_units>K</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -5338,8 +5330,8 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="surface_downward_mole_flux_of_carbon_dioxide">
-        <skos:definition>"Downward" indicates a vector component which is positive when directed downward (negative upward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2. The standard name surface_upward_mole_flux_of_carbon_dioxide should be used to label data in which the flux is positive when directed upward. The standard name "surface_carbon_dioxide_mole_flux" is deprecated because it does not specify in which direction the flux is positive.  Any data having the standard name "surface_carbon_dioxide_mole_flux" should be examined carefully to determine which sign convention was used.</skos:definition>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_phytoplankton">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -5362,9 +5354,9 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol">
-        <skos:definition>The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path.  A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. "Absorption optical thickness" means that part of the atmosphere optical thickness that is caused by the absorption of incident radiation. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  "Ambient aerosol" is aerosol that has taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the aerosol. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</skos:definition>
-        <canonical_units>1</canonical_units>
+      <Standard_Name rdf:about="surface_downward_mole_flux_of_carbon_dioxide">
+        <skos:definition>"Downward" indicates a vector component which is positive when directed downward (negative upward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2. The standard name surface_upward_mole_flux_of_carbon_dioxide should be used to label data in which the flux is positive when directed upward. The standard name "surface_carbon_dioxide_mole_flux" is deprecated because it does not specify in which direction the flux is positive.  Any data having the standard name "surface_carbon_dioxide_mole_flux" should be examined carefully to determine which sign convention was used.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5386,9 +5378,9 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="gross_primary_productivity_of_carbon">
-        <skos:definition>Gross primary productivity is the rate of synthesis of biomass per unit area from inorganic precursors by autotrophs, especially by photosynthesising plants using sunlight for energy. The producers also respire some of this biomass and the difference is net_primary_productivity.  "Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
+      <Standard_Name rdf:about="atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol">
+        <skos:definition>The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path.  A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. "Absorption optical thickness" means that part of the atmosphere optical thickness that is caused by the absorption of incident radiation. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets).  "Ambient aerosol" is aerosol that has taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the aerosol. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5602,7 +5594,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diatoms">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. Diatoms are single-celled phytoplankton with an external skeleton made of silica. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surfacewhere there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". Diatoms are single-celled phytoplankton with an external skeleton made of silica. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -6343,6 +6335,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_leaves">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="surface_snow_melt_heat_flux">
         <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. The snow melt heat flux is the supply of latent heat which is melting snow at freezing point. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -6539,6 +6537,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_due_to_nitrate_utilization">
+        <skos:definition>"Production of carbon" refers to the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. "Nitrate utilization" means net primary production by phytoplankton based on nitrate alone. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. The chemical formula for the nitrate anion is NO3-. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_fraction_of_atomic_chlorine_in_air">
         <skos:definition>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical symbol of atomic chlorine is Cl.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -6642,7 +6646,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="atmosphere_convective_inhibition">
-        <skos:definition>Convective inhibition is the amount of energy per unit mass required to overcome the negatively buoyant energy exerted by the environment on a parcel of air. Convective inhibition is often abbreviated as "CIN" or "CINH". It is calculated by integrating the negative temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from a given starting height to its equilibrium level. A coordinate variable of original_air_pressure_of_lifted_parcel should be specified to indicate the starting height of the lifted parcel.</skos:definition>
+        <skos:definition>Convective inhibition is the amount of energy per unit mass required to overcome the negatively buoyant energy exerted by the environment on a parcel of air.  Convective inhibition is often abbreviated as "CIN" or "CINH".  It is calculated by integrating the negative temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from a given starting height to its equilibrium level. A coordinate variable of original_air_pressure_of_lifted_parcel should be specified to indicate the starting height of the lifted parcel.</skos:definition>
         <canonical_units>J kg -1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -7109,12 +7113,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_by_miscellaneous_phytoplankton">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass.  'Miscellaneous phytoplankton' are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other seperately named components of the phytoplankton population. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_maritime_transport">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula of carbon monoxide is CO. The "maritime transport" sector includes fuel combustion activities related to maritime transport. "Maritime transport" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source category 1A3d as defined in the 2006 IPCC guidelines for national greenhouse gas Inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -7295,12 +7293,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_by_diazotrophs">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groupsin their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_hydrogen_chloride_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for hydrogen chloride is HCl.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -7382,6 +7374,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="mole_concentration_of_organic_detritus_expressed_as_nitrogen_in_sea_water">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. Organic detritus are particles of debris from decaying plants and animals.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water">
+        <skos:definition>Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constiuents of A.</skos:definition>
+        <canonical_units>kg m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -7502,12 +7500,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="mole_concentration_of_picophytoplankton_expressed_as_carbon_in_sea_water">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="net_primary_productivity_of_carbon_accumulated_in_leaves">
-        <skos:definition>Net primary productivity is the excess of gross_primary_productivity (rate of synthesis of biomass per unit area from inorganic precursors by autotrophs, or "producers", especially by photosynthesising plants using sunlight for energy) over the rate at which they themselves respire some of this biomass (plant_respiration, assuming all producers to be plants).  "Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -7772,15 +7764,15 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_land_transport">
-        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for toluene is C6H5CH3. Toluene has the same structure as benzene, except that one of the hydrogen atoms is replaced by a methyl group. The systematic name for toluene is methylbenzene. The "land transport" sector includes fuel combustion activities related to road transportation, railways and other transportation.  "Land transport" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A3b, 1A3c and 1A3e as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="volume_fraction_of_sand_in_soil">
         <skos:definition>"Volume fraction" is used in the construction volume_fraction_of_X_in_Y, where X is a material constituent of Y.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_land_transport">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for toluene is C6H5CH3. Toluene has the same structure as benzene, except that one of the hydrogen atoms is replaced by a methyl group. The systematic name for toluene is methylbenzene. The "land transport" sector includes fuel combustion activities related to road transportation, railways and other transportation.  "Land transport" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A3b, 1A3c and 1A3e as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -8126,7 +8118,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="amplitude_of_global_average_sea_level_change">
-        <skos:definition>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called "eustatic", which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Amplitude is the magnitude of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period can be used to specify the period of the sinusoidal wave.</skos:definition>
+        <skos:definition>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called "eustatic", which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Amplitude is the magnitude of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period should be used to specify the period of the sinusoidal wave.</skos:definition>
         <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -9626,12 +9618,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_by_calcareous_phytoplankton">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. Calcite is a mineral that is a  polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.  'Calcareous phytoplankton' are phytoplankton that produce calcite. Phytoplankton are autotrophic prokaryotic oreukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="downward_heat_flux_at_ground_level_in_soil">
         <skos:definition>ground_level means the land surface (beneath the snow and surface water, if any). "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -9950,7 +9936,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="atmosphere_convective_inhibition_wrt_surface">
-        <skos:definition>Convective inhibition is the amount of energy per unit mass required to overcome the negatively buoyant energy exerted by the environment on a parcel of air. Convective inhibition is often abbreviated as "CIN" or "CINH". It is calculated by integrating the negative temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from the surface to its equilibrium level.</skos:definition>
+        <skos:definition>Convective inhibition is the amount of energy per unit mass required to overcome the negatively buoyant energy exerted by the environment on a parcel of air.  Convective inhibition is often abbreviated as "CIN" or "CINH".  It is calculated by integrating the negative temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from the surface to its equilibrium level.</skos:definition>
         <canonical_units>J kg -1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -9991,6 +9977,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_calcareous_phytoplankton">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "Calcareous phytoplankton" are phytoplankton that produce calcite. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_cfc115">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. Thechemical formula of CFC115 is CClF2CF3. The IUPAC name for CFC115 is 1-chloro-1,1,2,2,2-pentafluoro-ethane.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
@@ -10016,7 +10008,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -10369,12 +10361,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_mole_productivity_of_carbon_due_to_nitrate_utilization">
-        <skos:definition>"Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area. Net primary productivity is the excess of gross primary productivity of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Nitrate utilization" means net primary production by phytoplankton based on nitrate alone. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  The chemical formula for the nitrate anion is NO3-.</skos:definition>
-        <canonical_units>mol m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_peroxynitric_acid_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for peroxynitric acid, sometimes referred to as PNA, is HO2NO2.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -10582,6 +10568,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="sea_surface_wind_wave_zero_upcrossing_period">
         <skos:definition>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</skos:definition>
         <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diazotrophs">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. In ocean modelling, diazotrophs are phytoplankton of the phylum cyanobacteria distinct from other phytoplankton groups in their ability to fix nitrogen gas in addition to nitrate and ammonium. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11018,7 +11010,13 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="atmosphere_stability_total_totals_index">
-        <skos:definition>The atmosphere_stability_total_totals_index indicates the likelihood of severe convection and is often referred to as simply the total totals index. The index is derived from the difference in air temperature between 850 and 500 hPa (the vertical totals) and the difference between the dew point temperature at 850 hPa and the air temperature at 500 hPa (the cross totals). The vertical totals and cross totals are summed to obtain the index.</skos:definition>
+        <skos:definition>The atmosphere_stability_total_totals_index indicates the
+likelihood of severe convection and is often referred to as simply the
+total totals index. The index is derived from the difference in air
+temperature between 850 and 500 hPa (the vertical totals) and the
+difference between the dew point temperature at 850 hPa and the air
+temperature at 500 hPa (the cross totals). The vertical totals and cross
+totals are summed to obtain the index.</skos:definition>
         <canonical_units>K</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -11619,6 +11617,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_inorganic_bromine">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Inorganic bromine", sometimes referred to as Bry, describes a family of chemical species which result from the degradation of source gases containing bromine (halons, methyl bromide, VSLS) and natural inorganic bromine sources such as volcanoes, seasalt and other aerosols. "Inorganic bromine" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. Standard names that use the term "brox" are used for quantities that contain all inorganic bromine species except HBr and BrONO2.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="gross_primary_productivity_of_biomass_expressed_as_carbon">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Gross primary production is the rate of synthesis of biomass from inorganic precursors by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton. The producers also respire some of this biomass and the difference is "net_primary_production". "Productivity" means production per unit area. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -12229,7 +12233,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="final_air_pressure_of_lifted_parcel">
-        <skos:definition>Various stability and convective potential indices are calculated by "lifting" a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere). original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the pressure heights at the start and end of lifting, respectively.</skos:definition>
+        <skos:definition>Various stability and convective potential indices are calculated by "lifting" a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere).  original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the pressure heights at the start and end of lifting, respectively.</skos:definition>
         <canonical_units>Pa</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -12255,6 +12259,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="change_over_time_in_sea_water_salinity">
         <skos:definition>"change_over_time_in_X" means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. There are standard names for the more precisely defined salinity quantities: sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_practical_salinity, S_P (used for salinity observations from 1978 to the present day), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Practical Salinity is reported on the Practical Salinity Scale of 1978 (PSS-78), and is usually based on the electrical conductivity of sea water in observations since the 1960s. Conversion of data between the observed scales follows: S_P = (S_K - 0.03) * (1.80655 / 1.805) and S_P = S_C, however the accuracy of the latter is dependent on whether chlorinity or conductivity was used to determine the S_C value, with this inconsistency driving the development of PSS-78. The more precise standard names should be used where appropriate for both modelled and observed salinities. In particular, the use of sea_water_salinity to describe salinity observations made from 1978 onwards is now deprecated in favor of the term sea_water_practical_salinity which is the salinity quantity stored by national data centers for post-1978 observations. The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale. The unit "parts per thousand" was used for sea_water_knudsen_salinity and sea_water_cox_salinity.</skos:definition>
         <canonical_units>1e-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_miscellaneous_phytoplankton">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. "Miscellaneous phytoplankton" are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other seperately named components of the phytoplankton population. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -12650,6 +12660,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="sea_surface_wave_zero_upcrossing_period">
         <skos:definition>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level.</skos:definition>
         <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="atmosphere_convective_available_potential_energy_wrt_surface">
+        <skos:definition>Convective(ly) available potential energy (often abbreviated CAPE) is a stability measure calculated by integrating the positive temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from the surface to its equilibrium level. CAPE exists under conditions of potential instability, and measures the potential energy per unit mass that would be released by the unstable parcel if it were able to convect upwards to equilibrium.</skos:definition>
+        <canonical_units>J kg -1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13079,7 +13095,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_nitrate_utilization">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Nitrate utilization" means net primary production by phytoplankton based on nitrate alone. "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "tendency_of_X" means derivative of X with respect to time.  Thechemical formula for the nitrate anion is NO3-.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Nitrate utilization" means net primary production of carbon by phytoplankton based on nitrate alone. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". "tendency_of_X" means derivative of X with respect to time. The chemical formula for the nitrate anion is NO3-.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -13722,6 +13738,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="upward_heat_flux_in_air">
         <skos:definition>"Upward" indicates a vector component which is positive when directed upward (negative downward). The vertical heat flux in air is the sum of all heat fluxes i.e. radiative, latent and sensible. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_wood">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -14486,6 +14508,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_picophytoplankton">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_waste_treatment_and_disposal">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. "Aerosol" means the suspended liquid or solid particles in air (except cloud droplets). Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol" means aerosol without water. Black carbon aerosol is composed of elemental carbon. It is strongly light absorbing. The "waste treatment and disposal" sector comprises solid waste disposal on land, wastewater handling, waste incineration and other waste disposal. "Waste treatment and disposal" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 6A, 6B, 6C and 6D as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -14561,12 +14589,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_dissolved_inorganic_silicon">
         <skos:definition>"Content" indicates a quantity per unit area.  "tendency_of_X" means derivative of X with respect to time. "Dissolved inorganic silicon/silicate" means silicate ions in solution.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="net_primary_productivity_of_carbon_accumulated_in_wood">
-        <skos:definition>Net primary productivity is the excess of gross_primary_productivity (rate of synthesis of biomass per unit area from inorganic precursors by autotrophs, or "producers", especially by photosynthesising plants using sunlight for energy) over the rate at which they themselves respire some of this biomass (plant_respiration, assuming all producers to be plants).  "Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -14895,7 +14917,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production">
-        <skos:definition>'Mole concentration' means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Net primary production" is the excess of gross primary production of organic carbon (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <skos:definition>"Mole concentration" means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -15062,12 +15084,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="net_primary_productivity_of_carbon">
-        <skos:definition>Net primary productivity is the excess of gross_primary_productivity (rate of synthesis of biomass per unit area from inorganic precursors by autotrophs, or "producers", especially by photosynthesising plants using sunlight for energy) over the rate at which they themselves respire some of this biomass (plant_respiration, assuming all producers to be plants).  "Productivity of carbon" refers to the production of biomass expressed as the mass of carbon which it contains.  "Productivity" means production per unit area.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="sensor_band_identifier">
         <skos:definition>A variable with the standard name of sensor_band_identifier contains strings which give the alphanumeric identifier of a sensor band. These strings have not yet been standardised.</skos:definition>
       </Standard_Name>
@@ -15118,6 +15134,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="integral_of_toa_net_downward_shortwave_flux_wrt_time">
         <skos:definition>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to.  "toa" means top of atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling).  "Shortwave" means shortwave radiation.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W s m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_roots">
+        <skos:definition>"Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example, photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. "Productivity" means production per unit area. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
   </Standard_Name>
