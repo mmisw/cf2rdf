@@ -18,6 +18,17 @@ $ curl "https://raw.githubusercontent.com/cf-convention/cf-documents/master/cf-s
 $ sbt
 > run --xml src/main/resources/cf-standard-name-table.xml
 [info] Running org.mmisw.cf2rdf.cf2rdf --xml src/main/resources/cf-standard-name-table.xml
-generated: src/main/resources/cf-standard-name-table.rdf
-           src/main/resources/cf-standard-name-table.conv-stats.txt
+cf2rdf conversion
+date:   Sun Jul 27 09:42:24 PDT 2014
+input:  src/main/resources/cf-standard-name-table.xml
+output: src/main/resources/cf-standard-name-table.rdf
+
+vocabulary properties from input file:
+ version_number: 27; last_modified: 2013-11-28T05:25:32Z
+
+conversion stats:
+numConcepts = 2526
+numEntries = 2525
+numWithNoCanonicalUnits = 5
+numWithNoDefinitions = 31
 ```

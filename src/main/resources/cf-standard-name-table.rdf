@@ -4,8 +4,14 @@
     xmlns="http://mmisw.org/ont/cf/parameter/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
+  <owl:Ontology rdf:about="">
+    <omvmmi:origVocLastModified>2013-11-28T05:25:32Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>27</omvmmi:origVocVersionId>
+  </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
     <rdfs:label>Standard Name</rdfs:label>
