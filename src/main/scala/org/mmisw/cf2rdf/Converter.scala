@@ -11,10 +11,11 @@ import scala.xml.Node
  *
  * @param xmlIn       Input XML
  * @param namespace   Namespace for the generated ontology
+ * @param mapper
  *
  * @author Carlos Rueda
  */
-class Converter(xmlIn: Node, namespace: String) {
+class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
 
   /** some general properties from the input */
   val props: Map[String,String] = {
@@ -43,6 +44,14 @@ class Converter(xmlIn: Node, namespace: String) {
       //concept.addProperty(RDFS.comment, description);
 
       M.currentTopConcept.addProperty(Skos.narrower, concept)
+
+      mapper.foreach(_.addOrrTerm(concept))
+    }
+
+    mapper.foreach { mapper =>
+      val (t, f) = mapper.done()
+      stats.mappingTermsAdded = t
+      stats.mappingOutputFilename = Some(f)
     }
 
     M.model
@@ -124,11 +133,18 @@ class Converter(xmlIn: Node, namespace: String) {
     var numWithNoCanonicalUnits = 0
     var numWithNoDefinitions = 0
 
+    var mappingTermsAdded = 0
+    var mappingOutputFilename: Option[String] = None
+
     override def toString =
       s"""numConcepts = $numConcepts
          |numEntries = $numEntries
          |numWithNoCanonicalUnits = $numWithNoCanonicalUnits
          |numWithNoDefinitions = $numWithNoDefinitions
+         |
+         |Mapping ontology:
+         |  mappingTermsAdded     = $mappingTermsAdded
+         |  mappingOutputFilename = ${mappingOutputFilename.get}
        """.stripMargin
   }
 

@@ -15,11 +15,12 @@ A complete session on the command line (using the popular [curl](http://curl.hax
 
 ```shell
 $ curl "https://raw.githubusercontent.com/cf-convention/cf-documents/master/cf-standard-names/cf-standard-name-table-27.xml" -o src/main/resources/cf-standard-name-table.xml
+$ curl "http://vocab.nerc.ac.uk/collection/P07/current/" -o src/main/resources/nvs_P07.rdf
 $ sbt
-> run --xml src/main/resources/cf-standard-name-table.xml
-[info] Running org.mmisw.cf2rdf.cf2rdf --xml src/main/resources/cf-standard-name-table.xml
+> run --xml src/main/resources/cf-standard-name-table.xml --nvs src/main/resources/nvs_P07.rdf
+[info] Running org.mmisw.cf2rdf.cf2rdf --xml src/main/resources/cf-standard-name-table.xml --nvs src/main/resources/nvs_P07.rdf
 cf2rdf conversion
-date:   Sun Jul 27 09:42:24 PDT 2014
+date:   Sat Aug 02 13:54:42 PDT 2014
 input:  src/main/resources/cf-standard-name-table.xml
 output: src/main/resources/cf-standard-name-table.rdf
 
@@ -31,4 +32,8 @@ numConcepts = 2526
 numEntries = 2525
 numWithNoCanonicalUnits = 5
 numWithNoDefinitions = 31
+
+Mapping ontology:
+  mappingTermsAdded     = 2525
+  mappingOutputFilename = src/main/resources/cfonmap.n3
 ```

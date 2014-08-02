@@ -25,10 +25,10 @@ object cf2rdf extends App {
     val usage =
       s"""
         | USAGE:
-        |   cf2rdf --xml xml [--rdf xml] [--namespace namespace]
+        |   cf2rdf --xml xml [--rdf xml] [--namespace namespace] [--nvs filename]
         | Example:
-        |   cf2rdf --xml src/main/resources/cf-standard-name-table-25.xml
-        |   generates src/main/resources/cf-standard-name-table-25.rdf
+        |   cf2rdf --xml src/main/resources/cf-standard-name-table.xml
+        |   generates src/main/resources/cf-standard-name-table.rdf
         |
         | Defaults: $defaults
         |
@@ -38,9 +38,10 @@ object cf2rdf extends App {
 
     def next(list: List[String]) {
       list match {
-        case "--xml" :: xml :: args => {opts("xml") = xml; next(args)}
-        case "--rdf" :: rdf :: args => {opts("rdf") = rdf; next(args)}
-        case "--namespace" :: namespace :: args => {opts("namespace") = namespace; next(args)}
+        case "--xml" :: xml :: args => opts("xml") = xml; next(args)
+        case "--rdf" :: rdf :: args => opts("rdf") = rdf; next(args)
+        case "--namespace" :: namespace :: args => opts("namespace") = namespace; next(args)
+        case "--nvs" :: nvsFilename :: args => opts("nvsFilename") = nvsFilename; next(args)
         case Nil => if (opts.contains("xml")) block else println(usage)
         case _ => println(usage)
       }
@@ -56,8 +57,10 @@ object cf2rdf extends App {
     val statsFilename = xmlFilename.replaceAll("\\.xml$", ".conv-stats.txt")
     val namespace   = opts("namespace")
 
+    val mapper = opts.get("nvsFilename") map (nvsFilename => new OrrNvsMapper(nvsFilename))
+
     val xmlIn = scala.xml.XML.loadFile(xmlFilename)
-    val converter = new Converter(xmlIn, namespace)
+    val converter = new Converter(xmlIn, namespace, mapper)
     val model = converter.convert
 
     def getStats = {
@@ -76,6 +79,7 @@ object cf2rdf extends App {
     }
 
     def saveModel() {
+      model.getWriter("N3").write(model, new java.io.FileOutputStream(rdfFilename + ".n3"), null)
       val writer = model.getWriter("RDF/XML-ABBREV")
       writer.setProperty("showXmlDeclaration", "true")
       writer.setProperty("relativeURIs", "same-document,relative")

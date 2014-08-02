@@ -1,5 +1,5 @@
 cf2rdf conversion
-date:   Sun Jul 27 09:42:24 PDT 2014
+date:   Sat Aug 02 13:54:42 PDT 2014
 input:  src/main/resources/cf-standard-name-table.xml
 output: src/main/resources/cf-standard-name-table.rdf
 
@@ -11,5 +11,9 @@ numConcepts = 2526
 numEntries = 2525
 numWithNoCanonicalUnits = 5
 numWithNoDefinitions = 31
+
+Mapping ontology:
+  mappingTermsAdded     = 2525
+  mappingOutputFilename = src/main/resources/cfonmap.n3
        
         
