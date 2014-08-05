@@ -12,7 +12,8 @@ object cf2rdfBuild extends Build {
       version := "0.1-SNAPSHOT",
       scalaVersion := "2.10.2",
       libraryDependencies ++= Seq(
-        "com.hp.hpl.jena"   % "jena"    % "2.6.3"
+        "com.hp.hpl.jena"   % "jena"             % "2.6.3",
+        "com.typesafe"      % "config"           % "1.2.1"
       )
     )
   )
