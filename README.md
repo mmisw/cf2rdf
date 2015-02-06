@@ -5,8 +5,6 @@ Conversion of [CF Standard Names](http://cfconventions.org/documents.html) vocab
 
 ### Running the conversion ###
 
-The conversion tool is run with the [sbt tool](http://www.scala-sbt.org/download.html).
-
 First you need to download the latest version of the XML file. Using your browser:
 
 - visit the [cf-convention.github.io Github repository](https://github.com/cf-convention/cf-convention.github.io)
@@ -15,7 +13,7 @@ First you need to download the latest version of the XML file. Using your browse
 - click the "Raw" representation to download the file
 - copy that file under `src/main/resources/`.
 
-Example:
+Example using curl for the download:
 
 ```shell
 $ FOUND_XML=https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/28/src/cf-standard-name-table.xml
@@ -34,8 +32,10 @@ $ curl "http://vocab.nerc.ac.uk/collection/P07/current/" -o src/main/resources/n
 100 4771k    0 4771k    0     0   237k      0 --:--:--  0:00:20 --:--:--  885k
 ```
 
-Then run the `cf2rdf` program to generate the RDF version of the CF vocabulary and also the
-mapping ontology:
+Then run the `cf2rdf` program to generate the RDF version of the CF vocabulary
+and also the mapping ontology.
+This program is run with the [sbt tool](http://www.scala-sbt.org/download.html):
+
 
 ```shell
 $ sbt run
