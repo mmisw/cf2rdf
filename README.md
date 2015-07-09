@@ -42,24 +42,14 @@ $ sbt run
 cf2rdf conversion
 input:  src/main/resources/cf-standard-name-table.xml
 output: src/main/resources/cf-standard-name-table.rdf
-
-vocabulary properties from input file:
- version_number: 28; last_modified: 2015-01-07T10:24:11Z
-
-conversion stats:
-numConcepts = 2640
-numEntries = 2639
-numWithNoCanonicalUnits = 5
-numWithNoDefinitions = 31
-
-Mapping ontology:
-  mappingTermsAdded     = 2638
-  mappingOutputFilename = src/main/resources/cfonmap.n3
+...
 ```
 
-As indicated in the output, the generated ontologies are:
-- `src/main/resources/cf-standard-name-table.rdf`
-- `src/main/resources/cfonmap.n3`
+The latest conversion report is [here](tree/master/src/main/resources/cf-standard-name-table.conv-stats.txt).
+
+The generated ontologies are:
+- [cf-standard-name-table.rdf](tree/master/src/main/resources/cf-standard-name-table.rdf)
+- [cfonmap.n3](tree/master/src/main/resources/cfonmap.n3)
 
 
 This program reads in configuration parameters from `src/main/resources/application.conf`.
