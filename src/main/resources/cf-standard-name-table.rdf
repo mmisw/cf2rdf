@@ -9,8 +9,8 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2015-01-07T10:24:11Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>28</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2015-07-08T09:43:36Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>29</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -203,6 +203,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="number_of_observations">
+        <skos:definition>A variable with the standard name of number_of_observations contains the number of discrete observations or measurements from which the values of  another data variable have been derived. The linkage between the data variable and the variable with a standard_name of number_of_observations is achieved using the ancillary_variables attribute.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="water_flux_out_of_sea_ice_and_sea_water">
         <skos:definition>"Water" means water in all phases.  The water_flux_out_of_sea_ice_and_sea_water is the freshwater  leaving the ocean as a result of precipitation, evaporation, river outflow and any water flux relaxation(s) and correction(s) that may have been applied. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -233,15 +239,15 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_monoterpenes_due_to_emission">
-        <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. "tendency_of_X" means derivative of X with respect to time. Monoterpenes are a class of terpenes that consist of two isoprene units and have the molecular formula C10H16. Terpenes are hydrocarbons. The term "monoterpenes" is used in standard names to describe the group of chemical species having this common structure that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="thickness_of_stratiform_rainfall_amount">
         <skos:definition>"Amount" means mass per unit area. The construction thickness_of_[X_]rainfall_amount means the accumulated "depth" of rainfall i.e. the thickness of a layer of liquid water having the same mass per unit area as the rainfall amount.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.</skos:definition>
         <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_monoterpenes_due_to_emission">
+        <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. "tendency_of_X" means derivative of X with respect to time. Monoterpenes are a class of terpenes that consist of two isoprene units and have the molecular formula C10H16. Terpenes are hydrocarbons. The term "monoterpenes" is used in standard names to describe the group of chemical species having this common structure that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -311,7 +317,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_radiative_flux_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -465,6 +471,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="fire_radiative_power">
+        <skos:definition>The product of the irradiance (the power per unit area) of a biomass fire and the corresponding fire area. A data variable containing the area affected by fire should be given the standard name fire_area.</skos:definition>
+        <canonical_units>W</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="product_of_northward_sea_water_velocity_and_temperature">
         <skos:definition>"product_of_X_and_Y" means X*Y. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward).</skos:definition>
         <canonical_units>K m s-1</canonical_units>
@@ -496,7 +508,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_photon_flux_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -712,6 +724,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="solar_irradiance">
+        <skos:definition>The quantity with standard name solar_irradiance, often called Total Solar Irradiance (TSI), is the radiation from the sun integrated over the whole electromagnetic spectrum and over the entire solar disk. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun, but a coordinate or scalar coordinate variable of distance_from_sun can be used to specify a value other than the default. "Irradiance" means the power per unit area (called radiative flux in other standard names), the area being normal to the direction of flow of the radiant energy.</skos:definition>
+        <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="integral_of_surface_net_downward_longwave_flux_wrt_time">
         <skos:definition>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to.  The surface called "surface" means the lower boundary of the atmosphere.  "Downward" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). "Longwave" means longwave radiation.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W s m-2</canonical_units>
@@ -731,8 +749,14 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="downwelling_photosynthetic_spherical_irradiance_in_sea_water">
-        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</skos:definition>
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</skos:definition>
         <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="radius_of_tropical_cyclone_central_dense_overcast_region">
+        <skos:definition>The average radius of a central region of clouds in tropical cyclones lacking well-defined eye features, which is computed by averaging the great circle distance in four cardinal directions. The radius in each direction is measured from the estimated storm center position to a warm point that exceeds a threshold brightness temperature at top of atmosphere limit. The threshold applied should be recorded in a coordinate variable having the standard_name of toa_brightness_temperature. A coordinate variable of radiation_wavelength, sensor_band_central_radiation_wavelength, or radiation_frequency may be specified to indicate that the brightness temperature applies at specific wavelengths or frequencies.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -787,6 +811,12 @@
       <Standard_Name rdf:about="number_of_days_with_air_temperature_above_threshold">
         <skos:definition>Air temperature is the bulk temperature of the air, not the surface (skin) temperature.  A variable whose standard name has the form number_of_days_with_X_below|above_threshold is a count of the number of days on which the condition X_below|above_threshold is satisfied.  It must have a coordinate variable or scalar coordinate variable with the a standard name of X to supply the threshold(s). It must have a climatological time variable, and a cell_methods entry for within days which describes the processing of quantity X before the threshold is applied. A number_of_days is an extensive quantity in time, and the cell_methods entry for over days should be "sum".</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="apparent_oxygen_utilization">
+        <skos:definition>Apparent Oxygen Utilization (AOU) is the difference between measured dissolved oxygen concentration in water, and the equilibrium saturation concentration of dissolved oxygen in water with the same physical and chemical properties. Reference: Broecker, W. S. and T. H. Peng (1982), Tracers in the Sea, Lamont-Doherty Earth Observatory, Palisades, N. Y.</skos:definition>
+        <canonical_units>mol kg-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -864,7 +894,6 @@
     <skos:narrower>
       <Standard_Name rdf:about="area_type">
         <skos:definition>A variable with the standard name of area_type contains strings which indicate the nature of the surface e.g. land, sea, sea_ice. These strings are standardised.  Values must be taken from the area_type table.</skos:definition>
-        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -960,6 +989,12 @@
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_inorganic_chlorine">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Inorganic chlorine", sometimes referred to as Cly, describes a family of chemical species which result from the degradation of source gases containing chlorine (CFCs, HCFCs, VSLS) and natural inorganic chlorine sources such as seasalt and other aerosols. "Inorganic chlorine" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. Standard names that use the term "clox" are used for quantities that contain all inorganic chlorine species except HCl and ClONO2.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="brightness_temperature_at_cloud_top">
+        <skos:definition>cloud_top refers to the top of the highest cloud. brightness_temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area. A coordinate variable of radiation_wavelength, sensor_band_central_radiation_wavelength, or radiation_frequency may be specified to indicate that the brightness temperature applies at specific wavelengths or frequencies.</skos:definition>
+        <canonical_units>K</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -1753,6 +1788,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tropical_cyclone_eye_brightness_temperature">
+        <skos:definition>"tropical_cyclone_eye_brightness_temperature" means the warmest  brightness temperature value in the eye region of a tropical cyclone (0 - 24 km from the storm center) derived using the Advanced Dvorak Technique, based on satellite observations. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007).  American Meterorological Society Weather and Forecasting, 22, 287-298. The brightness temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area.</skos:definition>
+        <canonical_units>K</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_nitrite_in_sea_water">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for the nitrite anion is NO2-.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -2011,6 +2052,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="cloud_binary_mask">
+        <skos:definition>X_binary_mask has 1 where condition X is met, 0 elsewhere. 1 = cloud present, 0 = cloud absent (clear). If no threshold is supplied, the binary mask is 1 if there is any non-zero amount of cloud. if a threshold is supplied, it should be specified by associating a coordinate variable or scalar coordinate variable with the data variable and giving the coordinate variable a standard name of cloud_area_fraction. The values of the coordinate variable are the threshold values for the corresponding subarrays of the data variable.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition">
         <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the particles. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. "Secondary particulate organic matter" means particulate organic matter formed within the atmosphere from gaseous precursors. The sum of primary_particulate_organic_matter_dry_aerosol and secondary_particulate_organic_matter_dry_aerosol is particulate_organic_matter_dry_aerosol. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Wet deposition" means deposition by precipitation. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -2114,7 +2161,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_radiance_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2 sr-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -2354,7 +2401,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_spherical_irradiance_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance".</skos:definition>
         <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -2505,6 +2552,12 @@
       <Standard_Name rdf:about="sound_pressure_level_in_air">
         <skos:definition>Sound pressure is the difference from the local ambient pressure caused by a sound wave at a particular location and time. Sound pressure level in air is expressed on a logarithmic scale with reference to a sound pressure of 2e-5 Pa. Lp = 20 log10(p/p0) where Lp is the sound pressure level, p is the rms sound pressure and p0 is the reference sound pressure.</skos:definition>
         <canonical_units>dB</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="area_fraction_of_twilight_defined_by_solar_zenith_angle">
+        <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. A coordinate variable of solar_zenith_angle indicating the twilight extent should be specified.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2659,8 +2712,9 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_water_practical_salinity">
-        <skos:definition>Practical Salinity, S_P, is defined on the Practical Salinity Scale of 1978 (PSS-78) and is calculated from the electrical conductivity of sea water (as well as temperature and pressure).  Officially S_P is dimensionless so that, while convenient, and while it is common practice, it is not officially sanctioned to say S_P = 35 psu. Often authors use PSS-78, as in S_P = 35 PSS-78. If salinity was measured using remote sensing techniques and not conductivity, then it is recommended that additional metadata (calibration/validation information) be described in the variable comment attribute. This name should be used to describe salinity observations made from 1978 onwards (Practical Salinity is the salinity quantity stored by national data centres for post-1978 observations). The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale.  There are also standard names for the precisely defined salinity quantities sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Salinity quantities that do not match any of the precise definitions should be given the more general standard name of sea_water_salinity.  Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448</skos:definition>
-        <canonical_units>1e-3</canonical_units>
+        <skos:definition>Practical Salinity, S_P, is a determination of the salinity of sea water, based on its electrical conductance. The measured conductance, corrected for temperature and pressure, is compared to the conductance of a standard potassium chloride solution, producing a value on the Practical Salinity Scale of 1978 (PSS-78). This name should not be used to describe salinity observations made before 1978, or ones not based on conductance measurements. Conversion of Practical Salinity to other precisely defined salinity measures should use the appropriate formulas specified by TEOS-10. Other standard names for precisely defined salinity quantities are sea_water_absolute_salinity (S_A); sea_water_preformed_salinity (S_*),  sea_water_reference_salinity (S_R); sea_water_cox_salinity (S_C),  used for salinity observations between 1967 and 1977; and sea_water_knudsen_salinity (S_K), used for salinity observations between 1901 and 1966. Salinity quantities that do not match any of the precise definitions shoul
+ d be given the more general standard name of sea_water_salinity. Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2682,14 +2736,14 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_alpha_pinene_due_to_emission">
-        <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for alpha_pinene is C10H16. The IUPAC name for alpha-pinene is (1S,5S)-2,6,6-trimethylbicyclo[3.1.1]hept-2-ene.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
+      <Standard_Name rdf:about="time">
+        <canonical_units>s</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="time">
-        <canonical_units>s</canonical_units>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_alpha_pinene_due_to_emission">
+        <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for alpha_pinene is C10H16. The IUPAC name for alpha-pinene is (1S,5S)-2,6,6-trimethylbicyclo[3.1.1]hept-2-ene.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2951,6 +3005,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="fog_area_fraction">
+        <skos:definition>Fog means water droplets or minute ice crystals close to the surface which reduce visibility in air to less than 1000m. "X_area_fraction" means the fraction of horizontal area occupied by X.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_waste_treatment_and_disposal">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for toluene is C6H5CH3. Toluene has the same structure as benzene, except that one of the hydrogen atoms is replaced by a methyl group. The systematic name for toluene is methylbenzene. The "waste treatment and disposal" sector comprises solid waste disposal on land, wastewater handling, waste incineration and other waste disposal. "Waste treatment and disposal" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 6A, 6B, 6C and 6D as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -3155,7 +3215,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="downwelling_photosynthetic_radiance_in_sea_water">
-        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</skos:definition>
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". Radiance is the radiative flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength.</skos:definition>
         <canonical_units>W m-2 sr-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -3514,7 +3574,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="runoff_flux">
-        <skos:definition>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. "Sea surface height" is a time-varying quantity. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</skos:definition>
+        <skos:definition>Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -4167,6 +4227,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection">
+        <skos:definition>The great circle distance measured from the tropical cyclone center to the leading edge of displaced convection, which is defined as the closest point that exceeds a threshold brightness temperature at top of atmosphere limit. The threshold applied should be recorded in a coordinate variable having the standard name of toa_brightness_temperature. A coordinate variable with standard name of radiation_wavelength, sensor_band_central_radiation_wavelength, or radiation_frequency may be specified to indicate that the brightness temperature applies at specific wavelengths or frequencies.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="y_heat_flux_in_sea_water_due_to_advection">
         <skos:definition>"y" indicates a vector component along the grid y-axis, positive with increasing y. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -4544,15 +4610,15 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="surface_frozen_carbon_dioxide_amount">
-        <skos:definition>"Amount" means mass per unit area. The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. Frozen carbon dioxide is found on the surface of Mars.</skos:definition>
-        <canonical_units>kg m-2</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_specific_humidity_due_to_stratiform_precipitation">
         <skos:definition>Specific humidity is the mass fraction of water vapor in (moist) air. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes). The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Tendency_of_X" means derivative of X with respect to time. "Specific" means per unit mass.</skos:definition>
         <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="surface_frozen_carbon_dioxide_amount">
+        <skos:definition>"Amount" means mass per unit area. The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. Frozen carbon dioxide is found on the surface of Mars.</skos:definition>
+        <canonical_units>kg m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -4643,7 +4709,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="downwelling_photosynthetic_radiative_flux_in_sea_water">
-        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -4864,6 +4930,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="mole_concentration_of_dissolved_organic_carbon_in_sea_water">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where Xis a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Organic carbon describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a completedescription of the species represented, for example, by using a comment attribute.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_stokes_drift_x_velocity">
+        <skos:definition>A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. The Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5583,7 +5655,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_photon_radiance_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
         <canonical_units>mol m-2 s-1 sr-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -5606,6 +5678,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="mole_concentration_of_nitric_acid_in_air">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for nitric acid is HNO3.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="atmosphere_moles_of_nitrogen_dioxide">
         <skos:definition>The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for nitrogen dioxide is NO2.</skos:definition>
         <canonical_units>mol</canonical_units>
@@ -5618,9 +5696,9 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mole_concentration_of_nitric_acid_in_air">
-        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for nitric acid is HNO3.</skos:definition>
-        <canonical_units>mol m-3</canonical_units>
+      <Standard_Name rdf:about="area_fraction_of_day_defined_by_solar_zenith_angle">
+        <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. A coordinate variable of solar_zenith_angle indicating the day extent should be specified.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5791,14 +5869,14 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_waste_burning">
-        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for butane is C4H10. Butane is a member of the group of hydrocarbons known as alkanes. There are standard names for the alkane group as well as for some of the individual species. The "agricultural waste burning" sector comprises field burning of agricultural residues. "Agricultural waste burning" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source category 4F as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
+      <Standard_Name rdf:about="tendency_of_surface_snow_amount">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "tendency_of_X" means derivative of X with respect to time. "Amount" means mass per unit area. Surface amount refers to the amount on the ground, excluding that on the plant or vegetation canopy.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_surface_snow_amount">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "tendency_of_X" means derivative of X with respect to time. "Amount" means mass per unit area. Surface amount refers to the amount on the ground, excluding that on the plant or vegetation canopy.</skos:definition>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_waste_burning">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for butane is C4H10. Butane is a member of the group of hydrocarbons known as alkanes. There are standard names for the alkane group as well as for some of the individual species. The "agricultural waste burning" sector comprises field burning of agricultural residues. "Agricultural waste burning" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source category 4F as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -5848,6 +5926,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="toa_net_downward_longwave_flux">
         <skos:definition>"longwave" means longwave radiation. "toa" means top of atmosphere.   "Downward" indicates a vector component which is positive when directed downward (negative upward).  Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="dvorak_tropical_number">
+        <skos:definition>The Advanced Dvorak Technique (ADT) is used to derive a set of Dvorak Tropical numbers using an objective pattern recognition algorithm to determine the intensity of a tropical cyclone by matching observed brightness temperature patterns, maximum sustained winds and minimum sea level pressure to a set of pre-defined tropical cyclone structures. Dvorak Tropical numbers range from 1.0 to 8.0, increasing with storm intensity. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007).  American Meterorological Society Weather and Forecasting, 22, 287-298.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5912,7 +5996,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_photon_flux_in_air">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -6353,6 +6437,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation">
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". The quantity with standard name fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation, often called Fraction of Absorbed Photosynthetically Active Radiation (FAPAR), is the fraction of incoming solar radiation in the photosynthetically active radiation spectral region that is absorbed by a vegetation canopy. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of "radiation_wavelength". The surface called "surface" means the lower boundary of the atmosphere. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". "Vegetation" means any plants e.g. trees, shrubs, grass. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="integral_of_surface_downward_northward_stress_wrt_time">
         <skos:definition>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. The surface called "surface" means the lower boundary of the atmosphere. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Downward" indicates a vector component which is positive when directed downward (negative upward). "Downward northward" indicates the ZY component of a tensor. A downward northward stress is a downward flux of northward momentum, which accelerates the lower medium northward and the upper medium southward. The surface downward stress is the windstress on the surface.</skos:definition>
         <canonical_units>Pa s</canonical_units>
@@ -6784,7 +6874,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water">
-        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. The direction ("up/downwelling") is specified. Radiation incident on a 4-pi collector has a standard name referring to "omnidirectional spherical irradiance". A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -6963,6 +7053,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="fire_temperature">
+        <skos:definition>The overall temperature of a fire area due to contributions from smoldering and flaming biomass. A data variable containing the area affected by fire should be given the standard name fire_area.</skos:definition>
+        <canonical_units>K</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_agricultural_waste_burning">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the particles. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol partilces" means aerosol particles without any water uptake. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. "Agricultural waste burning" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source category 4F as defined in the 2006 IPCC guidelines for national greenhouse gas inventories". Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -7061,6 +7157,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     <skos:narrower>
       <Standard_Name rdf:about="stratiform_cloud_area_fraction">
         <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X.  Cloud area fraction is also called "cloud amount" and "cloud cover".  The cloud area fraction is for the whole atmosphere column, as seen from the surface or the top of the atmosphere. The cloud area fraction in a layer of the atmosphere has the standard name cloud_area_fraction_in_atmosphere_layer.  In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="area_fraction_of_night_defined_by_solar_zenith_angle">
+        <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. A coordinate variable of solar_zenith_angle indicating the night extent should be specified.</skos:definition>
         <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -7740,6 +7842,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="mass_concentration_of_ozone_in_air">
         <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for ozone is O3.</skos:definition>
         <canonical_units>kg m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="radius_of_tropical_cyclone_eye">
+        <skos:definition>The radius of a tropical cyclone eye is defined to be the great circle distance measured from the cyclone center to the eye wall.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -8608,6 +8716,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="radius_of_tropical_cyclone_maximum_sustained_wind_speed">
+        <skos:definition>The great circle distance measured from the tropical cyclone center to the region of sustained 1-minute duration maximum wind speed, as defined by the standard name, tropical_cyclone_maximum_sustained_wind_speed.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_methyl_chloride_due_to_emission">
         <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for methyl chloride is CH3Cl. The IUPAC name for methyl chloride is chloromethane.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -9236,15 +9350,15 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mass_fraction_of_pm2p5_dry_aerosol_particles_in_air">
-        <skos:definition>Mass fraction is used in the construction "mass_fraction_of_X_in_Y", where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. "Pm2p5 aerosol" is an air pollutant with an aerodynamic diameter of less than or equal to 2.5 micrometers.</skos:definition>
-        <canonical_units>1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="thickness_of_liquid_water_cloud">
         <skos:definition>"Thickness" means the vertical extent of a layer.</skos:definition>
         <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="mass_fraction_of_pm2p5_dry_aerosol_particles_in_air">
+        <skos:definition>Mass fraction is used in the construction "mass_fraction_of_X_in_Y", where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. "Pm2p5 aerosol" is an air pollutant with an aerodynamic diameter of less than or equal to 2.5 micrometers.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9524,9 +9638,21 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_stokes_drift_y_velocity">
+        <skos:definition>A velocity is a vector quantity. "y" indicates a vector component along the grid x-axis, positive with increasing y. The Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="convective_rainfall_flux">
         <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="geopotential_height_at_cloud_top">
+        <skos:definition>Cloud_top refers to the top of the highest cloud. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. Geopotential height is the geopotential divided by the standard acceleration due to gravity. It is numerically similar to the altitude (or geometric height) and not to the quantity with standard name "height", which is relative to the surface.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9854,7 +9980,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Photon spherical irradiance is the photon flux incident on unit area of a hemispherical (or "2-pi") collector. The direction ("up/downwelling") is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance". A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -9878,7 +10004,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="atmosphere_optical_thickness_due_to_cloud">
-        <skos:definition>The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path.  A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. The atmosphere optical thickness applies to radiation passing through the entire atmosphere.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.</skos:definition>
+        <skos:definition>The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. The atmosphere optical thickness applies to radiation passing through the entire atmosphere. "Cloud" means the component of extinction owing to the presence of liquid or ice water particles. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase.</skos:definition>
         <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -9997,8 +10123,14 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="dvorak_tropical_cyclone_current_intensity_number">
+        <skos:definition>"Dvorak current intensity number" indicates the ranking of tropical cyclone strength (ranging from 1.0 to 8.0, increasing with storm intensity). The current intensity (CI) number is derived using the Advanced Dvorak Technique based on satellite observations over time. The CI number maps to a maximum sustained 1-minute wind speed and is derived by applying a series of intensity constraints to previous Dvorak-calculated trends of the same storm. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007).  American Meteorological Society Weather and Forecasting, 22, 287-298.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="surface_downwelling_photosynthetic_radiative_flux_in_air">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -10555,7 +10687,6 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     <skos:narrower>
       <Standard_Name rdf:about="region">
         <skos:definition>A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list.</skos:definition>
-        <canonical_units>string</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -10686,7 +10817,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_upwelling_photosynthetic_photon_flux_in_air">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean "net upward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Upwelling radiation is radiation from below. It does not mean "net upward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -11208,7 +11339,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="downwelling_photosynthetic_photon_flux_in_sea_water">
-        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -11387,6 +11518,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sunglint_angle">
+        <skos:definition>The angle between an incident beam of solar radiation and the outgoing beam specularly reflected at a sea surface.</skos:definition>
+        <canonical_units>rad</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="surface_snow_and_ice_refreezing_flux">
         <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The surface called "surface" means the lower boundary of the atmosphere. "Surface snow and ice refreezing flux" means the mass flux of surface  meltwater which refreezes within the snow or firn.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -11418,7 +11555,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". Radiative flux is the sum of shortwave and longwave radiative fluxes. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. Downwelling radiation is radiation from above. It does not mean "net downward". "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. "Diffuse" radiation is radiation that has been scattered by particles in the atmosphere such as cloud droplets and aerosols. When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -12035,7 +12172,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="omnidirectional_photosynthetic_spherical_irradiance_in_sea_water">
-        <skos:definition>"Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Omnidirectional spherical irradiance is the radiation incident on unit area of a spherical (or "4-pi") collector. It is sometimes called "scalar irradiance". Radiation incident on a 2-pi collector has standard names of "spherical irradiance" which specify up/downwelling.</skos:definition>
+        <skos:definition>"Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. Omnidirectional spherical irradiance is the radiation incident on unit area of a spherical (or "4-pi") collector. It is sometimes called "scalar irradiance". Radiation incident on a 2-pi collector has standard names of "spherical irradiance" which specify up/downwelling.</skos:definition>
         <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -12352,6 +12489,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="status_flag">
+        <skos:definition>A variable with the standard name of status_flag contains an indication of quality or other status of another data variable. The linkage between the data variable and the variable with the standard_name of status_flag is achieved using the ancillary_variables attribute.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="atmosphere_mass_content_of_gaseous_elemental_mercury">
         <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The chemical symbol for mercury is Hg.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
@@ -12481,6 +12624,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="heat_flux_correction">
         <skos:definition>Flux correction is also called "flux adjustment". A positive flux correction is downward i.e. added to the ocean. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="distance_from_sun">
+        <skos:definition>The distance from the sun to the point of observation.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -12899,7 +13048,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="thermodynamic_phase_of_cloud_water_particles_at_cloud_top">
-        <skos:definition>"cloud_top" refers to the top of the  highest cloud. "Water" means water in all phases. A variable with the standard name of thermodynamic_phase_of_cloud_water_particles_at_cloud_top contains integers which can be translated to strings using flag_values and flag_meanings attributes. Alternatively, the data variable may contain strings which indicate the thermodynamic phase. These strings are standardised. Values must be chosen from the following list: liquid; ice; mixed.</skos:definition>
+        <skos:definition>"cloud_top" refers to the top of the highest cloud. "Water" means water in all phases. A variable with the standard name of thermodynamic_phase_of_cloud_water_particles_at_cloud_top contains integers which can be translated to strings using flag_values and flag_meanings attributes. Alternatively, the data variable may contain strings which indicate the thermodynamic phase. These strings are standardised. Values must be chosen from the following list: liquid; ice; mixed; clear_sky; super_cooled_liquid_water; unknown.</skos:definition>
         <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -13359,6 +13508,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="fire_area">
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. "Fire area" means the area of detected biomass fire.</skos:definition>
+        <canonical_units>m2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_residential_and_commercial_combustion">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for benzene is C6H6. Benzene is the simplest aromatic hydrocarbon and has a ring structure consisting of six carbon atoms joined by alternating single and double chemical bonds. Each carbon atom is additionally bonded to one hydrogen atom. There are standard names that refer to aromatic_compounds as a group, as well as those for individual species. The "residential and commercial combustion" sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or "other" combustion, which is commonly included in the inventory data. "Residential and commercial combustion" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -13374,6 +13529,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment">
         <skos:definition>The wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S has the standard name sea_surface_wave_directional_variance_spectral_density.  S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The second wave period, T(m2) is calculated as the square root of the ratio M(0)/M(2).</skos:definition>
         <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="lightning_radiant_energy">
+        <skos:definition>The standard name "lightning radiant energy" means the energy emitted as electromagnetic radiation due to lightning. A coordinate variable of radiation_wavelength, radiation_frequency, or sensor_band_central_wavelength may be specified to indicate that the lightning_radiant_energy applies at specific wavelengths or frequencies. Bounds of the time and spatial coordinates may be specified to indicate the time interval and spatial extent over which the energy is emitted.</skos:definition>
+        <canonical_units>J</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13550,6 +13711,11 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="automated_tropical_cyclone_forecasting_system_storm_identifier">
+        <skos:definition>The Automated Tropical Cyclone Forecasting System (ATCF) storm identifier is an 8 character string which identifies a tropical cyclone. The storm identifier has the form BBCCYYYY, where BB is the ocean basin, specifically: AL - North Atlantic basin, north of the Equator; SL - South Atlantic basin, south of the Equator; EP - North East Pacific basin, eastward of 140 degrees west longitude; CP - North Central Pacific basin, between the dateline and 140 degrees west longitude; WP -North West Pacific basin, westward of the dateline; IO - North Indian Ocean basin, north of the Equator between 40 and 100 degrees east longitude; SH - South Pacific Ocean basin and South Indian Ocean basin. CC is the cyclone number. Numbers 01 through 49 are reserved for tropical and subtropical cyclones. A cyclone number is assigned to each tropical or subtropical cyclone in each basin as it develops. Numbers are assigned in chronological order. Numbers 50 through 79 are reserved for internal use by operational forecast centers. Numbers 80 through 89 are reserved for training, exercises and testing. Numbers 90 through 99 are reserved for tropical disturbances having the potential to become tropical or subtropical cyclones. The 90's are assigned sequentially and reused throughout the calendar year. YYYY is the four-digit year. This is calendar year for the northern hemisphere. For the southern hemisphere, the year begins July 1, with calendar year plus one. Reference: Miller, R.J., Schrader, A.J., Sampson, C.R., &amp; Tsui, T.L. (1990), The Automated Tropical Cyclone Forecasting System (ATCF), American Meteorological Society Computer Techniques, 5, 653–660.</skos:definition>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="geostrophic_eastward_wind">
         <skos:definition>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</skos:definition>
         <canonical_units>m s-1</canonical_units>
@@ -13685,6 +13851,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="atmosphere_moles_of_hydrogen_cyanide">
         <skos:definition>The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hydrogen cyanide is HCN.</skos:definition>
         <canonical_units>mol</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="scene_type_of_dvorak_tropical_cyclone_eye_region">
+        <skos:definition>A variable with the standard name of scene_type_of_dvorak_tropical_cyclone_eye_region contains integers which can be translated to strings using flag_values and flag_meanings attributes. It indicates the Advanced Dvorak Technique tropical cyclone eye region scene type chosen from the following list: clear_ragged_or_obscured_eye; pinhole_eye; large_eye;  no_eye.  Alternatively, the data variable may contain strings chosen from the same standardised list to indicate the scene type. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007). American Meterorological Society Weather and Forecasting, 22, 287-298.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13928,15 +14100,15 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="depth_at_maximum_upward_derivative_of_sea_water_potential_temperature">
-        <skos:definition>This quantity, often used to indicate the "thermocline depth", is the depth of the maximum vertical gradient of sea water potential temperature.  Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.</skos:definition>
-        <canonical_units>m</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="toa_bidirectional_reflectance">
         <skos:definition>"Bidirectional_reflectance" depends on the angles of incident and measured radiation. Reflectance is the ratio of the energy of the reflected to the incident radiation.  A coordinate variable of radiation_wavelength or radiation_frequency can be used to specify the wavelength or frequency, respectively, of the radiation. "toa" means top of atmosphere. toa_bidirectional_reflectance includes a factor to account for the cosine of the solar zenith angle but does not include any integration over solid angle.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="depth_at_maximum_upward_derivative_of_sea_water_potential_temperature">
+        <skos:definition>This quantity, often used to indicate the "thermocline depth", is the depth of the maximum vertical gradient of sea water potential temperature.  Depth is the vertical distance below the surface. Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13971,7 +14143,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="downwelling_photosynthetic_photon_radiance_in_sea_water">
-        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 300-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. "Photosynthetic" radiation is the part of the spectrum which is used in photosynthesis e.g. 400-700 nm. The range of wavelengths could be specified precisely by the bounds of a coordinate of radiation_wavelength. A photon flux is specified in terms of numbers of photons expressed in moles.</skos:definition>
         <canonical_units>mol m-2 s-1 sr-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -14533,6 +14705,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="scene_type_of_dvorak_tropical_cyclone_cloud_region">
+        <skos:definition>A variable with the standard name of scene_type_of_dvorak_tropical_cyclone_cloud_region contains integers which can be translated to strings using flag_values and flag_meanings attributes. It indicates the Advanced Dvorak Technique tropical cyclone cloud region scene type chosen from the following list: uniform_central_dense_overcast; embedded_center; irregular_central_dense_overcast; curved_band; shear. Alternatively, the data variable may contain strings chosen from the same standardised list to indicate the scene type. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007). American Meterorological Society Weather and Forecasting, 22, 287-298.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="atmosphere_mole_content_of_ozone">
         <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The construction "atmosphere_mole_content_of_X" means the vertically integrated number of moles of X above a unit area. The chemical formula for ozone is O3. atmosphere_mole_content_of_ozone is usually measured in Dobson Units which are equivalent to 446.2 micromoles m-2. N.B. Data variables containing column content of ozone can be given the standard name of either equivalent_thickness_at_stp_of_atmosphere_ozone_content or atmosphere_mole_content_of_ozone.The latter name is recommended for consistency with mole content names for chemical species other than ozone.</skos:definition>
         <canonical_units>mol m-2</canonical_units>
@@ -14552,8 +14730,8 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="change_over_time_in_sea_water_practical_salinity">
-        <skos:definition>"change_over_time_in_X" means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. Practical Salinity, S_P, is defined on the Practical Salinity Scale of 1978 (PSS-78) and is calculated from the electrical conductivity of sea water (as well as temperature and pressure).  Officially S_P is dimensionless so that, while convenient, and while it is common practice, it is not officially sanctioned to say S_P = 35 psu. Often authors use PSS-78, as in S_P = 35 PSS-78. If salinity was measured using remote sensing techniques and not conductivity, then it is recommended that additional metadata (calibration/validation information) be described in the variable comment attribute. This name should be used to describe salinity observations made from 1978 onwards (Practical Salinity is the salinity quantity stored by national data centres for post-1978 observations). The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale.  There are also standard names for the precisely defined salinity quantities sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Salinity quantities that do not match any of the precise definitions should be given the more general standard name of sea_water_salinity.  Reference: www.teos-10.org; Lewis, 1980 doi: 10.1109/JOE.1980.1145448</skos:definition>
-        <canonical_units>1e-3</canonical_units>
+        <skos:definition>"change_over_time_in_X" means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. Practical Salinity, S_P, is a determination of the salinity of sea water, based on its electrical conductance. The measured conductance, corrected for temperature and pressure, is compared to the conductance of a standard potassium chloride solution, producing a value on the Practical Salinity Scale of 1978 (PSS-78). This name should not be used to describe salinity observations made before 1978, or ones not based on conductance measurements. Conversion of Practical Salinity to other precisely defined salinity measures should use the appropriate formulas specified by TEOS-10. Other standard names for precisely defined salinity quantities are sea_water_absolute_salinity (S_A); sea_water_preformed_salinity (S_*), sea_water_reference_salinity (S_R); sea_water_cox_salinity (S_C), used for salinity observations between 1967 and 1977; and sea_water_knudsen_salinity (S_K), used for salinity observations between 1901 and 1966. Salinity quantities that do not match any of the precise definitions shoul d be given the more general standard name of sea_water_salinity. Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -15282,6 +15460,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tropical_cyclone_maximum_sustained_wind_speed">
+        <skos:definition>"tropical_cyclone_maximum_sustained_wind_speed" means the maximum sustained wind speed of a tropical cyclone, sustained over a period of one minute at the surface of the earth, derived using the Advanced Dvorak Technique based on satellite observations. Reference: Olander, T. L., &amp; Velden, C. S., The Advanced Dvorak Technique: Continued Development of an Objective Scheme to Estimate Tropical Cyclone Intensity Using Geostationary Infrared Satellite Imagery (2007). American Meterorological Society Weather and Forecasting, 22, 287-298.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_concentration_of_dimethyl_sulfide_in_air">
         <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for dimethyl sulfide is (CH3)2S.  Dimethyl sulfide is sometimes referred to as DMS.</skos:definition>
         <canonical_units>kg m-3</canonical_units>
@@ -15642,6 +15826,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="clear_sky_area_fraction">
+        <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. The clear_sky area fraction is for the whole atmosphere column, as seen from the surface or the top of the atmosphere.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_sulfate_dry_aerosol_particles">
         <skos:definition>The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. "tendency_of_X" means derivative of X with respect to time. The chemical formula for the sulfate anion is SO4(2-).</skos:definition>
         <canonical_units>mol s-1</canonical_units>
@@ -15759,6 +15949,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="liquid_water_content_of_permafrost_layer">
         <skos:definition>"Content" indicates a quantity per unit area.  Permafrost is soil or rock that has remained at a temperature at or below zero degrees Celsius throughout the seasonal cycle for two or more years.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="solar_irradiance_per_unit_wavelength">
+        <skos:definition>The quantity with standard name solar_irradiance_per_unit_wavelength, often called Solar Spectral Irradiance (SSI), is the radiation from the sun as a function of wavelength integrated over the entire solar disk. A coordinate variable for radiation wavelength should be given the standard name radiation_wavelength. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun, but a coordinate or scalar coordinate variable of distance_from_sun can be used to specify a value other than the default. "Irradiance" means the power per unit area (called radiative flux in other standard names), the area being normal to the direction of flow of the radiant energy.</skos:definition>
+        <canonical_units>W m-2 m-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>

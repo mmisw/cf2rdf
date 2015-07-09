@@ -3,12 +3,12 @@ input:  src/main/resources/cf-standard-name-table.xml
 output: src/main/resources/cf-standard-name-table.rdf
 
 vocabulary properties from input file:
- version_number: 28; last_modified: 2015-01-07T10:24:11Z
+ version_number: 29; last_modified: 2015-07-08T09:43:36Z
 
 conversion stats:
-numConcepts = 2640
-numEntries = 2639
-numWithNoCanonicalUnits = 5
+numConcepts = 2673
+numEntries = 2672
+numWithNoCanonicalUnits = 8
 numWithNoDefinitions = 31
 
 Mapping ontology:
