@@ -45,11 +45,11 @@ output: src/main/resources/cf-standard-name-table.rdf
 ...
 ```
 
-The latest conversion report is [here](tree/master/src/main/resources/cf-standard-name-table.conv-stats.txt).
+The latest conversion report is [here](src/main/resources/cf-standard-name-table.conv-stats.txt).
 
 The generated ontologies are:
-- [cf-standard-name-table.rdf](tree/master/src/main/resources/cf-standard-name-table.rdf)
-- [cfonmap.n3](tree/master/src/main/resources/cfonmap.n3)
+- [cf-standard-name-table.rdf](src/main/resources/cf-standard-name-table.rdf)
+- [cfonmap.n3](src/main/resources/cfonmap.n3)
 
 
 This program reads in configuration parameters from `src/main/resources/application.conf`.
