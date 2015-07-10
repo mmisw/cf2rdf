@@ -12,7 +12,7 @@ numWithNoCanonicalUnits = 8
 numWithNoDefinitions = 31
 
 Mapping ontology:
-  mappingTermsAdded     = 2638
+  mappingTermsAdded     = 2671
   mappingOutputFilename = src/main/resources/cfonmap.n3
        
       
