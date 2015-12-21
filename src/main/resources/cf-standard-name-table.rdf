@@ -9,8 +9,8 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2015-07-08T09:43:36Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>29</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2015-12-03T08:05:16Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>30</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -2618,6 +2618,11 @@
       <Standard_Name rdf:about="mole_concentration_of_halon1301_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for halon1301 is CBrF3. The IUPAC name for halon1301 is bromo-trifluoro-methane.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="institution">
+        <skos:definition>An auxiliary coordinate variable with a standard name of institution contains string values which specify where the original data, with which the coordinate variable is associated, were produced. The use of institution as the standard name for an auxiliary coordinate variable permits the aggregation of data from multiple institutions within a single data file.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11137,6 +11142,11 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Upward" indicates a vector component which is positive when directed upward (negative downward).  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Upward eastward" indicates the ZX component of a tensor. An upward eastward momentum flux is an upward flux of eastward momentum, which accelerates the upper medium eastward and the lower medium westward.  Momentum flux is dimensionally equivalent to stress and pressure.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The total upward eastward momentum flux due to gravity waves is the sum of the fluxes due to orographic gravity waves and nonorographic waves. The total upward eastward momentum flux due to nonorographic gravity waves is the sum of the fluxes due to eastward and westward propagating waves. These quantities have the standard names upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves and upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves, respectively.</skos:definition>
         <canonical_units>Pa</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="source">
+        <skos:definition>An auxiliary coordinate variable with a standard name of source contains string values which describe the method of production of the original data with which the coordinate variable is associated. If the data were model-generated, source should name the model and its version, as specifically as could be useful. If the data are observational, source should characterize them (e.g., "surface observation", "radiosonde"). The use of source as the standard name for an auxiliary coordinate variable permits the aggregation of data from multiple sources within a single data file.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>

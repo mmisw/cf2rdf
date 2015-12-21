@@ -3163,6 +3163,9 @@ orr:atmosphere_horizontal_streamfunction
 orr:volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0065/> .
 
+orr:source
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/TO330BQW/> .
+
 orr:sunglint_angle
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/BAD6PGHA/> .
 
@@ -4491,6 +4494,9 @@ orr:sea_ice_and_surface_snow_amount
 
 orr:mass_concentration_of_chlorophyll_a_in_sea_water
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF14N7/> .
+
+orr:institution
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/13VECVJM/> .
 
 orr:tendency_of_atmosphere_moles_of_ozone
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N735/> .
