@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://mmisw.org/ont/cf/parameter/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://mmisw.org/ont/cf/parameter/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2015-12-03T08:05:16Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>30</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2016-04-05T07:17:14Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>32</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -550,15 +550,15 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mass_fraction_of_hcfc142b_in_air">
-        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for HCFC142b is CH3CClF2. The IUPAC name for HCFC142b is 1-chloro-1,1-difluoroethane.</skos:definition>
-        <canonical_units>1</canonical_units>
+      <Standard_Name rdf:about="tendency_of_sea_water_salinity_due_to_advection">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and normally given as 1e-3 or 0.001 i.e. parts per thousand. There are standard names for the more precisely defined salinity quantities: sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_practical_salinity, S_P (used for salinity observations from 1978 to the present day), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Practical Salinity is reported on the Practical Salinity Scale of 1978 (PSS-78), and is usually based on the electrical conductivity of sea water in observations since the 1960s. Conversion of data between the observed scales follows: S_P = (S_K - 0.03) * (1.80655 / 1.805) and S_P = S_C, however the accuracy of the latter is dependent on whether chlorinity or conductivity was used to determine the S_C value, with this inconsistency driving the development of PSS-78. The more precise standard names should be used where appropriate for both modelled and observed salinities. In particular, the use of sea_water_salinity to describe salinity observations made from 1978 onwards is now deprecated in favor of the term sea_water_practical_salinity which is the salinity quantity stored by national data centers for post-1978 observations. The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale. The unit "parts per thousand" was used for sea_water_knudsen_salinity and sea_water_cox_salinity.</skos:definition>
+        <canonical_units>1e-3 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mass_concentration_of_methane_in_air">
-        <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for methane is CH4. Methane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</skos:definition>
-        <canonical_units>kg m-3</canonical_units>
+      <Standard_Name rdf:about="mass_fraction_of_hcfc142b_in_air">
+        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for HCFC142b is CH3CClF2. The IUPAC name for HCFC142b is 1-chloro-1,1-difluoroethane.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -568,9 +568,9 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_sea_water_salinity_due_to_advection">
-        <skos:definition>"tendency_of_X" means derivative of X with respect to time. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and normally given as 1e-3 or 0.001 i.e. parts per thousand. There are standard names for the more precisely defined salinity quantities: sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_practical_salinity, S_P (used for salinity observations from 1978 to the present day), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Practical Salinity is reported on the Practical Salinity Scale of 1978 (PSS-78), and is usually based on the electrical conductivity of sea water in observations since the 1960s. Conversion of data between the observed scales follows: S_P = (S_K - 0.03) * (1.80655 / 1.805) and S_P = S_C, however the accuracy of the latter is dependent on whether chlorinity or conductivity was used to determine the S_C value, with this inconsistency driving the development of PSS-78. The more precise standard names should be used where appropriate for both modelled and observed salinities. In particular, the use of sea_water_salinity to describe salinity observations made from 1978 onwards is now deprecated in favor of the term sea_water_practical_salinity which is the salinity quantity stored by national data centers for post-1978 observations. The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale. The unit "parts per thousand" was used for sea_water_knudsen_salinity and sea_water_cox_salinity.</skos:definition>
-        <canonical_units>1e-3 s-1</canonical_units>
+      <Standard_Name rdf:about="mass_concentration_of_methane_in_air">
+        <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for methane is CH4. Methane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</skos:definition>
+        <canonical_units>kg m-3</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -1267,6 +1267,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="ocean_relative_vorticity">
+        <skos:definition>Relative vorticity is the upward component of the relative vorticity vector i.e. the component which arises from horizontal velocity.</skos:definition>
+        <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="net_upward_longwave_flux_in_air">
         <skos:definition>"longwave" means longwave radiation. "Upward" indicates a vector component which is positive when directed upward (negative downward). Net upward radiation is the difference between radiation from below (upwelling) and radiation from above (downwelling). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -1668,6 +1674,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="northward_westward_derivative_of_geopotential">
+        <skos:definition>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. "Westward" indicates a vector component which is positive when directed westward (negative eastward). "Northward" indicates a vector component which is positive when directed northward (negative southward). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be "northward", "southward", "eastward", "westward", "x" or "y". The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</skos:definition>
+        <canonical_units>s-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="atmosphere_moles_of_hexachlorobiphenyl">
         <skos:definition>The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for hexachlorobiphenyl is C12H4Cl6.  This structure of this species consists of two linked benzene rings, each of which is additionally bonded to three chlorine atoms.</skos:definition>
         <canonical_units>mol</canonical_units>
@@ -1827,6 +1839,12 @@
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition">
         <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the particles. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol particles" means aerosol particles without any water uptake. "particulate_organic_matter_dry_aerosol" means all particulate organic matter dry aerosol except elemental carbon.  It is the sum of primary_particulate_organic_matter_dry_aerosol and secondary_particulate_organic_matter_dry_aerosol. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Wet deposition" means deposition by precipitation. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="number_of_days_with_surface_temperature_below_threshold">
+        <skos:definition>The surface temperature is the temperature at the interface, not the bulk temperature of the medium above or below. The surface called "surface" means the lower boundary of the atmosphere. A variable whose standard name has the form number_of_days_with_X_below|above_threshold is a count of the number of days on which the condition X_below|above_threshold is satisfied. It must have a coordinate variable or scalar coordinate variable with the a standard name of X to supply the threshold(s). It must have a climatological time variable, and a cell_methods entry for within days which describes the processing of quantity X before the threshold is applied. A number_of_days is an extensive quantity in time, and the cell_methods entry for over days should be "sum".</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2615,6 +2633,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="northward_upward_derivative_of_geopotential">
+        <skos:definition>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential, P, in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Upward" indicates a vector component which is positive when directed upward (negative downward). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be "northward", "southward", "eastward", "westward", "x" or "y". The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</skos:definition>
+        <canonical_units>s-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_halon1301_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for halon1301 is CBrF3. The IUPAC name for halon1301 is bromo-trifluoro-methane.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -3303,8 +3327,8 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_downward_heat_flux_in_snow">
-        <skos:definition>"Downward" indicates a vector component which is positive when directed downward (negative upward).  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The surface called "surface" means the lower boundary of the atmosphere.</skos:definition>
-        <canonical_units>Wm-2</canonical_units>
+        <skos:definition>"Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The surface called "surface" means the lower boundary of the atmosphere.</skos:definition>
+        <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -3611,6 +3635,12 @@
       <Standard_Name rdf:about="sea_surface_height_above_geoid">
         <skos:definition>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. "Sea surface height" is a time-varying quantity. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</skos:definition>
         <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="dry_atmosphere_mole_fraction_of_methane">
+        <skos:definition>Mole fraction is used in the construction "mole_fraction_of_X_in_Y", where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The construction "dry_atmosphere_mole_fraction" means that the quantity refers to the whole atmospheric column and is calculated as the total number of particles of X in the column divided by the number of dry air particles in the same column, i.e. the effect of water vapor is excluded. For localized values within the atmospheric medium, standard names including "in_air" are used. Methane is a member of the group of hydrocarbons known as alkanes. There are standard names for the alkane group as well as for some of the individual species. The chemical formula for methane is CH4.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -4052,15 +4082,15 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_residential_and_commercial_combustion">
-        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for ethene is C2H4. Ethene is a member of the group of hydrocarbons known as alkenes. There are standard names for the alkene group as well as for some of the individual species. The "residential and commercial combustion" sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or "other" combustion, which is commonly included in the inventory data. "Residential and commercial combustion" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_sea_water_temperature">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. Sea water temperature is the in situ temperature of the sea water. For observed data, depending on the period during which the observation was made, the measured in situ temperature was recorded against standard "scales". These historical scales include the International Practical Temperature Scale of 1948 (IPTS-48; 1948-1967), the International Practical Temperature Scale of 1968 (IPTS-68, Barber, 1969; 1968-1989) and the International Temperature Scale of 1990 (ITS-90, Saunders 1990; 1990 onwards). Conversion of data between these scales follows t68 = t48 - (4.4 x 10e-6) * t48(100 - t - 48); t90 = 0.99976 * t68. Observations made prior to 1948 (IPTS-48) have not been documented and therefore a conversion cannot be certain. Differences between t90 and t68 can be up to 0.01 at temperatures of 40 C and above; differences of 0.002-0.007 occur across the standard range of ocean temperatures (-10 - 30 C). The International Equation of State of Seawater 1980 (EOS-80, UNESCO, 1981) and the Practical Salinity Scale (PSS-78) were both based on IPTS-68, while the Thermodynamic Equation of Seawater 2010 (TEOS-10) is based on ITS-90. References: Barber, 1969, doi: 10.1088/0026-1394/5/2/001; UNESCO, 1981; Saunders, 1990, WOCE Newsletter, 10, September 1990.</skos:definition>
         <canonical_units>K s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_residential_and_commercial_combustion">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for ethene is C2H4. Ethene is a member of the group of hydrocarbons known as alkenes. There are standard names for the alkene group as well as for some of the individual species. The "residential and commercial combustion" sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or "other" combustion, which is commonly included in the inventory data. "Residential and commercial combustion" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -4672,6 +4702,12 @@
       <Standard_Name rdf:about="atmosphere_moles_of_dinitrogen_pentoxide">
         <skos:definition>The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for dinitrogen pentoxide is N2O5.</skos:definition>
         <canonical_units>mol</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="single_scattering_albedo_in_air_due_to_ambient_aerosol_particles">
+        <skos:definition>"Single scattering albedo" is the fraction of radiation in an incident light beam scattered by the particles of an aerosol reference volume for a given wavelength. It is the ratio of the scattering and the extinction coefficients of the aerosol particles in the reference volume. A coordinate variable with a standard name of radiation_wavelength or radiation_frequency should be included to specify either the wavelength or frequency. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. "Ambient_aerosol" means that the aerosol is measured or modelled at the ambient state of pressure, temperature and relative humidity that exists in its immediate environment. "Ambient aerosol particles" are aerosol particles that have taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the particles. To specify the relative humidity and temperature at which the quantity described by the standard name applies, provide scalar coordinate variables with standard names of "relative_humidity" and "air_temperature". The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -6616,6 +6652,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="northward_land_ice_velocity">
+        <skos:definition>A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). Land ice velocity is defined as a two-dimensional vector, with no vertical component. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="sea_ice_freeboard">
         <skos:definition>Sea ice freeboard is the height of the sea-ice upper surface above the water surface.</skos:definition>
         <canonical_units>m</canonical_units>
@@ -7467,8 +7509,8 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="heat_flux_into_sea_water_due_to_freezing_of_frazil_ice">
-        <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.  "Frazil" consists of needle like crystals of ice, typically between three and four millimeters in diameter, which form as sea water begins to freeze. Salt is expelled during the freezing process and frazil ice consists of nearly pure fresh water.</skos:definition>
-        <canonical_units>Wm-2</canonical_units>
+        <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Frazil" consists of needle like crystals of ice, typically between three and four millimeters in diameter, which form as sea water begins to freeze. Salt is expelled during the freezing process and frazil ice consists of nearly pure fresh water.</skos:definition>
+        <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -8368,6 +8410,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="upward_upward_derivative_of_geopotential">
+        <skos:definition>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. "Upward" indicates a vector component which is positive when directed upward (negative downward). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be "northward", "southward", "eastward", "westward", "x" or "y". The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</skos:definition>
+        <canonical_units>s-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="atmosphere_ln_pressure_coordinate">
         <skos:definition>"ln_X" means natural logarithm of X. X must be dimensionless. See Appendix D of the CF convention for information about dimensionless vertical coordinates.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -8623,6 +8671,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_maritime_transport">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer are used. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. "Dry aerosol particles" means aerosol particles without any water uptake. "particulate_organic_matter_dry_aerosol" means all particulate organic matter dry aerosol except elemental carbon. It is the sum of primary_particulate_organic_matter_dry_aerosol and secondary_particulate_organic_matter_dry_aerosol. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The "maritime transport" sector includes fuel combustion activities related to maritime transport. "Maritime transport" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source category 1A3d as defined in the 2006 IPCC guidelines for national greenhouse gas Inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="downward_air_velocity">
+        <skos:definition>A velocity is a vector quantity. “Downward" indicates a vector component which is positive when directed downward (negative upward). Downward air velocity is the vertical component of the 3D air velocity vector. The standard name upward_air_velocity may be used for a vector component with the opposite sign convention.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9517,6 +9571,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="distance_from_geocenter">
+        <skos:definition>A measure of distance from the Earth's geocenter, commonly used in satellite tracks.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="medium_soil_pool_carbon_content">
         <skos:definition>"Content" indicates a quantity per unit area.  The "soil content" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including content_of_soil_layer are used.  "Soil carbon" is the organic matter present in soil quantified by the mass of carbon it contains. Soil carbon is returned to the atmosphere as the organic matter decays. The decay process takes varying amounts of time depending on the composition of the organic matter, the temperature and the availability of moisture. A carbon "soil pool" means the carbon contained in organic matter which has a characteristic period over which it decays and releases carbon into the atmosphere. "Medium soil pool" refers to the decay of organic matter in soil with a characteristic period of between ten and one hundred years under reference climate conditions of a temperature of 20 degrees Celsius and no water limitations.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
@@ -9638,8 +9698,8 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing">
-        <skos:definition>Specific humidity is the mass fraction of water vapor in (moist) air.  In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "specific" means per unit mass.</skos:definition>
-        <canonical_units>K s-1</canonical_units>
+        <skos:definition>Specific humidity is the mass fraction of water vapor in (moist) air. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes). The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "specific" means per unit mass.</skos:definition>
+        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9978,6 +10038,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="acoustic_signal_roundtrip_travel_time_in_sea_water">
+        <skos:definition>The quantity with standard name acoustic_signal_roundtrip_travel_time_in_sea_water is the time taken for an acoustic signal to propagate from the emitting instrument to a reflecting surface and back again to the instrument. In the case of an instrument based on the sea floor and measuring the roundtrip time to the sea surface, the data are commonly used as a measure of ocean heat content.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="air_temperature_threshold">
         <skos:definition>Air temperature is the bulk temperature of the air, not the surface (skin) temperature. Air temperature excess and deficit are calculated relative to the air temperature threshold.</skos:definition>
         <canonical_units>K</canonical_units>
@@ -10291,6 +10357,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="sea_surface_wind_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment">
         <skos:definition>The wind wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S can be integrated over direction to give S1= integral(S dtheta).  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The inverse wave period, T(m-1), is calculated as the ratio M(-1)/M(0).</skos:definition>
         <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="westward_westward_derivative_of_geopotential">
+        <skos:definition>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential, P, in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. "Westward" indicates a vector component which is positive when directed westward (negative eastward). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be "northward", "southward", "eastward", "westward", "x" or "y". The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</skos:definition>
+        <canonical_units>s-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11511,7 +11583,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_temperature">
-        <skos:definition>Sea surface temperature is usually abbreviated as "SST". It is the temperature of sea water near the surface (including the part under sea-ice, if any), and not the skin temperature, whose standard name is surface_temperature. For the temperature of sea water at a particular depth or layer, a data variable of sea_water_temperature with a vertical coordinate axis should be used.</skos:definition>
+        <skos:definition>Sea surface temperature is usually abbreviated as "SST". It is the temperature of sea water near the surface (including the part under sea-ice, if any). More specific terms, namely sea_surface_skin_temperature, sea_surface_subskin_temperature, and surface_termperature are available for the skin, subskin, and interface temperature, respectively. For the temperature of sea water at a particular depth or layer, a data variable of sea_water_temperature with a vertical coordinate axis should be used.’</skos:definition>
         <canonical_units>K</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -12079,6 +12151,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="dry_atmosphere_mole_fraction_of_carbon_dioxide">
+        <skos:definition>Mole fraction is used in the construction "mole_fraction_of_X_in_Y", where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The construction "dry_atmosphere_mole_fraction" means that the quantity refers to the whole atmospheric column and is calculated as the total number of particles of X in the column divided by the number of dry air particles in the same column, i.e. the effect of water vapor is excluded. For localized values within the atmospheric medium, standard names including "in_air" are used. The chemical formula for carbon dioxide is CO2.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="integral_of_surface_downward_latent_heat_flux_wrt_time">
         <skos:definition>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to.  The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface latent heat flux is the exchange of heat between the surface and the air on account of evaporation (including sublimation). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W s m-2</canonical_units>
@@ -12280,6 +12358,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="mass_fraction_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_in_air">
         <skos:definition>Mass fraction is used in the construction "mass_fraction_of_X_in_Y", where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. The term "particulate_organic_matter_dry_aerosol" means all particulate organic matter dry aerosol except elemental carbon. It is the sum of primary_particulate_organic_matter_dry_aerosol and secondary_particulate_organic_matter_dry_aerosol.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="northward_northward_derivative_of_geopotential">
+        <skos:definition>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential, P, in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. "Northward" indicates a vector component which is positive when directed northward (negative southward). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be "northward", "southward", "eastward", "westward", "x" or "y". The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</skos:definition>
+        <canonical_units>s-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13680,7 +13764,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="upward_air_velocity">
-        <skos:definition>A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). Upward air velocity is the vertical component of the 3D air velocity vector.</skos:definition>
+        <skos:definition>A velocity is a vector quantity. "Upward" indicates a vector component which is positive when directed upward (negative downward). Upward air velocity is the vertical component of the 3D air velocity vector. The standard name downward_air_velocity may be used for a vector component with the opposite sign convention.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -13837,6 +13921,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_halon1211">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for halon1211 is CBrClF2. The IUPAC name for halon1211 is bromo-chloro-difluoro-methane.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="westward_upward_derivative_of_geopotential">
+        <skos:definition>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential, P, in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. "Westward" indicates a vector component which is positive when directed westward (negative eastward). "Upward" indicates a vector component which is positive when directed upward (negative downward). "component_derivative_of_X" means derivative of X with respect to distance in the component direction, which may be "northward", "southward", "eastward", "westward", "x" or "y". The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</skos:definition>
+        <canonical_units>s-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -14047,6 +14137,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="stratiform_cloud_longwave_emissivity">
         <skos:definition>Emissivity is the ratio of the power emitted by an object to the power that would be emitted by a perfect black body having the same temperature as the object. The emissivity is assumed to be an integral over all wavelengths, unless a coordinate of radiation_wavelength or radiation_frequency is included to specify either the wavelength or frequency. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  "longwave" means longwave radiation.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="eastward_land_ice_velocity">
+        <skos:definition>A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Land ice velocity is defined as a two-dimensional vector, with no vertical component. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -15062,15 +15158,15 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mole_fraction_of_glyoxal_in_air">
-        <skos:definition>Mole fraction is used in the construction "mole_fraction_of_X_in_Y", where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The chemical formula for glyoxal is CHOCHO. The IUPAC name for glyoxal is ethanedial.</skos:definition>
-        <canonical_units>1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_sea_water_salinity_due_to_sea_ice_thermodynamics">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Sea ice thermodynamics" refers to the addition or subtraction of sea ice mass due to surface and basal fluxes. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and normally given as 1e-3 or 0.001 i.e. parts per thousand. There are standard names for the more precisely defined salinity quantities: sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_practical_salinity, S_P (used for salinity observations from 1978 to the present day), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Practical Salinity is reported on the Practical Salinity Scale of 1978 (PSS-78), and is usually based on the electrical conductivity of sea water in observations since the 1960s. Conversion of data between the observed scales follows: S_P = (S_K - 0.03) * (1.80655 / 1.805) and S_P = S_C, however the accuracy of the latter is dependent on whether chlorinity or conductivity was used to determine the S_C value, with this inconsistency driving the development of PSS-78. The more precise standard names should be used where appropriate for both modelled and observed salinities. In particular, the use of sea_water_salinity to describe salinity observations made from 1978 onwards is now deprecated in favor of the term sea_water_practical_salinity which is the salinity quantity stored by national data centers for post-1978 observations. The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale. The unit "parts per thousand" was used for sea_water_knudsen_salinity and sea_water_cox_salinity.</skos:definition>
         <canonical_units>1e-3 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="mole_fraction_of_glyoxal_in_air">
+        <skos:definition>Mole fraction is used in the construction "mole_fraction_of_X_in_Y", where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The chemical formula for glyoxal is CHOCHO. The IUPAC name for glyoxal is ethanedial.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -15461,6 +15557,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="surface_downwelling_photon_radiance_per_unit_wavelength_in_sea_water">
         <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Photon radiance is the photon flux in a particular direction, per unit of solid angle. The direction from which it is coming must be specified, for instance with a coordinate of zenith_angle. If the radiation does not depend on direction, a standard name of isotropic radiance should be chosen instead. A photon flux is specified in terms of numbers of photons expressed in moles. A coordinate variable for radiation wavelength should be given the standard name radiation_wavelength.</skos:definition>
         <canonical_units>mol m-2 s-1 m-1 sr-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_change_in_land_ice_amount">
+        <skos:definition>"Amount" means mass per unit area. Zero change in land ice amount is an arbitrary level. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -15869,6 +15971,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_residential_and_commercial_combustion">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for carbon monoxide is CO. The "residential and commercial combustion" sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or "other" combustion, which is commonly included in the inventory data. "Residential and commercial combustion" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="change_in_land_ice_amount">
+        <skos:definition>"Amount" means mass per unit area. Zero change in land ice amount is an arbitrary level. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</skos:definition>
+        <canonical_units>kg m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
