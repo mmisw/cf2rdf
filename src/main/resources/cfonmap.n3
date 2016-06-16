@@ -6040,6 +6040,9 @@ orr:northward_sea_water_velocity_assuming_no_tide
 orr:surface_runoff_amount
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0248/> .
 
+orr:specific_turbulent_kinetic_energy_of_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/MA6ZA2GF/> .
+
 orr:square_of_eastward_wind
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0319/> .
 
@@ -6760,6 +6763,9 @@ orr:time
 orr:number_of_days_with_surface_temperature_below_threshold
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/Z0QXDO4I/> .
 
+orr:specific_turbulent_kinetic_energy_dissipation_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/PPSY3FZJ/> .
+
 orr:tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_waste_treatment_and_disposal
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/AAAFJFAA/> .
 
@@ -7260,6 +7266,9 @@ orr:atmosphere_moles_of_nitrogen_dioxide
 
 orr:sunglint_angle
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/BAD6PGHA/> .
+
+orr:turbulent_mixing_length_of_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/TVCXOW3Y/> .
 
 orr:integral_wrt_depth_of_tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF14N5/> .
