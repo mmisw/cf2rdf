@@ -16,7 +16,7 @@ First you need to download the latest version of the XML file. Using your browse
 Example using curl for the download:
 
 ```shell
-$ FOUND_XML=https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/28/src/cf-standard-name-table.xml
+$ FOUND_XML=https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/36/src/cf-standard-name-table.xml
 $ curl "$FOUND_XML" -o src/main/resources/cf-standard-name-table.xml
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed

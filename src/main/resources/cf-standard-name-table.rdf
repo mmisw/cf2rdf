@@ -9,8 +9,8 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2016-06-13T10:23:54Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>34</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2016-09-21T04:47:47Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>36</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -347,6 +347,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_ice_volume">
+        <skos:definition>"X_volume" means the volume occupied by X within the grid cell.</skos:definition>
         <canonical_units>m3</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -1674,6 +1675,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_mean_height">
+        <skos:definition>Wave height is defined as the vertical distance from a wave trough to the following wave crest. The mean wave height is the mean trough to crest distance measured during the observation period.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_sulfur_dioxide_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for sulfur dioxide is SO2.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -1722,6 +1729,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_secondary_swell_wave_significant_height">
+        <skos:definition>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The secondary swell wave is the second most energetic wave in the low frequency portion of a bimodal wave frequency spectrum. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_fraction_of_bromine_nitrate_in_air">
         <skos:definition>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. The chemical formula of bromine nitrate is BrONO2.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -1753,7 +1766,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_wave_significant_height">
-        <skos:definition>Height is the vertical distance above the surface.</skos:definition>
+        <skos:definition>Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</skos:definition>
         <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -1941,6 +1954,12 @@
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_pm2p5_dry_aerosol_particles_due_to_dry_deposition">
         <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the particles. "Pm2p5 aerosol" is an air pollutant with an aerodynamic diameter of less than or equal to 2.5 micrometers. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Dry deposition" is the sum of turbulent deposition and gravitational settling. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_primary_swell_wave_significant_height">
+        <skos:definition>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The primary swell wave is the most energetic swell wave. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -4113,7 +4132,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_swell_wave_significant_height">
-        <skos:definition>Height is the vertical distance above the surface. Swell waves are waves on the ocean surface.</skos:definition>
+        <skos:definition>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</skos:definition>
         <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -6378,6 +6397,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_maximum_trough_depth">
+        <skos:definition>The trough is the lowest point of a wave. Trough depth is the vertical distance between the trough and the calm sea surface. Maximum trough depth is the maximum value measured during the observation period.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_fraction_of_hydrogen_sulfide_in_air">
         <skos:definition>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula of hydrogen sulfide is H2S.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -6923,6 +6948,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_ice_extent">
+        <skos:definition>The term sea_ice_extent means the total area of all grid cells in which the sea ice area fraction equals or exceeds a threshold, often chosen to be 15 per cent. The threshold must be specified by supplying a coordinate variable or scalar coordinate variable with the standard name of sea_ice_area_fraction.  The horizontal domain over which sea ice extent is calculated is described by the associated coordinate variables and coordinate bounds or by a coordinate variable or scalar coordinate variable with the standard name of "region" supplied according to section 6.1.1 of the CF conventions.</skos:definition>
         <canonical_units>m2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -7476,6 +7502,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="mass_fraction_of_bromine_nitrate_in_air">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for bromine nitrate is BrONO2.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_maximum_crest_height">
+        <skos:definition>The crest is the highest point of a wave. Crest height is the vertical distance between the crest and the calm sea surface. Maximum crest height is the maximum value measured during the observation period.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -8271,6 +8303,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="mole_concentration_of_water_vapor_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_mean_height_of_highest_tenth">
+        <skos:definition>Wave height is defined as the vertical distance from a wave trough to the following wave crest. The height of the highest tenth is defined as the mean of the highest ten per cent of trough to crest distances measured during the observation period.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -10030,6 +10068,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_iron_due_to_biological_production">
         <skos:definition>"Content" indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_maximum_height">
+        <skos:definition>Wave height is defined as the vertical distance from a wave trough to the following wave crest. The maximum wave height is the greatest trough to crest distance measured during the observation period.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13419,7 +13463,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_wind_wave_significant_height">
-        <skos:definition>Height is the vertical distance above the surface. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</skos:definition>
+        <skos:definition>Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</skos:definition>
         <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
