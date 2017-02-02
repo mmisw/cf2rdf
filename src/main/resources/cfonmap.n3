@@ -64,6 +64,9 @@ orr:change_in_energy_content_of_atmosphere_layer_due_to_change_in_sigma_coordina
 orr:tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_dry_deposition
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV7N14/> .
 
+orr:land_ice_basal_specific_mass_balance_flux
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/VGGKKZOX/> .
+
 orr:ocean_vertical_momentum_diffusivity_due_to_convection
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV10N28/> .
 
@@ -358,6 +361,9 @@ orr:tendency_of_atmosphere_mass_content_of_pm10_dry_aerosol_particles_due_to_emi
 orr:upward_heat_flux_at_ground_level_in_soil
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0075/> .
 
+orr:land_ice_surface_y_velocity
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/W1A22MZN/> .
+
 orr:magnitude_of_derivative_of_position_wrt_x_coordinate_index
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV10N17/> .
 
@@ -598,6 +604,9 @@ orr:tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_advection
 orr:mass_concentration_of_dimethyl_sulfide_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N250/> .
 
+orr:land_ice_surface_upward_velocity
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/XZ7V7UUA/> .
+
 orr:water_flux_into_sea_water_from_rivers
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV10S2/> .
 
@@ -639,6 +648,9 @@ orr:mole_concentration_of_formic_acid_in_air
 
 orr:tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_waste_burning
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/EIGFAJFE/> .
+
+orr:mass_concentration_of_petroleum_hydrocarbons_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/6JIASUY6/> .
 
 orr:mass_concentration_of_atomic_nitrogen_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N224/> .
@@ -693,6 +705,9 @@ orr:tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air
 
 orr:mass_fraction_of_nox_expressed_as_nitrogen_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N406/> .
+
+orr:grounded_ice_sheet_area_fraction
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/3DXQHARK/> .
 
 orr:tendency_of_atmosphere_mass_content_of_pm2p5_dust_dry_aerosol_particles_due_to_emission
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CLV6IS0E/> .
@@ -1144,6 +1159,9 @@ orr:atmosphere_moles_of_inorganic_chlorine
 orr:tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_forest_fires
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/GRFAUB95/> .
 
+orr:tendency_of_land_ice_mass_due_to_calving
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/JBIEE1L0/> .
+
 orr:eastward_water_vapor_transport_across_unit_distance_in_atmosphere_layer
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0652/> .
 
@@ -1465,11 +1483,17 @@ orr:ocean_mass_y_transport_due_to_advection
 orr:upward_sea_ice_basal_heat_flux
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0079/> .
 
+orr:land_ice_surface_x_velocity
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/RXRK9H3R/> .
+
 orr:surface_upward_latent_heat_flux
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0231/> .
 
 orr:tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_dissolution_from_inorganic_particles
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF14N89/> .
+
+orr:water_flux_into_sea_water_from_land_ice
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/1KY8NWCO/> .
 
 orr:dynamic_tropopause_potential_temperature
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV8N8/> .
@@ -1923,6 +1947,9 @@ orr:beaufort_wind_force
 
 orr:sea_surface_wave_mean_height
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/IRPTM00V/> .
+
+orr:land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/XYRB8PPK/> .
 
 orr:atmosphere_moles_of_xylene
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N180/> .
@@ -3012,6 +3039,9 @@ orr:ocean_volume_fraction
 
 orr:tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_emission
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/3ZRX84QZ/> .
+
+orr:upward_geothermal_heat_flux_at_ground_level_in_land_ice
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/D7BDD06R/> .
 
 orr:tendency_of_atmosphere_moles_of_carbon_tetrachloride
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12S38/> .
@@ -4750,6 +4780,9 @@ orr:mole_fraction_of_atomic_nitrogen_in_air
 orr:tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_land_transport
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/IBFDDBJF/> .
 
+orr:land_ice_basal_upward_velocity
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/MMYZ457D/> .
+
 orr:tendency_of_bedrock_altitude
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0178/> .
 
@@ -5497,6 +5530,9 @@ orr:volume_attenuated_backwards_scattering_function_in_air
 orr:tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_waste_treatment_and_disposal
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/AGBEDAAB/> .
 
+orr:land_ice_surface_melt_flux
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/T1BYATS8/> .
+
 orr:tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/7X0DRNML/> .
 
@@ -5746,6 +5782,9 @@ orr:mole_concentration_of_formaldehyde_in_air
 orr:tendency_of_atmosphere_moles_of_nitrous_oxide
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12S54/> .
 
+orr:land_ice_specific_mass_flux_due_to_calving
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/6P97S53N/> .
+
 orr:tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_particles_due_to_dry_deposition
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/C4AGSXHQ/> .
 
@@ -5757,6 +5796,9 @@ orr:magnitude_of_sea_ice_displacement
 
 orr:tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV13N29/> .
+
+orr:temperature_at_base_of_ice_sheet_model
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/8L7VIB67/> .
 
 orr:ocean_heat_x_transport
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N540/> .
@@ -5934,6 +5976,9 @@ orr:model_level_number_at_base_of_ocean_mixed_layer_defined_by_sigma_theta
 
 orr:atmosphere_mass_content_of_formaldehyde
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N44/> .
+
+orr:tendency_of_land_ice_mass_due_to_basal_mass_balance
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/SUJ756R0/> .
 
 orr:tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_industrial_processes_and_combustion
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/BIIBBBBH/> .
@@ -6682,6 +6727,9 @@ orr:tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particle
 orr:mass_concentration_of_peroxynitric_acid_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N309/> .
 
+orr:floating_ice_sheet_area_fraction
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/U2HD33ZJ/> .
+
 orr:sea_surface_wave_from_direction
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0384/> .
 
@@ -6906,6 +6954,9 @@ orr:ocean_heat_y_transport_due_to_diffusion
 
 orr:tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_forestry_and_agricultural_products
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/248KZNJZ/> .
+
+orr:land_ice_runoff_flux
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/JS2GJNO4/> .
 
 orr:tendency_of_air_temperature_due_to_moist_convection
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0210/> .
@@ -7761,6 +7812,9 @@ orr:surface_geopotential
 
 orr:tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_waste_treatment_and_disposal
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/IGIHFJCI/> .
+
+orr:temperature_at_top_of_ice_sheet_model
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/DNS5N2NN/> .
 
 orr:surface_net_upward_radiative_flux
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0240/> .
