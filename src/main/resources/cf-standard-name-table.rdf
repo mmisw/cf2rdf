@@ -9,8 +9,8 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2017-01-25T13:15:07Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>40</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2017-02-22T08:54:22Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>41</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -744,7 +744,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_sea_water_x_velocity">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_x_velocity is the sum of a variable part, surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. surface_geostrophic_sea_water_x_velocity is the sum of a variable part, surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -4029,12 +4029,6 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="floating_ice_sheet_area_fraction">
-        <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. A "floating ice sheet", sometimes called an "ice shelf", indicates where the ice sheet is flowing over sea water.</skos:definition>
-        <canonical_units>1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="mass_fraction_of_carbon_monoxide_in_air">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula of carbon monoxide is CO.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -4114,7 +4108,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_ice_area">
-        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell.</skos:definition>
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region".</skos:definition>
         <canonical_units>m2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -4462,7 +4456,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_northward_sea_water_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_northward_sea_water_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -4841,6 +4835,12 @@
       <Standard_Name rdf:about="thickness_of_stratiform_snowfall_amount">
         <skos:definition>"Amount" means mass per unit area. The construction thickness_of_[X_]snowfall_amount means the accumulated "depth" of snow which fell i.e. the thickness of the layer of snow at its own density. There are corresponding standard names for liquid water equivalent (lwe) thickness.  Stratiform precipitation, whether liquid or frozen, is precipitation that formed in stratiform cloud.</skos:definition>
         <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_nitrogen_due_to_dry_deposition">
+        <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. "tendency_of_X" means derivative of X with respect to time. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "dry_deposition" is the sum of turbulent deposition and gravitational settling. "Nitrogen" summarizes all chemical species containing nitrogen atoms. Usually, particle bound and gaseous nitrogen compounds, such as atomic nitrogen (N), nitrogen monoxide (NO), nitrogen dioxide (NO2), dinitrogen pentoxide (N2O5), nitric acid (HNO3), nitrage (NO3-), peroxynitric acid (HNO4), ammoina (NH3), ammonium (NH4+), bromine nitrate (BrONO2), chlorine nitrate (ClONO2) and organic nitrates (most notably peroxyacetyl nitrate, sometimes referred to as PAN, (CH3COO2NO2)) are included. The list of individual species that are included in this quantity can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5241,7 +5241,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Geostrophic" indicates that geostrophic balance is assumed. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_y_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_y_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -5560,6 +5560,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="floating_ice_shelf_area_fraction">
+        <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. A "floating ice shelf", sometimes called a "floating ice sheet", indicates where an ice sheet extending from a land area flows over sea water.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_kinetic_energy_content_due_to_advection">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -5574,6 +5580,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="toa_outgoing_shortwave_flux">
         <skos:definition>"shortwave" means shortwave radiation. "toa" means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the "upwelling" TOA shortwave flux, sometimes called the "outgoing shortwave radiation" or "OSR". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="geostrophic_northward_sea_water_velocity">
+        <skos:definition>A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -6003,6 +6015,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="direct_downwelling_shortwave_flux_in_air">
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Direct" (also known as "beam") radiation is radiation that has followed a direct path from the sun and is alternatively known as "direct insolation". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. "shortwave" means shortwave radiation.</skos:definition>
+        <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="lwe_water_evaporation_rate">
         <skos:definition>"lwe" means liquid water equivalent. "Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".)</skos:definition>
         <canonical_units>m s-1</canonical_units>
@@ -6143,6 +6161,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="land_ice_y_velocity">
         <skos:definition>A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.</skos:definition>
         <canonical_units>m s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_nitrogen_due_to_deposition">
+        <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. "tendency_of_X" means derivative of X with respect to time. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Deposition" is the sum of wet and dry deposition. "Nitrogen" summarizes all chemical species containing nitrogen atoms. Usually, particle bound and gaseous nitrogen compounds, such as atomic nitrogen (N), nitrogen monoxide (NO), nitrogen dioxide (NO2), dinitrogen pentoxide (N2O5), nitric acid (HNO3), nitrage (NO3-), peroxynitric acid (HNO4), ammoina (NH3), ammonium (NH4+), bromine nitrate (BrONO2), chlorine nitrate (ClONO2) and organic nitrates (most notably peroxyacetyl nitrate, sometimes referred to as PAN, (CH3COO2NO2)) are included. The list of individual species that are included in this quantity can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -7986,7 +8010,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_eastward_sea_water_velocity">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. surface_geostrophic_eastward_sea_water_velocity is the sum of a variable part, surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. surface_geostrophic_eastward_sea_water_velocity is the sum of a variable part, surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -8513,6 +8537,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="soil_moisture_content">
         <skos:definition>"moisture" means water in all phases contained in soil. "Content" indicates a quantity per unit area. The "soil content" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including content_of_soil_layer are used.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="surface_direct_downwelling_shortwave_flux_in_air">
+        <skos:definition>Downwelling radiation is radiation from above. It does not mean "net downward". "Direct" (also known as "beam") radiation is radiation that has followed a direct path from the sun and is alternatively known as "direct insolation". When thought of as being incident on a surface, a radiative flux is sometimes called "irradiance". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called "vector irradiance". In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The surface called "surface" means the lower boundary of the atmosphere. "shortwave" means shortwave radiation.</skos:definition>
+        <canonical_units>W m-2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9485,7 +9515,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_eastward_sea_water_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_eastward_sea_water_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -9575,7 +9605,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x.  "Geostrophic" indicates that geostrophic balance is assumed. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.  surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "x" indicates a vector component along the grid x-axis, positive with increasing x. "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. "sea_level" means mean sea level. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_x_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -9652,6 +9682,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="floating_ice_shelf_area">
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region". A "floating ice shelf", sometimes called a "floating ice sheet", indicates where an ice sheet extending from a land area flows over sea water.</skos:definition>
+        <canonical_units>m2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="northward_momentum_flux_correction">
         <skos:definition>"Northward" indicates a vector component which is positive when directed northward (negative southward). Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity. Flux correction is also called "flux adjustment". A positive flux correction is downward i.e. added to the ocean. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>Pa</canonical_units>
@@ -9721,6 +9757,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="atmosphere_level_of_free_convection_wrt_surface">
         <skos:definition>The level of free convection is the altitude where the temperature of the environment decreases faster than the moist adiabatic lapse rate of a saturated air parcel at the same level.  It is calculated by lifting a parcel of air dry adiabatically from the surface to the LCL (lifting condensation level), then moist adiabatically until the parcel temperature is equal to the ambient temperature.</skos:definition>
         <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="geostrophic_eastward_sea_water_velocity">
+        <skos:definition>A velocity is a vector quantity. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars.</skos:definition>
+        <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -10222,7 +10264,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="geostrophic_northward_wind">
-        <skos:definition>"Northward" indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</skos:definition>
+        <skos:definition>"Northward" indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -10240,7 +10282,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_sea_water_y_velocity">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Geostrophic" indicates that geostrophic balance is assumed.  surface_geostrophic_sea_water_y_velocity is the sum of a variable part, surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "y" indicates a vector component along the grid y-axis, positive with increasing y. "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. surface_geostrophic_sea_water_y_velocity is the sum of a variable part, surface_geostrophic_sea_water_y_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -11742,7 +11784,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="burned_area">
-        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. "Burned area" means the area of burned vegetation.</skos:definition>
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region". "Burned area" means the area of burned vegetation.</skos:definition>
         <canonical_units>m2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -13060,6 +13102,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_nitrogen_due_to_wet_deposition">
+        <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. "tendency_of_X" means derivative of X with respect to time. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "wet_deposition" means deposition by precipitation. "Nitrogen" summarizes all chemical species containing nitrogen atoms. Usually, particle bound and gaseous nitrogen compounds, such as atomic nitrogen (N), nitrogen monoxide (NO), nitrogen dioxide (NO2), dinitrogen pentoxide (N2O5), nitric acid (HNO3), nitrage (NO3-), peroxynitric acid (HNO4), ammoina (NH3), ammonium (NH4+), bromine nitrate (BrONO2), chlorine nitrate (ClONO2) and organic nitrates (most notably peroxyacetyl nitrate, sometimes referred to as PAN, (CH3COO2NO2)) are included. The list of individual species that are included in this quantity can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_atomic_chlorine">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical symbol for atomic chlorine is Cl.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
@@ -13175,7 +13223,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_area">
-        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell.</skos:definition>
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region".</skos:definition>
         <canonical_units>m2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -13853,7 +13901,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_geostrophic_northward_sea_water_velocity">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed. "Water" means water in all phases. surface_geostrophic_northward_sea_water_velocity is the sum of a variable part, surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. A velocity is a vector quantity. "Northward" indicates a vector component which is positive when directed northward (negative southward). "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. surface_geostrophic_northward_sea_water_velocity is the sum of a variable part, surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid, and a constant part due to the stationary component of ocean circulation.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -14134,7 +14182,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="fire_area">
-        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. "Fire area" means the area of detected biomass fire.</skos:definition>
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region". "Fire area" means the area of detected biomass fire.</skos:definition>
         <canonical_units>m2</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -14348,7 +14396,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="geostrophic_eastward_wind">
-        <skos:definition>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</skos:definition>
+        <skos:definition>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) "Geostrophic" indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars.</skos:definition>
         <canonical_units>m s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -16664,6 +16712,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="solar_irradiance_per_unit_wavelength">
         <skos:definition>The quantity with standard name solar_irradiance_per_unit_wavelength, often called Solar Spectral Irradiance (SSI), is the radiation from the sun as a function of wavelength integrated over the entire solar disk. A coordinate variable for radiation wavelength should be given the standard name radiation_wavelength. The quantity applies outside the atmosphere, by default at a distance of one astronomical unit from the sun, but a coordinate or scalar coordinate variable of distance_from_sun can be used to specify a value other than the default. "Irradiance" means the power per unit area (called radiative flux in other standard names), the area being normal to the direction of flow of the radiant energy.</skos:definition>
         <canonical_units>W m-2 m-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="grounded_ice_sheet_area">
+        <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region". "Grounded ice sheet" indicates where the ice sheet rests over bedrock and is thus grounded. It excludes ice-caps, glaciers and floating ice shelves.</skos:definition>
+        <canonical_units>m2</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
