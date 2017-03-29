@@ -388,6 +388,9 @@ orr:atmosphere_mass_content_of_aromatic_compounds
 orr:divergence_of_sea_ice_velocity
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0700/> .
 
+orr:integral_of_product_of_eastward_wind_and_specific_humidity_wrt_height
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/Y3YCVZ68/> .
+
 orr:sensor_zenith_angle
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/L0VDN0EO/> .
 
@@ -460,6 +463,9 @@ orr:tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_fro
 orr:atmosphere_mass_content_of_hypobromous_acid
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N64/> .
 
+orr:sea_surface_wave_maximum_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/E41IV2XW/> .
+
 orr:tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_waste_treatment_and_disposal
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/BBAAJCIJ/> .
 
@@ -492,6 +498,9 @@ orr:atmosphere_moles_of_peroxynitric_acid
 
 orr:tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_soil
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/E8SXAB5A/> .
+
+orr:sea_surface_primary_swell_wave_from_direction
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/PZU87D8A/> .
 
 orr:mass_concentration_of_cfc114_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N240/> .
@@ -583,6 +592,9 @@ orr:tendency_of_mass_fraction_of_cloud_ice_in_air_due_to_advection
 orr:integral_of_sea_water_temperature_wrt_depth_in_ocean_layer
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0610/> .
 
+orr:tendency_of_ocean_mole_content_of_organic_carbon_due_to_runoff_and_sediment_dissolution
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/OTMMR1LR/> .
+
 orr:tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_energy_production_and_distribution
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/MY3194P0/> .
 
@@ -612,6 +624,9 @@ orr:water_flux_into_sea_water_from_rivers
 
 orr:miscellaneous_living_matter_carbon_content
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV16A20/> .
+
+orr:surface_partial_pressure_of_carbon_dioxide_natural_analogue_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CCC4DXOM/> .
 
 orr:mass_fraction_of_hexachlorobiphenyl_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N377/> .
@@ -687,6 +702,9 @@ orr:mole_concentration_of_hcfc141b_in_air
 
 orr:litter_carbon_content
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0604/> .
+
+orr:mole_concentration_of_dissolved_inorganic_carbon_natural_analogue_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/YJL4TNO1/> .
 
 orr:tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_waste_burning
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/BJJJHDBF/> .
@@ -1087,6 +1105,9 @@ orr:tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricult
 orr:mass_concentration_of_butane_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N233/> .
 
+orr:sea_surface_secondary_swell_wave_mean_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/3X5X86V6/> .
+
 orr:convection_time_fraction
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV16A8/> .
 
@@ -1188,6 +1209,9 @@ orr:mass_fraction_of_carbon_tetrachloride_in_air
 
 orr:atmosphere_moles_of_hcc140a
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12S14/> .
+
+orr:sea_surface_primary_swell_wave_mean_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/60QCHKZK/> .
 
 orr:mass_fraction_of_cfc114_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N352/> .
@@ -1318,6 +1342,9 @@ orr:surface_downwelling_photosynthetic_photon_flux_in_air
 orr:mass_fraction_of_nitrogen_dioxide_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N401/> .
 
+orr:tendency_of_ocean_mole_content_of_inorganic_carbon
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/2XXHRQ6K/> .
+
 orr:volume_beam_attenuation_coefficient_of_radiative_flux_in_sea_water
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0066/> .
 
@@ -1404,6 +1431,9 @@ orr:mass_concentration_of_bromine_chloride_in_air
 
 orr:downwelling_photon_spherical_irradiance_per_unit_wavelength_in_sea_water
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/879S7613/> .
+
+orr:surface_downward_mass_flux_of_carbon_dioxide_natural_analogue_expressed_as_carbon
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/LRU471DO/> .
 
 orr:specific_dry_energy_of_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0311/> .
@@ -1749,6 +1779,9 @@ orr:tendency_of_ocean_mole_content_of_dissolved_inorganic_carbon_due_to_biologic
 
 orr:ice_cloud_area_fraction
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/1C3HWKK2/> .
+
+orr:surface_carbon_dioxide_natural_analogue_partial_pressure_difference_between_sea_water_and_air
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/JLPMBXHZ/> .
 
 orr:northward_ocean_freshwater_transport_due_to_overturning
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0482/> .
@@ -2112,6 +2145,9 @@ orr:photolysis_rate_of_ozone_to_1D_oxygen_atom
 
 orr:tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_production
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/JBABCJJJ/> .
+
+orr:sea_surface_wave_from_direction_at_variance_spectral_density_maximum
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/I8P5MQ0F/> .
 
 orr:change_over_time_in_sea_water_conservative_temperature
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/EIHFBIDA/> .
@@ -2557,6 +2593,9 @@ orr:tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_savanna_a
 orr:tendency_of_air_temperature_due_to_longwave_heating
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0208/> .
 
+orr:sea_surface_wave_mean_period_of_highest_tenth
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/N532TGCF/> .
+
 orr:soil_type
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0357/> .
 
@@ -2671,6 +2710,9 @@ orr:snowfall_flux
 orr:product_of_northward_sea_water_velocity_and_temperature
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0433/> .
 
+orr:surface_carbon_dioxide_abiotic_analogue_partial_pressure_difference_between_sea_water_and_air
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/JHUWODE6/> .
+
 orr:atmosphere_moles_of_alpha_pinene
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N112/> .
 
@@ -2751,6 +2793,9 @@ orr:ratio_of_y_derivative_of_ocean_rigid_lid_pressure_to_sea_surface_density
 
 orr:tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_savanna_and_grassland_fires
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/GHHDAGGA/> .
+
+orr:wet_bulb_potential_temperature
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/A91BA0BW/> .
 
 orr:tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/QTYB0PGB/> .
@@ -2910,6 +2955,9 @@ orr:distance_from_sun
 
 orr:tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_icefall
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N763/> .
+
+orr:mole_concentration_of_carbonate_abiotic_analogue_expressed_as_carbon_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/20C653S8/> .
 
 orr:tendency_of_atmosphere_mass_content_of_noy_expressed_as_nitrogen_due_to_dry_deposition
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/496GHBC8/> .
@@ -3292,6 +3340,9 @@ orr:square_of_lagrangian_tendency_of_air_pressure
 orr:magnitude_of_derivative_of_position_wrt_model_level_number
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV10N16/> .
 
+orr:shallow_convective_precipitation_flux
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/R0PBU19R/> .
+
 orr:mole_fraction_of_glyoxal_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/Y4E46BJR/> .
 
@@ -3384,9 +3435,6 @@ orr:tendency_of_atmosphere_mole_concentration_of_ozone_due_to_chemical_productio
 
 orr:sea_surface_swell_wave_period
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0377/> .
-
-orr:sea_surface_wind_wave_zero_upcrossing_period
-      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0392/> .
 
 orr:sea_ice_temperature
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0368/> .
@@ -3781,6 +3829,9 @@ orr:tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_forest_f
 orr:atmosphere_net_rate_of_absorption_of_shortwave_energy
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0761/> .
 
+orr:sea_surface_secondary_swell_wave_from_direction
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/XR5G1631/> .
+
 orr:integral_of_air_temperature_excess_wrt_time
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0609/> .
 
@@ -3978,6 +4029,9 @@ orr:tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultu
 
 orr:mass_fraction_of_nitrate_radical_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N398/> .
+
+orr:sea_surface_wave_energy_at_variance_spectral_density_maximum
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/5Q0EA19T/> .
 
 orr:tendency_of_sea_ice_area_fraction_due_to_ridging
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV16A64/> .
@@ -4612,6 +4666,12 @@ orr:northward_atmosphere_heat_transport
 orr:mole_fraction_of_carbon_monoxide_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0812/> .
 
+orr:sea_surface_swell_wave_mean_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/8WMKETJA/> .
+
+orr:mole_concentration_of_dissolved_inorganic_carbon_abiotic_analogue_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/WTITDJDL/> .
+
 orr:mass_concentration_of_peroxy_radicals_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N307/> .
 
@@ -4623,6 +4683,9 @@ orr:tendency_of_atmosphere_mass_content_of_pm10_seasalt_dry_aerosol_particles_du
 
 orr:product_of_northward_wind_and_air_temperature
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0434/> .
+
+orr:integral_of_product_of_northward_wind_and_specific_humidity_wrt_height
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/FHL4XLAR/> .
 
 orr:surface_downward_y_stress_correction
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N593/> .
@@ -4969,6 +5032,9 @@ orr:stratiform_cloud_area_fraction_in_atmosphere_layer
 orr:sound_frequency
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0361/> .
 
+orr:sea_surface_wave_mean_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/SUM7H3HM/> .
+
 orr:sea_ice_y_displacement
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV13N20/> .
 
@@ -5208,6 +5274,9 @@ orr:mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water
 
 orr:platform_roll_angle
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0442/> .
+
+orr:tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_sedimentation
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/EN0OQ3F0/> .
 
 orr:convective_cloud_top_height
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0712/> .
@@ -6028,6 +6097,9 @@ orr:atmosphere_mass_content_of_atomic_chlorine
 orr:effective_radius_of_stratiform_cloud_rain_particle
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N202/> .
 
+orr:surface_partial_pressure_of_carbon_dioxide_abiotic_analogue_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/P99S30MO/> .
+
 orr:canopy_throughfall_flux
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV8N7/> .
 
@@ -6090,9 +6162,6 @@ orr:product_of_northward_wind_and_upward_air_velocity
 
 orr:ocean_barotropic_streamfunction
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0463/> .
-
-orr:sea_surface_swell_wave_zero_upcrossing_period
-      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0380/> .
 
 orr:surface_carbon_dioxide_partial_pressure_difference_between_sea_water_and_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF14N64/> .
@@ -6171,9 +6240,6 @@ orr:tendency_of_atmosphere_moles_of_nitrous_acid
 
 orr:upward_air_velocity
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0109/> .
-
-orr:sea_surface_wave_zero_upcrossing_period
-      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0388/> .
 
 orr:tendency_of_atmosphere_mass_content_of_formic_acid_due_to_dry_deposition
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N627/> .
@@ -6301,6 +6367,9 @@ orr:net_downward_shortwave_flux_in_air
 orr:ocean_vertical_heat_diffusivity
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV10N26/> .
 
+orr:tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_runoff_and_sediment_dissolution
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/RC6GMP96/> .
+
 orr:tendency_of_potential_energy_content_of_atmosphere_layer_due_to_advection
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0150/> .
 
@@ -6381,6 +6450,9 @@ orr:net_primary_mole_productivity_of_biomass_expressed_as_carbon_due_to_nitrate_
 
 orr:tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_wet_deposition
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/XWL9GOEY/> .
+
+orr:mole_concentration_of_carbonate_natural_analogue_expressed_as_carbon_in_sea_water
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CH76Q43I/> .
 
 orr:upward_eastward_stress_at_sea_ice_base
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0111/> .
@@ -6576,6 +6648,9 @@ orr:atmosphere_moles_of_hydroxyl_radical
 
 orr:downward_heat_flux_at_ground_level_in_soil
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0689/> .
+
+orr:sea_surface_wave_maximum_steepness
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/RJVTH20O/> .
 
 orr:surface_upward_heat_flux_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0230/> .
@@ -7714,6 +7789,9 @@ orr:surface_upwelling_shortwave_flux_in_air
 orr:mass_concentration_of_sulfur_dioxide_in_air
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF12N320/> .
 
+orr:sea_surface_wave_significant_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/HEKWBIH1/> .
+
 orr:change_over_time_in_sea_water_neutral_density
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/BBAH2104/> .
 
@@ -8161,6 +8239,9 @@ orr:mass_fraction_of_hydrogen_bromide_in_air
 orr:surface_snow_amount
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0250/> .
 
+orr:surface_downward_mass_flux_of_carbon_dioxide_abiotic_analogue_expressed_as_carbon
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/B8UJPX8C/> .
+
 orr:tendency_of_wind_speed_due_to_gravity_wave_drag
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0138/> .
 
@@ -8278,6 +8359,12 @@ orr:lwe_thickness_of_atmosphere_mass_content_of_water_vapor
 orr:tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CF14N94/> .
 
+orr:sea_surface_wave_period_of_highest_wave
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/OCVYVB2M/> .
+
+orr:sea_surface_wind_wave_mean_period
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/EXD6ILFA/> .
+
 orr:surface_downward_mole_flux_of_carbon_dioxide
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFV15A21/> .
 
@@ -8385,6 +8472,9 @@ orr:liquid_water_content_of_permafrost_layer
 
 orr:net_upward_longwave_flux_in_air_assuming_clear_sky
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0498/> .
+
+orr:tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation
+      skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/X2LMWDLH/> .
 
 orr:lwe_thickness_of_canopy_water_amount
       skos:exactMatch <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0562/> .

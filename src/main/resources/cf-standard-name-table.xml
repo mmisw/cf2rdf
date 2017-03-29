@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <standard_name_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cf-standard-name-table-1.1.xsd">
-   <version_number>41</version_number>
-   <last_modified>2017-02-22T08:54:22Z</last_modified>
+   <version_number>42</version_number>
+   <last_modified>2017-03-28T08:38:46Z</last_modified>
    <institution>Centre for Environmental Data Analysis</institution>
    <contact>support@ceda.ac.uk</contact>
 
@@ -4096,6 +4096,20 @@ totals are summed to obtain the index.</description>
       <description>&quot;integral_of_Y_wrt_X&quot; means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. &quot;wrt&quot; means with respect to. Air temperature is the bulk temperature of the air, not the surface (skin) temperature. The air temperature excess is the air temperature minus the air temperature threshold, where only positive values are included in the integral. Its integral with respect to time is often called after its units of &quot;degree-days&quot;. The air_temperature variable, which is the data variable of the integral should have a scalar coordinate variable or a size-one coordinate variable with the standard name of air_temperature_threshold, to indicate the threshold.</description>
    </entry>
   
+   <entry id="integral_of_product_of_eastward_wind_and_specific_humidity_wrt_height">
+      <canonical_units>m2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The phrase &quot;integral_of_Y_wrt_X&quot; means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. The phrase &quot;wrt&quot; means &quot;with respect to&quot;. Height is the vertical distance above the surface. The phrase &quot;product_of_X_and_Y&quot; means X*Y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name &quot;upward_air_velocity&quot;.) &quot;Eastward&quot; indicates a vector component which is positive when directed eastward (negative westward). Specific humidity is the mass fraction of water vapor in (moist) air.</description>
+   </entry>
+  
+   <entry id="integral_of_product_of_northward_wind_and_specific_humidity_wrt_height">
+      <canonical_units>m2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The phrase &quot;integral_of_Y_wrt_X&quot; means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. The phrase &quot;wrt&quot; means &quot;with respect to&quot;. Height is the vertical distance above the surface. The phrase &quot;product_of_X_and_Y&quot; means X*Y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name &quot;upward_air_velocity&quot;.) &quot;Northward&quot; indicates a vector component which is positive when directed northward (negative southward). Specific humidity is the mass fraction of water vapor in (moist) air.</description>
+   </entry>
+  
    <entry id="integral_of_sea_ice_temperature_wrt_depth_expressed_as_heat_content">
       <canonical_units>J m-2</canonical_units>
       <grib></grib>
@@ -7135,11 +7149,25 @@ totals are summed to obtain the index.</description>
       <description>&#39;Mole concentration&#39; means number of moles per unit volume, also called&quot;molarity&quot;, and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as &#39;nitrogen&#39; or a phrase such as &#39;nox_expressed_as_nitrogen&#39;. Mole concentration at saturation means the mole concentration in a saturated solution.The phrase &#39;expressed_as&#39; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. Calcite is a mineral that is a polymorph of calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also exist for aragonite, another polymorph of calcium carbonate.</description>
    </entry>
   
+   <entry id="mole_concentration_of_carbonate_abiotic_analogue_expressed_as_carbon_in_sea_water">
+      <canonical_units>mol m-3</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole concentration means number of moles per unit volume, also called &quot;molarity&quot;, and is used in the construction &quot;mole_concentration_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. In ocean biogeochemistry models, an &quot;abiotic analogue&quot; is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The phrase &quot;expressed_as&quot; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula of the carbonate anion is CO3 with an electrical charge of minus two.</description>
+   </entry>
+  
    <entry id="mole_concentration_of_carbonate_expressed_as_carbon_in_sea_water">
       <canonical_units>mol m-3</canonical_units>
       <grib></grib>
       <amip></amip>
       <description>&#39;Mole concentration&#39; means number of moles per unit volume, also called&quot;molarity&quot;, and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as &#39;nitrogen&#39; or a phrase such as &#39;nox_expressed_as_nitrogen&#39;. The phrase &#39;expressed_as&#39; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula of the carbonate anion is CO3 with a charge of minus two.</description>
+   </entry>
+  
+   <entry id="mole_concentration_of_carbonate_natural_analogue_expressed_as_carbon_in_sea_water">
+      <canonical_units>mol m-3</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole concentration means number of moles per unit volume, also called &quot;molarity&quot;, and is used in the construction &quot;mole_concentration_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. In ocean biogeochemistry models, a &quot;natural analogue&quot; is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The phrase &quot;expressed_as&quot; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula of the carbonate anion is CO3 with an electrical charge of minus two.</description>
    </entry>
   
    <entry id="mole_concentration_of_carbon_dioxide_in_air">
@@ -7310,11 +7338,25 @@ totals are summed to obtain the index.</description>
       <description>Mole concentration means number of moles per unit volume, also called &quot;molarity&quot;, and is used in the construction &quot;mole_concentration_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Dissolved inorganic carbon&quot; describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. &quot;Dissolved inorganic carbon&quot; is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. Carbon14 is a radioactive isotope of carbon having six protons and eight neutrons, used in radiocarbon dating.</description>
    </entry>
   
+   <entry id="mole_concentration_of_dissolved_inorganic_carbon_abiotic_analogue_in_sea_water">
+      <canonical_units>mol m-3</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole concentration means number of moles per unit volume, also called &quot;molarity&quot;, and is used in the construction &quot;mole_concentration_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. In ocean biogeochemistry models, an &quot;abiotic analogue&quot; is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. &quot;Dissolved inorganic carbon&quot; describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. &quot;Dissolved inorganic carbon&quot; is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</description>
+   </entry>
+  
    <entry id="mole_concentration_of_dissolved_inorganic_carbon_in_sea_water">
       <canonical_units>mol m-3</canonical_units>
       <grib></grib>
       <amip></amip>
       <description>Mole concentration means number of moles per unit volume, also called &quot;molarity&quot;, and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as &#39;nitrogen&#39; or a phrase such as &#39;nox_expressed_as_nitrogen&#39;. &quot;Dissolved inorganic carbon&quot; describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. &quot;Dissolved inorganic carbon&quot; is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the speciesrepresented, for example, by using a comment attribute.</description>
+   </entry>
+  
+   <entry id="mole_concentration_of_dissolved_inorganic_carbon_natural_analogue_in_sea_water">
+      <canonical_units>mol m-3</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole concentration means number of moles per unit volume, also called &quot;molarity&quot;, and is used in the construction &quot;mole_concentration_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. In ocean biogeochemistry models, a &quot;natural analogue&quot; is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. &quot;Dissolved inorganic carbon&quot; describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. &quot;Dissolved inorganic carbon&quot; is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</description>
    </entry>
   
    <entry id="mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water">
@@ -10742,6 +10784,20 @@ totals are summed to obtain the index.</description>
       <description>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Air pressure at low frequency&quot; means variations in air pressure with periods longer than 20 days. These give rise to corresponding variations in sea surface topography. The quantity sea_surface_height_correction_due_to_air_pressure_at_low_frequency is commonly called the &quot;inverted barometer effect&quot; and the correction should be applied by adding it to the quantity with standard name altimeter_range.  Additional altimeter range corrections are given by the quantities with standard names altimeter_range_correction_due_to_wet_troposphere, altimeter_range_correction_due_to_dry_troposphere, altimeter_range_correction_due_to_ionosphere and sea_surface_height_correction_due_to_air_pressure_and_wind_at_high_frequency.</description>
    </entry>
   
+   <entry id="sea_surface_primary_swell_wave_from_direction">
+      <canonical_units>degree</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The quantity with standard name sea_surface_primary_swell_wave_from_direction is the direction from which the most energetic swell waves are coming. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The primary swell wave is the most energetic swell wave. The phrase &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
+   </entry>
+  
+   <entry id="sea_surface_primary_swell_wave_mean_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The quantity with standard name sea_surface_primary_swell_wave_mean_period is the mean period of the most energetic swell waves. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The primary swell wave is the most energetic swell wave. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration.</description>
+   </entry>
+  
    <entry id="sea_surface_primary_swell_wave_significant_height">
       <canonical_units>m</canonical_units>
       <grib></grib>
@@ -10754,6 +10810,20 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>Sea surface salinity is the salt content of sea water close to the sea surface, often on the Practical Salinity Scale of 1978. However, the unqualified term &#39;salinity&#39; is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. Sea surface salinity is often abbreviated as &quot;SSS&quot;. For the salinity of sea water at a particular depth or layer, a data variable of &quot;sea_water_salinity&quot; or one of the more precisely defined salinities should be used with a vertical coordinate axis. There are standard names for the precisely defined salinity quantities: sea_water_knudsen_salinity, S_K (used for salinity observations between 1901 and 1966), sea_water_cox_salinity, S_C (used for salinity observations between 1967 and 1977), sea_water_practical_salinity, S_P (used for salinity observations from 1978 to the present day), sea_water_absolute_salinity, S_A, sea_water_preformed_salinity, S_*, and sea_water_reference_salinity. Practical Salinity is reported on the Practical Salinity Scale of 1978 (PSS-78), and is usually based on the electrical conductivity of sea water in observations since the 1960s. Conversion of data between the observed scales follows: S_P = (S_K - 0.03) * (1.80655 / 1.805) and S_P = S_C, however the accuracy of the latter is dependent on whether chlorinity or conductivity was used to determine the S_C value, with this inconsistency driving the development of PSS-78. The more precise standard names should be used where appropriate for both modelled and observed salinities. In particular, the use of sea_water_salinity to describe salinity observations made from 1978 onwards is now deprecated in favor of the term sea_water_practical_salinity which is the salinity quantity stored by national data centers for post-1978 observations. The only exception to this is where the observed salinities are definitely known not to be recorded on the Practical Salinity Scale. The unit &quot;parts per thousand&quot; was used for sea_water_knudsen_salinity and sea_water_cox_salinity.</description>
+   </entry>
+  
+   <entry id="sea_surface_secondary_swell_wave_from_direction">
+      <canonical_units>degree</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The quantity with standard name sea_surface_secondary_swell_wave_from_direction is the direction from which the second most energetic swell waves are coming. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The secondary swell wave is the second most energetic wave in the low frequency portion of a bimodal wave frequency spectrum. The phrase &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
+   </entry>
+  
+   <entry id="sea_surface_secondary_swell_wave_mean_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The quantity with standard name sea_surface_secondary_swell_wave_mean_period is the mean period of the second most energetic swell waves. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum.  The secondary swell wave is the second most energetic wave in the low frequency portion of a bimodal wave frequency spectrum. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration.</description>
    </entry>
   
    <entry id="sea_surface_secondary_swell_wave_significant_height">
@@ -10781,7 +10851,14 @@ totals are summed to obtain the index.</description>
       <canonical_units>degree</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Swell waves are waves on the ocean surface. &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming.</description>
+      <description>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The phrase &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
+   </entry>
+  
+   <entry id="sea_surface_swell_wave_mean_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum.</description>
    </entry>
   
    <entry id="sea_surface_swell_wave_mean_period_from_variance_spectral_density_first_frequency_moment">
@@ -10823,14 +10900,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>degree</canonical_units>
       <grib>104</grib>
       <amip></amip>
-      <description>Swell waves are waves on the ocean surface. &quot;to_direction&quot; is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
-   </entry>
-  
-   <entry id="sea_surface_swell_wave_zero_upcrossing_period">
-      <canonical_units>s</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Swell waves are waves on the ocean surface.</description>
+      <description>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The phrase &quot;to_direction&quot; is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
    </entry>
   
    <entry id="sea_surface_temperature">
@@ -10847,11 +10917,25 @@ totals are summed to obtain the index.</description>
       <description>Sea surface wave directional variance spectral density is the variance of the amplitude of the waves within given ranges of direction and wave frequency.</description>
    </entry>
   
+   <entry id="sea_surface_wave_energy_at_variance_spectral_density_maximum">
+      <canonical_units>m2 s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The wave directional spectrum can be written as a five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction. S has the standard name sea_surface_wave_directional_variance_spectral_density. S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density. The quantity with standard name sea_surface_wave_energy_at_variance_spectral_density_maximum, sometimes called peak wave energy, is the maximum value of the variance spectral density (max(S1)).</description>
+   </entry>
+  
    <entry id="sea_surface_wave_from_direction">
       <canonical_units>degree</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming.</description>
+      <description>The phrase &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
+   </entry>
+  
+   <entry id="sea_surface_wave_from_direction_at_variance_spectral_density_maximum">
+      <canonical_units>degree</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The quantity with standard name sea_surface_wave_from_direction_at_variance_spectral_density_maximum is the direction from which the most energetic waves are coming. The spectral peak is the most energetic wave in the total wave spectrum. The phrase &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north. The wave directional spectrum can be written as a five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction. S has the standard name sea_surface_wave_directional_variance_spectral_density. S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.</description>
    </entry>
   
    <entry id="sea_surface_wave_maximum_crest_height">
@@ -10866,6 +10950,20 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>Wave height is defined as the vertical distance from a wave trough to the following wave crest. The maximum wave height is the greatest trough to crest distance measured during the observation period.</description>
+   </entry>
+  
+   <entry id="sea_surface_wave_maximum_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The maximum wave period is the longest wave period measured during the observation period. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</description>
+   </entry>
+  
+   <entry id="sea_surface_wave_maximum_steepness">
+      <canonical_units>1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Wave steepness is defined as the ratio of the wave height divided by the wavelength. Maximum wave steepness is the maximum value measured during the observation period. Wave height is defined as the vertical distance from a wave trough to the following wave crest. The wavelength is the horizontal distance between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</description>
    </entry>
   
    <entry id="sea_surface_wave_maximum_trough_depth">
@@ -10889,6 +10987,13 @@ totals are summed to obtain the index.</description>
       <description>Wave height is defined as the vertical distance from a wave trough to the following wave crest. The height of the highest tenth is defined as the mean of the highest ten per cent of trough to crest distances measured during the observation period.</description>
    </entry>
   
+   <entry id="sea_surface_wave_mean_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.  Wave mean period is the mean period measured over the observation duration.</description>
+   </entry>
+  
    <entry id="sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment">
       <canonical_units>s</canonical_units>
       <grib></grib>
@@ -10910,6 +11015,13 @@ totals are summed to obtain the index.</description>
       <description>The wave directional spectrum can be written as a  five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction.  S has the standard name sea_surface_wave_directional_variance_spectral_density.  S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.  Frequency moments, M(n) of S1 can then be calculated as follows: M(n) = integral(S1 f^n df), where f^n is f to the power of n.  The second wave period, T(m2) is calculated as the square root of the ratio M(0)/M(2).</description>
    </entry>
   
+   <entry id="sea_surface_wave_mean_period_of_highest_tenth">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Wave mean period is the mean period measured over the observation duration. The quantity with standard name sea_surface_wave_mean_period_of_highest_tenth is the mean period of the highest one-tenth of waves during the observation duration. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</description>
+   </entry>
+  
    <entry id="sea_surface_wave_period_at_variance_spectral_density_maximum">
       <canonical_units>s</canonical_units>
       <grib></grib>
@@ -10917,11 +11029,25 @@ totals are summed to obtain the index.</description>
       <description>A period is an interval of time, or the time-period of an oscillation.  The sea_surface_wave_period_at_variance_spectral_density_maximum, sometimes called peak wave period, is the period of the most energetic waves in the total wave spectrum at a specific location.</description>
    </entry>
   
+   <entry id="sea_surface_wave_period_of_highest_wave">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Wave period of the highest wave is the period determined from wave crests corresponding to the greatest vertical distance above mean level during the observation period. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</description>
+   </entry>
+  
    <entry id="sea_surface_wave_significant_height">
       <canonical_units>m</canonical_units>
       <grib>100</grib>
       <amip></amip>
       <description>Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.</description>
+   </entry>
+  
+   <entry id="sea_surface_wave_significant_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Significant wave period is a statistic computed from wave measurements and corresponds to the mean wave period of the highest one third of the waves. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</description>
    </entry>
   
    <entry id="sea_surface_wave_stokes_drift_x_velocity">
@@ -10942,7 +11068,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>degree</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;to_direction&quot; is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north. </description>
+      <description>The phrase &quot;to_direction&quot; is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
    </entry>
   
    <entry id="sea_surface_wave_variance_spectral_density">
@@ -10952,18 +11078,18 @@ totals are summed to obtain the index.</description>
       <description>Sea surface wave variance spectral density is the variance of wave amplitude within a range of wave frequency.</description>
    </entry>
   
-   <entry id="sea_surface_wave_zero_upcrossing_period">
-      <canonical_units>s</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level.</description>
-   </entry>
-  
    <entry id="sea_surface_wind_wave_from_direction">
       <canonical_units>degree</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name &quot;upward_air_velocity&quot;.) &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming.</description>
+      <description>Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. The phrase &quot;from_direction&quot; is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
+   </entry>
+  
+   <entry id="sea_surface_wind_wave_mean_period">
+      <canonical_units>s</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration. Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum.</description>
    </entry>
   
    <entry id="sea_surface_wind_wave_mean_period_from_variance_spectral_density_first_frequency_moment">
@@ -11005,14 +11131,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>degree</canonical_units>
       <grib>101</grib>
       <amip></amip>
-      <description>Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name &quot;upward_air_velocity&quot;.) &quot;to_direction&quot; is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
-   </entry>
-  
-   <entry id="sea_surface_wind_wave_zero_upcrossing_period">
-      <canonical_units>s</canonical_units>
-      <grib></grib>
-      <amip></amip>
-      <description>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</description>
+      <description>Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. The phrase &quot;to_direction&quot; is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</description>
    </entry>
   
    <entry id="sea_water_absolute_salinity">
@@ -11309,6 +11428,13 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>&quot;Time fraction&quot; means a fraction of a time interval. The interval in question must be specified by the values or bounds of the time coordinate variable associated with the data. &quot;X_time_fraction&quot; means the fraction of the time interval during which X occurs.</description>
+   </entry>
+  
+   <entry id="shallow_convective_precipitation_flux">
+      <canonical_units>kg m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Convective precipitation is that produced by the convection schemes in an atmosphere model. Some atmosphere models differentiate between shallow and deep convection. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.</description>
    </entry>
   
    <entry id="single_scattering_albedo_in_air_due_to_ambient_aerosol_particles">
@@ -11955,6 +12081,20 @@ totals are summed to obtain the index.</description>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere.The brightness temperature of a body is the temperature of a black body which radiates the same power per unit solid angle per unit area.</description>
    </entry>
   
+   <entry id="surface_carbon_dioxide_abiotic_analogue_partial_pressure_difference_between_sea_water_and_air">
+      <canonical_units>Pa</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, an &quot;abiotic analogue&quot; is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure difference between sea water and air is positive when the partial pressure of the dissolved gas in sea water is greater than the partial pressure in air.</description>
+   </entry>
+  
+   <entry id="surface_carbon_dioxide_natural_analogue_partial_pressure_difference_between_sea_water_and_air">
+      <canonical_units>Pa</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, a &quot;natural analogue&quot; is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure difference between sea water and air is positive when the partial pressure of the dissolved gas in sea water is greater than the partial pressure in air.</description>
+   </entry>
+  
    <entry id="surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
@@ -12039,11 +12179,25 @@ totals are summed to obtain the index.</description>
       <description>&quot;Downward&quot; indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The chemical formula for ammonia is NH3.</description>
    </entry>
   
+   <entry id="surface_downward_mass_flux_of_carbon_dioxide_abiotic_analogue_expressed_as_carbon">
+      <canonical_units>kg m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;Downward&quot; indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. In ocean biogeochemistry models, an &quot;abiotic analogue&quot; is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The phrase &quot;expressed_as&quot; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula for carbon dioxide is CO2.</description>
+   </entry>
+  
    <entry id="surface_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
       <description>&quot;Downward&quot; indicates a vector component which is positive when directed downward (negative upward).  The phrase &#39;expressed_as&#39; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics.  The surface called &quot;surface&quot; means the lower boundary of the atmosphere.  The chemical formula for carbon dioxide is CO2.</description>
+   </entry>
+  
+   <entry id="surface_downward_mass_flux_of_carbon_dioxide_natural_analogue_expressed_as_carbon">
+      <canonical_units>kg m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;Downward&quot; indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. In ocean biogeochemistry models, a &quot;natural analogue&quot; is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The phrase &quot;expressed_as&quot; is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula for carbon dioxide is CO2.</description>
    </entry>
   
    <entry id="surface_downward_mass_flux_of_water_due_to_irrigation">
@@ -12529,6 +12683,13 @@ totals are summed to obtain the index.</description>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;Water&quot; means water in all phases, including frozen i.e. ice and snow. A velocity is a vector quantity. &quot;Northward&quot; indicates a vector component which is positive when directed northward (negative southward).</description>
    </entry>
   
+   <entry id="surface_partial_pressure_of_carbon_dioxide_abiotic_analogue_in_sea_water">
+      <canonical_units>Pa</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, an &quot;abiotic analogue&quot; is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</description>
+   </entry>
+  
    <entry id="surface_partial_pressure_of_carbon_dioxide_in_air">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
@@ -12541,6 +12702,13 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;Water&quot; means water in all phases, including frozen i.e. ice and snow. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</description>
+   </entry>
+  
+   <entry id="surface_partial_pressure_of_carbon_dioxide_natural_analogue_in_sea_water">
+      <canonical_units>Pa</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, a &quot;natural analogue&quot; is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</description>
    </entry>
   
    <entry id="surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air">
@@ -17880,6 +18048,27 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <description>&quot;Content&quot; indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is asingle term in a sum of terms which together compose the general quantity  named by omitting the phrase.  &#39;Nitrogen fixation&#39; means the production of ammonia from nitrogen gas. Organisms that fix nitrogen are termed &#39;diazotrophs&#39;. Diazotrophic phytoplankton can fix atmospheric nitrogen, thus increasing the content of nitrogen in the ocean. &quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
    </entry>
   
+   <entry id="tendency_of_ocean_mole_content_of_inorganic_carbon">
+      <canonical_units>mol m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. &quot;Inorganic carbon&quot; describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</description>
+   </entry>
+  
+   <entry id="tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_runoff_and_sediment_dissolution">
+      <canonical_units>mol m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. &quot;Inorganic carbon&quot; describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Runoff is the liquid water which drains from land. If not specified, &quot;runoff&quot; refers to the sum of surface runoff and subsurface drainage.</description>
+   </entry>
+  
+   <entry id="tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_sedimentation">
+      <canonical_units>mol m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. &quot;Inorganic carbon&quot; describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Sedimentation&quot; is the sinking of particulate matter to the floor of a body of water.</description>
+   </entry>
+  
    <entry id="tendency_of_ocean_mole_content_of_iron_due_to_biological_production">
       <canonical_units>mol m-2 s-1</canonical_units>
       <grib></grib>
@@ -17899,6 +18088,20 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <grib></grib>
       <amip></amip>
       <description>&quot;Content&quot; indicates a quantity per unit area.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  &quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
+   </entry>
+  
+   <entry id="tendency_of_ocean_mole_content_of_organic_carbon_due_to_runoff_and_sediment_dissolution">
+      <canonical_units>mol m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. &quot;Organic carbon&quot; describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Runoff is the liquid water which drains from land. If not specified, &quot;runoff&quot; refers to the sum of surface runoff and subsurface drainage.</description>
+   </entry>
+  
+   <entry id="tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation">
+      <canonical_units>mol m-2 s-1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. &quot;Organic carbon&quot; describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Sedimentation&quot; is the sinking of particulate matter to the floor of a body of water.</description>
    </entry>
   
    <entry id="tendency_of_ocean_mole_content_of_phosphorus_due_to_biological_production">
@@ -19514,6 +19717,13 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <description>A quantity with standard name Xward_Yward_derivative_of_geopotential is a second spatial derivative of geopotential, P, in the direction specified by X and Y, i.e., d2P/dXdY. Geopotential is the sum of the specific gravitational potential energy relative to the geoid and the specific centripetal potential energy. &quot;Westward&quot; indicates a vector component which is positive when directed westward (negative eastward). &quot;component_derivative_of_X&quot; means derivative of X with respect to distance in the component direction, which may be &quot;northward&quot;, &quot;southward&quot;, &quot;eastward&quot;, &quot;westward&quot;, &quot;x&quot; or &quot;y&quot;. The last two indicate derivatives along the axes of the grid, in the case where they are not true longitude and latitude.</description>
    </entry>
   
+   <entry id="wet_bulb_potential_temperature">
+      <canonical_units>K</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Wet bulb potential temperature is the temperature a parcel of air would have if moved dry adiabatically until it reaches saturation and thereafter moist adiabatically to sea level pressure.</description>
+   </entry>
+  
    <entry id="wet_bulb_temperature">
       <canonical_units>K</canonical_units>
       <grib></grib>
@@ -20371,14 +20581,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     <entry_id>tendency_of_atmosphere_mass_content_of_water_vapor_due_to_advection</entry_id>
   </alias>
   
-  <alias id="direction_of_swell_wave_velocity">
-    <entry_id>sea_surface_swell_wave_to_direction</entry_id>
-  </alias>
-  
-  <alias id="direction_of_wind_wave_velocity">
-    <entry_id>sea_surface_wind_wave_to_direction</entry_id>
-  </alias>
-  
   <alias id="land_ice_surface_specific_mass_balance">
     <entry_id>land_ice_surface_specific_mass_balance_rate</entry_id>
   </alias>
@@ -21169,6 +21371,26 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
   
   <alias id="floating_ice_sheet_area_fraction">
     <entry_id>floating_ice_shelf_area_fraction</entry_id>
+  </alias>
+  
+  <alias id="direction_of_swell_wave_velocity">
+    <entry_id>sea_surface_swell_wave_to_direction</entry_id>
+  </alias>
+  
+  <alias id="direction_of_wind_wave_velocity">
+    <entry_id>sea_surface_wind_wave_to_direction</entry_id>
+  </alias>
+  
+  <alias id="sea_surface_wave_zero_upcrossing_period">
+    <entry_id>sea_surface_wave_mean_period</entry_id>
+  </alias>
+  
+  <alias id="sea_surface_wind_wave_zero_upcrossing_period">
+    <entry_id>sea_surface_wind_wave_mean_period</entry_id>
+  </alias>
+  
+  <alias id="sea_surface_swell_wave_zero_upcrossing_period">
+    <entry_id>sea_surface_swell_wave_mean_period</entry_id>
   </alias>
  
 

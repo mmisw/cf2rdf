@@ -9,8 +9,8 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2017-02-22T08:54:22Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>41</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2017-03-28T08:38:46Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>42</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -140,6 +140,12 @@
       <Standard_Name rdf:about="surface_downwelling_spherical_irradiance_per_unit_wavelength_in_sea_water">
         <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. Downwelling radiation is radiation from above. It does not mean "net downward". Spherical irradiance is the radiation incident on unit area of a hemispherical (or "2-pi") collector. It is sometimes called "scalar irradiance". The direction (up/downwelling) is specified. Radiation incident on a 4-pi collector has standard names of "omnidirectional spherical irradiance". A coordinate variable for radiation wavelength should be given the standard name radiation_wavelength.</skos:definition>
         <canonical_units>W m-2 m-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_maximum_steepness">
+        <skos:definition>Wave steepness is defined as the ratio of the wave height divided by the wavelength. Maximum wave steepness is the maximum value measured during the observation period. Wave height is defined as the vertical distance from a wave trough to the following wave crest. The wavelength is the horizontal distance between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -481,6 +487,12 @@
       <Standard_Name rdf:about="fire_radiative_power">
         <skos:definition>The product of the irradiance (the power per unit area) of a biomass fire and the corresponding fire area. A data variable containing the area affected by fire should be given the standard name fire_area.</skos:definition>
         <canonical_units>W</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_significant_period">
+        <skos:definition>Significant wave period is a statistic computed from wave measurements and corresponds to the mean wave period of the highest one third of the waves. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</skos:definition>
+        <canonical_units>s</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -969,6 +981,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_mean_period_of_highest_tenth">
+        <skos:definition>Wave mean period is the mean period measured over the observation duration. The quantity with standard name sea_surface_wave_mean_period_of_highest_tenth is the mean period of the highest one-tenth of waves during the observation duration. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_scavenging_by_inorganic_particles">
         <skos:definition>'Mole concentration' means number of moles per unit volume, also called"molarity", and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
@@ -1244,15 +1262,15 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="soil_thermal_capacity">
-        <skos:definition>Thermal capacity, or heat capacity, is the amount of heat energy required to increase the temperature of 1 kg of material by 1 K. It is a property of the material.</skos:definition>
-        <canonical_units>J kg-1 K-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_aggregation">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Aggregation is the clumping together of frozen cloud particles to produce snowflakes. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="soil_thermal_capacity">
+        <skos:definition>Thermal capacity, or heat capacity, is the amount of heat energy required to increase the temperature of 1 kg of material by 1 K. It is a property of the material.</skos:definition>
+        <canonical_units>J kg-1 K-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2054,7 +2072,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_wave_from_direction">
-        <skos:definition>"from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming.</skos:definition>
+        <skos:definition>The phrase "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -2527,6 +2545,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Organic carbon" describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Sedimentation" is the sinking of particulate matter to the floor of a body of water.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "Miscellaneous phytoplankton" are all those phytoplankton that are not diatoms, diazotrophs, calcareous phytoplankton, picophytoplankton or other seperately named components of the phytoplankton population. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
@@ -2676,12 +2700,6 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="sea_surface_swell_wave_zero_upcrossing_period">
-        <skos:definition>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Swell waves are waves on the ocean surface.</skos:definition>
-        <canonical_units>s</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="angle_of_rotation_from_east_to_x">
         <skos:definition>The quantity with standard name angle_of_rotation_from_east_to_x is the angle, anticlockwise reckoned positive, between due East and (dr/di)jk, where r(i,j,k) is the vector 3D position of the point with coordinate indices (i,j,k).  It could be used for rotating vector fields between model space and latitude-longitude space.</skos:definition>
         <canonical_units>degree</canonical_units>
@@ -2819,6 +2837,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="surface_downward_mass_flux_of_carbon_dioxide_abiotic_analogue_expressed_as_carbon">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula for carbon dioxide is CO2.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_particulate_matter_expressed_as_silicon_in_sea_water">
         <skos:definition>'Mole concentration' means number of moles per unit volume, also called"molarity", and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -2847,6 +2871,12 @@
       <Standard_Name rdf:about="surface_downward_sensible_heat_flux">
         <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). The surface sensible heat flux, also called "turbulent" heat flux, is the exchange of heat between the surface and the air by motion of air. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>W m-2</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="integral_of_product_of_eastward_wind_and_specific_humidity_wrt_height">
+        <skos:definition>The phrase "integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. The phrase "wrt" means "with respect to". Height is the vertical distance above the surface. The phrase "product_of_X_and_Y" means X*Y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name "upward_air_velocity".) "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Specific humidity is the mass fraction of water vapor in (moist) air.</skos:definition>
+        <canonical_units>m2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -3603,6 +3633,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="mole_concentration_of_carbonate_natural_analogue_expressed_as_carbon_in_sea_water">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula of the carbonate anion is CO3 with an electrical charge of minus two.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="toa_adjusted_shortwave_forcing">
         <skos:definition>"shortwave" means shortwave radiation. "toa" means top of atmosphere. Adjusted forcing is the radiative flux change caused by an imposed change in radiative forcing agent (greenhouse gases, aerosol, solar radiation, etc.) after allowance for stratospheric temperature adjustment.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -3756,6 +3792,12 @@
       <Standard_Name rdf:about="sea_surface_height_above_geoid">
         <skos:definition>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. "Sea surface height" is a time-varying quantity. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</skos:definition>
         <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="wet_bulb_potential_temperature">
+        <skos:definition>Wet bulb potential temperature is the temperature a parcel of air would have if moved dry adiabatically until it reaches saturation and thereafter moist adiabatically to sea level pressure.</skos:definition>
+        <canonical_units>K</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -4281,6 +4323,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="surface_carbon_dioxide_abiotic_analogue_partial_pressure_difference_between_sea_water_and_air">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure difference between sea water and air is positive when the partial pressure of the dissolved gas in sea water is greater than the partial pressure in air.</skos:definition>
+        <canonical_units>Pa</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="sea_ice_y_transport">
         <skos:definition>"y" indicates a vector component along the grid y-axis, positive with increasing y.</skos:definition>
         <canonical_units>kg s-1</canonical_units>
@@ -4796,6 +4844,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_organic_carbon_due_to_runoff_and_sediment_dissolution">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Organic carbon" describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="surface_frozen_carbon_dioxide_amount">
         <skos:definition>"Amount" means mass per unit area. The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. Frozen carbon dioxide is found on the surface of Mars.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
@@ -5246,6 +5300,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_sedimentation">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Inorganic carbon" describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Sedimentation" is the sinking of particulate matter to the floor of a body of water.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Upward" indicates a vector component which is positive when directed upward (negative downward).  "Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Upward eastward" indicates the ZX component of a tensor. An upward eastward momentum flux is an upward flux of eastward momentum, which accelerates the upper medium eastward and the lower medium westward.  Momentum flux is dimensionally equivalent to stress and pressure.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The total upward eastward momentum flux due to gravity waves is the sum of the fluxes due to orographic gravity waves and nonorographic waves. The upward eastward momentum flux due to orographic gravity waves has the standard name upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves. The total upward eastward momentum flux due to nonorographic gravity waves is the sum of the fluxes due to eastward and westward propagating waves. The former has the standard name upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward _gravity_waves.</skos:definition>
         <canonical_units>Pa</canonical_units>
@@ -5282,9 +5342,9 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="model_level_number_at_sea_floor">
-        <skos:definition>The quantity with standard name model_level_number_at_sea_floor is the depth of the ocean expressed in model levels. This could be a non-integer value because some ocean models use partial cells close to the sea floor.  For example, if this field were 23.4 at some location, it would mean the water column at that point comprised 23 full model levels plus 40% occupancy of the lowest (24th) gridcell.</skos:definition>
-        <canonical_units>1</canonical_units>
+      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_homogeneous_nucleation">
+        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a   single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  Homogeneous nucleation occurs when a small number of water molecules combine to form a freezing or condensation nucleus.</skos:definition>
+        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5293,9 +5353,9 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_homogeneous_nucleation">
-        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a   single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  Homogeneous nucleation occurs when a small number of water molecules combine to form a freezing or condensation nucleus.</skos:definition>
-        <canonical_units>s-1</canonical_units>
+      <Standard_Name rdf:about="model_level_number_at_sea_floor">
+        <skos:definition>The quantity with standard name model_level_number_at_sea_floor is the depth of the ocean expressed in model levels. This could be a non-integer value because some ocean models use partial cells close to the sea floor.  For example, if this field were 23.4 at some location, it would mean the water column at that point comprised 23 full model levels plus 40% occupancy of the lowest (24th) gridcell.</skos:definition>
+        <canonical_units>1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5422,6 +5482,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <Standard_Name rdf:about="mass_concentration_of_biogenic_nmvoc_expressed_as_carbon_in_air">
         <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "nmvoc" means non methane volatile organic compounds; "nmvoc" is the term used in standard names to describe the group of chemical species having this classification that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. "Biogenic" means influenced, caused, or created by natural processes.</skos:definition>
         <canonical_units>kg m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_runoff_and_sediment_dissolution">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Inorganic carbon" describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Runoff is the liquid water which drains from land. If not specified, "runoff" refers to the sum of surface runoff and subsurface drainage.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5787,6 +5853,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="surface_carbon_dioxide_natural_analogue_partial_pressure_difference_between_sea_water_and_air">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure difference between sea water and air is positive when the partial pressure of the dissolved gas in sea water is greater than the partial pressure in air.</skos:definition>
+        <canonical_units>Pa</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_fraction_of_pm10_sea_salt_dry_aerosol_particles_in_air">
         <skos:definition>Mass fraction is used in the construction "mass_fraction_of_X_in_Y", where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. "Dry aerosol particles" means aerosol particles without any water uptake. "Pm10 aerosol" is an air pollutant with an aerodynamic diameter of less than or equal to 10 micrometers.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -5820,6 +5892,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_pm2p5_seasalt_dry_aerosol_particles_due_to_dry_deposition">
         <skos:definition>"Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the particles. "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. "Pm2p5 aerosol" is an air pollutant with an aerodynamic diameter of less than or equal to 2.5 micrometers. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Dry deposition" is the sum of turbulent deposition and gravitational settling. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_maximum_period">
+        <skos:definition>The maximum wave period is the longest wave period measured during the observation period. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</skos:definition>
+        <canonical_units>s</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5907,15 +5985,15 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_dichlorine_peroxide">
-        <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for dichlorine peroxide is Cl2O2.</skos:definition>
-        <canonical_units>mol s-1</canonical_units>
+      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_condensation_and_evaporation">
+        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Evaporation is the conversion of liquid or solid into vapor.  (The conversion of solid alone into vapor is called "sublimation".) Condensation is the conversion of vapor into liquid. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "condensed_water" means liquid and ice.</skos:definition>
+        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mole_concentration_of_nitric_acid_in_air">
-        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for nitric acid is HNO3.</skos:definition>
-        <canonical_units>mol m-3</canonical_units>
+      <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_dichlorine_peroxide">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for dichlorine peroxide is Cl2O2.</skos:definition>
+        <canonical_units>mol s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5925,9 +6003,9 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_condensation_and_evaporation">
-        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Evaporation is the conversion of liquid or solid into vapor.  (The conversion of solid alone into vapor is called "sublimation".) Condensation is the conversion of vapor into liquid. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.  "condensed_water" means liquid and ice.</skos:definition>
-        <canonical_units>s-1</canonical_units>
+      <Standard_Name rdf:about="mole_concentration_of_nitric_acid_in_air">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for nitric acid is HNO3.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -6290,6 +6368,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_period_of_highest_wave">
+        <skos:definition>Wave period of the highest wave is the period determined from wave crests corresponding to the greatest vertical distance above mean level during the observation period. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="sea_ice_surface_temperature">
         <skos:definition>The surface temperature is the (skin) temperature at the interface, not the bulk temperature of the medium above or below.  "Sea ice surface temperature" is the temperature that exists at the interface of sea ice and an overlying medium which may be air or snow.  In areas of snow covered sea ice, sea_ice_surface_temperature is not the same as the quantity with standard name surface_temperature.</skos:definition>
         <canonical_units>K</canonical_units>
@@ -6607,6 +6691,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_secondary_swell_wave_mean_period">
+        <skos:definition>The quantity with standard name sea_surface_secondary_swell_wave_mean_period is the mean period of the second most energetic swell waves. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum.  The secondary swell wave is the second most energetic wave in the low frequency portion of a bimodal wave frequency spectrum. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_wet_deposition">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  "Content" indicates a quantity per unit area.  "Wet deposition" means deposition by precipitation.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -6632,7 +6722,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_wind_wave_from_direction">
-        <skos:definition>Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name "upward_air_velocity".) "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming.</skos:definition>
+        <skos:definition>Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. The phrase "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -7266,7 +7356,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_wave_to_direction">
-        <skos:definition>"to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
+        <skos:definition>The phrase "to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -8333,6 +8423,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_swell_wave_mean_period">
+        <skos:definition>A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_concentration_of_aromatic_compounds_in_air">
         <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Aromatic compounds in organic chemistry are compounds that contain at least one benzene ring of six carbon atoms joined by alternating single and double covalent bonds.  The simplest aromatic compound is benzene itself.  In standard names "aromatic_compounds" is the term used to describe the group of aromatic chemical species that  are represented within a given model.  The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.  Standard names exist for some individual aromatic species, e.g. benzene and xylene.</skos:definition>
         <canonical_units>kg m-3</canonical_units>
@@ -8342,6 +8438,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="relative_platform_azimuth_angle">
         <skos:definition>Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. relative_platform_azimuth_angle is the difference between the viewing geometries from two different platforms over the same observation target. It is the difference between the values of two quantities with standard name platform_azimuth_angle. There is no standardized sign convention for  relative_platform_azimuth_angle. "Observation target" means a location on the Earth defined by the sensor performing the observations. A standard name also exists for relative_sensor_azimuth_angle. For some viewing geometries the sensor and the platform cannot be assumed to be close enough to neglect the difference in calculated azimuth angle.</skos:definition>
         <canonical_units>degree</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="surface_partial_pressure_of_carbon_dioxide_natural_analogue_in_sea_water">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</skos:definition>
+        <canonical_units>Pa</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9458,6 +9560,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="mole_fraction_of_dinitrogen_pentoxide_in_air">
         <skos:definition>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of dinitrogen pentoxide is N2O5.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="surface_partial_pressure_of_carbon_dioxide_abiotic_analogue_in_sea_water">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. The chemical formula for carbon dioxide is CO2. In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</skos:definition>
+        <canonical_units>Pa</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -10623,6 +10731,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="shallow_convective_precipitation_flux">
+        <skos:definition>Convective precipitation is that produced by the convection schemes in an atmosphere model. Some atmosphere models differentiate between shallow and deep convection. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water">
         <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.   'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid.</skos:definition>
         <canonical_units>mol m-2 s-1</canonical_units>
@@ -10728,6 +10842,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="eastward_momentum_flux_correction">
         <skos:definition>"Eastward" indicates a vector component which is positive when directed eastward (negative westward). Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity. Flux correction is also called "flux adjustment". A positive flux correction is downward i.e. added to the ocean. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>Pa</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_secondary_swell_wave_from_direction">
+        <skos:definition>The quantity with standard name sea_surface_secondary_swell_wave_from_direction is the direction from which the second most energetic swell waves are coming. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The secondary swell wave is the second most energetic wave in the low frequency portion of a bimodal wave frequency spectrum. The phrase "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
+        <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -10999,6 +11119,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_mean_period">
+        <skos:definition>A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level.  Wave mean period is the mean period measured over the observation duration.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="atmosphere_mass_per_unit_area">
         <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
@@ -11125,6 +11251,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_primary_swell_wave_mean_period">
+        <skos:definition>The quantity with standard name sea_surface_primary_swell_wave_mean_period is the mean period of the most energetic swell waves. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The primary swell wave is the most energetic swell wave. A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration.</skos:definition>
+        <canonical_units>s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_fraction_of_secondary_particulate_organic_matter_dry_aerosol_particles_in_air">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. "Secondary particulate organic matter" means particulate organic matter formed within the atmosphere from gaseous precursors. The sum of primary_particulate_organic_matter_dry_aerosol and secondary_particulate_organic_matter_dry_aerosol is particulate_organic_matter_dry_aerosol.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -11194,6 +11326,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Production of carbon" means the production of biomass expressed as the mass of carbon which it contains. Net primary production is the excess of gross primary production (the rate of synthesis of biomass from inorganic precursors) by autotrophs ("producers"), for example,  photosynthesis in plants or phytoplankton, over the rate at which the autotrophs themselves respire some of this biomass. In the oceans, carbon production per unit volume is often found at a number of depths at a given horizontal location. That quantity can then be integrated to calculate production per unit area at the location. Standard names for production per unit area use the term "productivity". Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wind_wave_mean_period">
+        <skos:definition>A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration. Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum.</skos:definition>
+        <canonical_units>s</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11670,6 +11808,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="mole_concentration_of_dissolved_inorganic_carbon_natural_analogue_in_sea_water">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. "Dissolved inorganic carbon" describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. "Dissolved inorganic carbon" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mole_concentration_of_dissolved_inorganic_carbon_in_sea_water_due_to_biological_processes">
         <skos:definition>'Mole concentration' means number of moles per unit volume, also called"molarity", and is used in the construction mole_concentration_of_X_in_Y, whereX is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time. "Dissolved inorganic carbon" describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. "Dissolved inorganic carbon" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models.  Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
         <canonical_units>mol m-3 s-1</canonical_units>
@@ -11756,12 +11900,6 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="heat_flux_into_sea_water_due_to_iceberg_thermodynamics">
         <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  " Iceberg thermodynamics" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.</skos:definition>
         <canonical_units>W m-2</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="sea_surface_wind_wave_zero_upcrossing_period">
-        <skos:definition>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)</skos:definition>
-        <canonical_units>s</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11909,9 +12047,9 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="mole_concentration_of_cfc11_in_sea_water">
-        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The chemical formula of CFC11 is CFCl3. The IUPAC name fof CFC11 is trichloro-fluoro-methane.</skos:definition>
-        <canonical_units>mol m-3</canonical_units>
+      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_deposition_and_sublimation">
+        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Sublimation is the conversion of solid into vapor. Deposition is the opposite of sublimation, i.e. it is the conversion of vapor into solid.  Deposition is distinct from the processes of dry deposition and wet deposition of atmospheric aerosol particles, which are referred to in some standard names. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11921,9 +12059,9 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_deposition_and_sublimation">
-        <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Sublimation is the conversion of solid into vapor. Deposition is the opposite of sublimation, i.e. it is the conversion of vapor into solid.  Deposition is distinct from the processes of dry deposition and wet deposition of atmospheric aerosol particles, which are referred to in some standard names. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
-        <canonical_units>s-1</canonical_units>
+      <Standard_Name rdf:about="mole_concentration_of_cfc11_in_sea_water">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The chemical formula of CFC11 is CFCl3. The IUPAC name fof CFC11 is trichloro-fluoro-methane.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -12086,6 +12224,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="surface_temperature_anomaly">
         <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "anomaly" means difference from climatology. The surface temperature is the (skin) temperature at the interface, not the bulk temperature of the medium above or below.</skos:definition>
         <canonical_units>K</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_inorganic_carbon">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Inorganic carbon" describes a family of chemical species and is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -12880,6 +13024,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_from_direction_at_variance_spectral_density_maximum">
+        <skos:definition>The quantity with standard name sea_surface_wave_from_direction_at_variance_spectral_density_maximum is the direction from which the most energetic waves are coming. The spectral peak is the most energetic wave in the total wave spectrum. The phrase "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north. The wave directional spectrum can be written as a five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction. S has the standard name sea_surface_wave_directional_variance_spectral_density. S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density.</skos:definition>
+        <canonical_units>degree</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_fraction_of_nmvoc_expressed_as_carbon_in_air">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. "nmvoc" means non methane volatile organic compounds; "nmvoc" is the term used in standard names to describe the group of chemical species having this classification that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -13312,6 +13462,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_wave_energy_at_variance_spectral_density_maximum">
+        <skos:definition>The wave directional spectrum can be written as a five dimensional function S(t,x,y,f,theta) where t is time, x and y are horizontal coordinates (such as longitude and latitude), f is frequency and theta is direction. S has the standard name sea_surface_wave_directional_variance_spectral_density. S can be integrated over direction to give S1= integral(S dtheta) and this quantity has the standard name sea_surface_wave_variance_spectral_density. The quantity with standard name sea_surface_wave_energy_at_variance_spectral_density_maximum, sometimes called peak wave energy, is the maximum value of the variance spectral density (max(S1)).</skos:definition>
+        <canonical_units>m2 s</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including "content_of_atmosphere_layer" are used. The mass is the total mass of the molecules. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Emission" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface). "Emission" is a process entirely distinct from "re-emission" which is used in some standard names. The chemical formula for nitrogen monoxide is NO. The "residential and commercial combustion" sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or "other" combustion, which is commonly included in the inventory data. "Residential and commercial combustion" is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, "IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories".</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
@@ -13333,6 +13489,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_accretion_to_snow">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. Accretion is the growth of a hydrometeor by collision with cloud droplets or ice crystals. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="integral_of_product_of_northward_wind_and_specific_humidity_wrt_height">
+        <skos:definition>The phrase "integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. The phrase "wrt" means "with respect to". Height is the vertical distance above the surface. The phrase "product_of_X_and_Y" means X*Y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name "upward_air_velocity".) "Northward" indicates a vector component which is positive when directed northward (negative southward). Specific humidity is the mass fraction of water vapor in (moist) air.</skos:definition>
+        <canonical_units>m2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13493,7 +13655,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_wind_wave_to_direction">
-        <skos:definition>Wind waves are waves on the ocean surface. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name "upward_air_velocity".) "to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
+        <skos:definition>Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. The phrase "to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -14069,7 +14231,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_swell_wave_from_direction">
-        <skos:definition>Swell waves are waves on the ocean surface. "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming.</skos:definition>
+        <skos:definition>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The phrase "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -14082,12 +14244,6 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="tendency_of_mass_fraction_of_cloud_ice_in_air_due_to_advection">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).</skos:definition>
         <canonical_units>s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="sea_surface_wave_zero_upcrossing_period">
-        <skos:definition>A period is an interval of time, or the time-period of an oscillation. The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level.</skos:definition>
-        <canonical_units>s</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -14372,6 +14528,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_surface_primary_swell_wave_from_direction">
+        <skos:definition>The quantity with standard name sea_surface_primary_swell_wave_from_direction is the direction from which the most energetic swell waves are coming. Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The primary swell wave is the most energetic swell wave. The phrase "from_direction" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
+        <canonical_units>degree</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_concentration_of_sulfate_dry_aerosol_particles_in_air">
         <skos:definition>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Aerosol" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. "Dry aerosol particles" means aerosol particles without any water uptake. The chemical formula for the sulfate anion is SO4(2-).</skos:definition>
         <canonical_units>kg m-3</canonical_units>
@@ -14606,7 +14768,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="sea_surface_swell_wave_to_direction">
-        <skos:definition>Swell waves are waves on the ocean surface. "to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
+        <skos:definition>Swell waves are waves on the ocean surface and are the low frequency portion of a bimodal wave frequency spectrum. The phrase "to_direction" is used in the construction X_to_direction and indicates the direction towards which the velocity vector of X is headed. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.</skos:definition>
         <canonical_units>degree</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -15288,6 +15450,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="mole_concentration_of_dissolved_inorganic_carbon_abiotic_analogue_in_sea_water">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. "Dissolved inorganic carbon" describes a family of chemical species in solution, including carbon dioxide, carbonic acid and the carbonate and bicarbonate anions. "Dissolved inorganic carbon" is the term used in standard names for all species belonging to the family that are represented within a given model. The list of individual species that are included in a quantity having a group chemical standard name can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_fraction_of_nitrous_oxide_in_air">
         <skos:definition>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.   The chemical formula of  nitrous oxide is N2O.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -15737,6 +15905,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_boundary_layer_mixing">
+        <skos:definition>'Mass fraction' is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convectionschemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
+        <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mass_fraction_of_methane_in_air">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for methane isCH4. Methane is a member of the group of hydrocarbons known as alkanes.  There are standard names for the alkane group as well as for some of the individual species.</skos:definition>
         <canonical_units>1</canonical_units>
@@ -15752,12 +15926,6 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="mass_content_of_water_in_soil">
         <skos:definition>"Water" means water in all phases. "Content" indicates a quantity per unit area. The mass content of water in soil refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including "content_of_soil_layer" are used.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_boundary_layer_mixing">
-        <skos:definition>'Mass fraction' is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convectionschemes).  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  "tendency_of_X" means derivative of X with respect to time.</skos:definition>
-        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -16517,6 +16685,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="mole_concentration_of_carbonate_abiotic_analogue_expressed_as_carbon_in_sea_water">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula of the carbonate anion is CO3 with an electrical charge of minus two.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="original_air_pressure_of_lifted_parcel">
         <skos:definition>Various stability and convective potential indices are calculated by "lifting" a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere).  original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the pressure heights at the start and end of lifting, respectively.</skos:definition>
         <canonical_units>Pa</canonical_units>
@@ -16580,6 +16754,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="clear_sky_area_fraction">
         <skos:definition>"X_area_fraction" means the fraction of horizontal area occupied by X. "X_area" means the horizontal area occupied by X within the grid cell. The clear_sky area fraction is for the whole atmosphere column, as seen from the surface or the top of the atmosphere.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="surface_downward_mass_flux_of_carbon_dioxide_natural_analogue_expressed_as_carbon">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The chemical formula for carbon dioxide is CO2.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
