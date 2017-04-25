@@ -9,8 +9,8 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://mmisw.org/ont/cf/parameter/">
   <owl:Ontology rdf:about="">
-    <omvmmi:origVocLastModified>2017-03-28T08:38:46Z</omvmmi:origVocLastModified>
-    <omvmmi:origVocVersionId>42</omvmmi:origVocVersionId>
+    <omvmmi:origVocLastModified>2017-04-25T09:31:50Z</omvmmi:origVocLastModified>
+    <omvmmi:origVocVersionId>43</omvmmi:origVocVersionId>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
   <owl:Class rdf:about="Standard_Name">
@@ -149,6 +149,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_water_ph_natural_analogue_reported_on_total_scale">
+        <skos:definition>sea_water_pH_reported_on_total_scale is the measure of acidity of sea water, defined as the negative logarithm of the concentration of dissolved hydrogen ions plus bisulfate ions in a sea water medium; it can be measured or calculated; when measured the scale is defined according to a series of buffers prepared in artificial seawater containing bisulfate. The quantity may be written as pH(total) = -log([H+](free) + [HSO4-]). In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="downward_eastward_momentum_flux_in_air_due_to_diffusion">
         <skos:definition>"Eastward" indicates a vector component which is positive when directed eastward (negative westward).  "Downward" indicates a vector component which is positive when directed downward (negative upward).  "Downward eastward" indicates the ZX component of a tensor.  Momentum flux is dimensionally equivalent to stress and pressure. It is a tensor quantity.  In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.  The specification of a physical process by the phrase due_to_process means thatthe quantity named is a  single term in a sum of terms which together compose the generalquantity  named by omitting the phrase.</skos:definition>
         <canonical_units>Pa</canonical_units>
@@ -158,6 +164,12 @@
       <Standard_Name rdf:about="sea_water_pressure">
         <skos:definition>"Sea water pressure" is the pressure that exists in the medium of sea water.  It includes the pressure due to overlying sea water, sea ice, air and any other medium that may be present. For sea water pressure excluding the pressure due to overlying media other than sea water, the standard name sea_water_pressure_due_to_sea_water should be used.</skos:definition>
         <canonical_units>dbar</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_water_alkalinity_natural_analogue_expressed_as_mole_equivalent">
+        <skos:definition>sea_water_alkalinity_expressed_as_mole_equivalent is the total alkalinity equivalent concentration (including carbonate, nitrogen, silicate, and borate components). In ocean biogeochemistry models, a "natural analogue" is used to simulate the effect on a modelled variable of imposing preindustrial atmospheric carbon dioxide concentrations, even when the model as a whole may be subjected to varying forcings.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -672,7 +684,7 @@
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_dissolved_inorganic_silicon_in_sea_water">
-        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Dissolved inorganic silicon" means silicate ions in solution.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Dissolved inorganic silicon" means the sum of all dissolved silicon in solution (including silicic acid and its first dissociated anion SiO(OH)3-).</skos:definition>
         <canonical_units>mol m-3</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -890,6 +902,12 @@
       <Standard_Name rdf:about="northward_ocean_freshwater_transport_due_to_overturning">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Northward" indicates a vector component which is positive when directed northward (negative southward). Northward transport by (meridional) overturning is geometrically defined as being the part due to the vertical integral of the product of zonal means of velocity and tracer. The velocity does not include "bolus" or Gent-McWilliams velocity.</skos:definition>
         <canonical_units>kg s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="ratio_of_sea_water_practical_salinity_anomaly_to_relaxation_timescale">
+        <skos:definition>The quantity with standard name ratio_of_sea_water_practical_salinity_anomaly_to_relaxation_timescale is a correction term applied to modelled sea water practical salinity. The term is estimated as the deviation of model local sea water practical salinity from an observation-based climatology (e.g. World Ocean Database) weighted by a user-specified relaxation coefficient in s-1 (1/(relaxation timescale)). The phrase "ratio_of_X_to_Y" means X/Y. The term "anomaly" means difference from climatology. Practical Salinity, S_P, is a determination of the salinity of sea water, based on its electrical conductance. The measured conductance, corrected for temperature and pressure, is compared to the conductance of a standard potassium chloride solution, producing a value on the Practical Salinity Scale of 1978 (PSS-78). This name should not be used to describe salinity observations made before 1978, or ones not based on conductance measurements. Conversion of Practical Salinity to other precisely defined salinity measures should use the appropriate formulas specified by TEOS-10. Other standard names for precisely defined salinity quantities are sea_water_absolute_salinity (S_A); sea_water_preformed_salinity (S_*), sea_water_reference_salinity (S_R); sea_water_cox_salinity (S_C), used for salinity observations between 1967 and 1977; and sea_water_knudsen_salinity (S_K), used for salinity observations between 1901 and 1966. Salinity quantities that do not match any of the precise definitions shoul d be given the more general standard name of sea_water_salinity. Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448.</skos:definition>
+        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -2017,6 +2035,12 @@
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="surface_downward_mass_flux_of_carbon13_dioxide_abiotic_analogue_expressed_as_carbon13">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. Carbon13 is a stable isotope of carbon having six protons and seven neutrons.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="eastward_atmosphere_water_transport_across_unit_distance">
         <skos:definition>"Water" means water in all phases. "Eastward" indicates a vector component which is positive when directed eastward (negative westward). Transport across_unit_distance means expressed per unit distance normal to the direction of transport.</skos:definition>
         <canonical_units>kg s-1 m-1</canonical_units>
@@ -2774,12 +2798,6 @@
       <Standard_Name rdf:about="atmosphere_mass_content_of_carbon_tetrachloride">
         <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The chemical formula of carbon tetrachloride is CCl4.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="ocean_mixed_layer_thickness_defined_by_vertical_tracer_diffusivity">
-        <skos:definition>The ocean mixed layer is the upper part of the ocean, regarded as being well-mixed. The base of the mixed layer defined by temperature, sigma, sigma_theta, or vertical diffusivity is the level at which the quantity indicated differs from its surface value by a certain amount. The amount by which the quantity differs can be specified by a scalar coordinate variable.</skos:definition>
-        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -4200,6 +4218,12 @@
       <Standard_Name rdf:about="tendency_of_air_temperature_due_to_diffusion">
         <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. Air temperature is the bulk temperature of the air, not the surface (skin) temperature.</skos:definition>
         <canonical_units>K s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="integral_of_sea_water_practical_salinity_wrt_depth">
+        <skos:definition>"integral_of_Y_wrt_X" means int Y dX. The data variable should have an axis for X specifying the limits of the integral as bounds. "wrt" means with respect to. Depth is the vertical distance below the surface. Practical Salinity, S_P, is a determination of the salinity of sea water, based on its electrical conductance. The measured conductance, corrected for temperature and pressure, is compared to the conductance of a standard  potassium chloride solution, producing a value on the Practical Salinity Scale of 1978 (PSS-78). This name should not be used to describe salinity observations made before 1978, or ones not based on conductance measurements. Conversion of Practical Salinity to other precisely defined salinity measures should use the appropriate formulas specified by TEOS-10. Other standard names for precisely defined salinity quantities are sea_water_absolute_salinity (S_A); sea_water_preformed_salinity (S_*), sea_water_reference_salinity (S_R); sea_water_cox_salinity (S_C), used for salinity observations between 1967 and 1977; and sea_water_knudsen_salinity (S_K), used for salinity observations between 1901 and 1966. Salinity quantities that do not match any of the precise definitions should be given the more general standard name of sea_water_salinity. Reference: www.teos-10.org; Lewis, 1980 doi:10.1109/JOE.1980.1145448.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -5796,6 +5820,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="tendency_of_global_average_sea_level_change">
         <skos:definition>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called "eustatic", which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. "tendency_of_X" means derivative of X with respect to time.</skos:definition>
         <canonical_units>m year-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="surface_downward_mass_flux_of_carbon14_dioxide_abiotic_analogue_expressed_as_carbon">
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Downward" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored. The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. Carbon14 is a radioactive isotope of carbon having six protons and eight neutrons, used in radiocarbon dating.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -7931,6 +7961,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_mass_fraction_of_cloud_condensed_water_in_air_due_to_advection">
+        <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "condensed_water" means liquid and ice. Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).</skos:definition>
+        <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="heat_flux_into_sea_water_due_to_freezing_of_frazil_ice">
         <skos:definition>In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "Frazil" consists of needle like crystals of ice, typically between three and four millimeters in diameter, which form as sea water begins to freeze. Salt is expelled during the freezing process and frazil ice consists of nearly pure fresh water.</skos:definition>
         <canonical_units>W m-2</canonical_units>
@@ -7940,12 +7976,6 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="atmosphere_mass_content_of_peroxy_radicals">
         <skos:definition>"Content" indicates a quantity per unit area.  The "atmosphere content" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.  The term "peroxy_radicals" means all organic and inorganic peroxy radicals. This includes HO2 and all organic peroxy radicals, sometimes referred to as RO2. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</skos:definition>
         <canonical_units>kg m-2</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
-      <Standard_Name rdf:about="tendency_of_mass_fraction_of_cloud_condensed_water_in_air_due_to_advection">
-        <skos:definition>The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. "tendency_of_X" means derivative of X with respect to time. "condensed_water" means liquid and ice. Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).</skos:definition>
-        <canonical_units>s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -8833,6 +8863,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="sea_water_ph_abiotic_analogue_reported_on_total_scale">
+        <skos:definition>sea_water_pH_reported_on_total_scale is the measure of acidity of sea water, defined as the negative logarithm of the concentration of dissolved hydrogen ions plus bisulfate ions in a sea water medium; it can be measured or calculated; when measured the scale is defined according to a series of buffers prepared in artificial seawater containing bisulfate. The quantity may be written as pH(total) = -log([H+](free) + [HSO4-]). In ocean biogeochemistry models, an "abiotic analogue" is used to simulate the effect on a modelled variable when biological effects on ocean carbon concentration and alkalinity are ignored.</skos:definition>
+        <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_toluene_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for toluene is C6H5CH3.  Toluene has the same structure as benzene, except that one ofthe hydrogen atoms is replaced by a methyl group.  The systematic name for toluene is methylbenzene.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -8878,6 +8914,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="mass_fraction_of_methyl_peroxy_radical_in_air">
         <skos:definition>Mass fraction is used in the construction mass_fraction_of_X_in_Y, whereX is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for methyl_peroxy_radical is CH3O2. In chemistry, a 'radical' is a highly reactive, and therefore shortlived, species.</skos:definition>
         <canonical_units>1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="ratio_of_sea_water_potential_temperature_anomaly_to_relaxation_timescale">
+        <skos:definition>The quantity with standard name ratio_of_sea_water_potential_temperature_anomaly_to_relaxation_timescale is a correction term applied to modelled sea water potential temperature. The term is estimated as the deviation of model local sea water potential temperature from an observation-based climatology (e.g. World Ocean Database) weighted by a user-specified relaxation coefficient in s-1 (1/(relaxation timescale)). Potential temperature is the temperature a parcel of air or sea water would have if moved adiabatically to sea level pressure. The phrase "ratio_of_X_to_Y" means X/Y. The term "anomaly" means difference from climatology.</skos:definition>
+        <canonical_units>K s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9228,15 +9270,15 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
-      <Standard_Name rdf:about="land_ice_specific_mass_flux_due_to_calving">
-        <skos:definition>"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. "Specific mass flux due to calving" means the change in land ice mass per unit area resulting from iceberg calving. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</skos:definition>
-        <canonical_units>kg m-2 s-1</canonical_units>
-      </Standard_Name>
-    </skos:narrower>
-    <skos:narrower>
       <Standard_Name rdf:about="tendency_of_mass_fraction_of_cloud_ice_in_air">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).</skos:definition>
         <canonical_units>s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="land_ice_specific_mass_flux_due_to_calving">
+        <skos:definition>"Land ice" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. "Specific mass flux due to calving" means the change in land ice mass per unit area resulting from iceberg calving. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</skos:definition>
+        <canonical_units>kg m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -9790,6 +9832,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="ocean_mixed_layer_thickness_defined_by_vertical_tracer_diffusivity_deficit">
+        <skos:definition>"Thickness" means the vertical extent of a layer. The ocean mixed layer is the upper part of the ocean, regarded as being well-mixed. The base of the mixed layer defined by temperature, sigma, sigma_theta, or vertical diffusivity is the level at which the quantity indicated differs from its surface value by a certain amount. The amount by which the quantity differs can be specified by a scalar coordinate variable.</skos:definition>
+        <canonical_units>m</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="floating_ice_shelf_area">
         <skos:definition>"X_area" means the horizontal area occupied by X within the grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region". A "floating ice shelf", sometimes called a "floating ice sheet", indicates where an ice sheet extending from a land area flows over sea water.</skos:definition>
         <canonical_units>m2</canonical_units>
@@ -10084,6 +10132,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_remineralization">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Remineralization is the degradation of organic matter into inorganic forms of carbon, nitrogen, phosphorus and other micronutrients, which consumes oxygen and releases energy.</skos:definition>
+        <canonical_units>mol m-3 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_aceto_nitrile_in_air">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. The chemical formula for aceto-nitrile is CH3CN. The IUPAC name for aceto-nitrile is ethanenitrile.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -10285,6 +10339,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="water_evaporation_flux_from_soil">
         <skos:definition>"Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="tendency_of_ocean_mole_content_of_nitrogen_due_to_biological_production">
+        <skos:definition>"tendency_of_X" means derivative of X with respect to time. "Content" indicates a quantity per unit area. "Nitrogen" summarizes all chemical species containing nitrogen atoms. The list of individual species that are included in this quantity can vary between models. Where possible, the data variable should be accompanied by a complete description of the species represented, for example, by using a comment attribute. The specification of a physical process by the phrase "due_to_" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</skos:definition>
+        <canonical_units>mol m-2 s-1</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -11745,6 +11805,12 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <Standard_Name rdf:about="water_potential_evaporation_flux">
         <skos:definition>"Water" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called "sublimation".) Potential evaporation is the rate at which evaporation would take place under unaltered ambient conditions (temperature, relative humidity, wind, etc.) if the supply of water were unlimited, as if from an open water surface. In accordance with common usage in geophysical disciplines, "flux" implies per unit area, called "flux density" in physics.</skos:definition>
         <canonical_units>kg m-2 s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="ocean_mixed_layer_thickness_defined_by_vertical_tracer_diffusivity_threshold">
+        <skos:definition>"Thickness" means the vertical extent of a layer. The ocean mixed layer is the upper part of the ocean, regarded as being well-mixed. Diffusivity is also sometimes known as the coefficient of diffusion. Diffusion occurs as a result of a gradient in the spatial distribution of mass concentration, temperature or momentum. The diffusivity may be very different in the vertical and horizontal directions. The diffusivity threshold should be specified by associating a coordinate variable or scalar coordinate variable with the data variable and giving the coordinate variable a standard name of ocean_vertical_tracer_diffusivity.</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -13732,6 +13798,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="partial_pressure_of_carbon_dioxide_in_sea_water">
+        <skos:definition>The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The chemical formula for carbon dioxide is CO2.</skos:definition>
+        <canonical_units>Pa</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="time_when_flood_water_falls_below_threshold">
         <skos:definition>The quantity with standard name time_when_flood_water_falls_below_threshold is the time elapsed between the breaking of a levee (origin of flood water simulation) and the instant when the depth falls below a given threshold for the last time, having already risen to its maximum depth, at a given point in space. If a threshold is supplied, it should be specified by associating a coordinate variable or scalar coordinate variable with the data variable and giving the coordinate variable a standard name of flood_water_thickness. The values of the coordinate variable are the threshold values for the corresponding subarrays of the data variable. If no threshold is specified, its value is taken to be zero. Flood water is water that covers land which is normally not covered by water.</skos:definition>
         <canonical_units>s</canonical_units>
@@ -14176,6 +14248,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="partial_pressure_of_methane_in_sea_water">
+        <skos:definition>The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The chemical formula for methane is CH4.</skos:definition>
+        <canonical_units>Pa</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="lagrangian_tendency_of_air_pressure">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time. The Lagrangian tendency of a quantity is its rate of change following the motion of the fluid, also called the "material derivative" or "convective derivative". The Lagrangian tendency of air pressure, often called "omega", plays the role of the upward component of air velocity when air pressure is being used as the vertical coordinate. If the vertical air velocity is upwards, it is negative when expressed as a tendency of air pressure; downwards is positive.</skos:definition>
         <canonical_units>Pa s-1</canonical_units>
@@ -14499,7 +14577,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="surface_partial_pressure_of_carbon_dioxide_in_sea_water">
-        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. "Water" means water in all phases, including frozen i.e. ice and snow. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume.</skos:definition>
+        <skos:definition>The surface called "surface" means the lower boundary of the atmosphere. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The chemical formula for carbon dioxide is CO2.</skos:definition>
         <canonical_units>Pa</canonical_units>
       </Standard_Name>
     </skos:narrower>
@@ -14740,6 +14818,12 @@ totals are summed to obtain the index.</skos:definition>
       <Standard_Name rdf:about="tendency_of_atmosphere_moles_of_peroxynitric_acid">
         <skos:definition>"tendency_of_X" means derivative of X with respect to time.  The construction "atmosphere_moles_of_X" means the total number of moles of X in the entire atmosphere, i.e. summed over the atmospheric column and over the entire globe. The chemical formula for peroxynitric acid, sometimes referred to as PNA, is HO2NO2.</skos:definition>
         <canonical_units>mol s-1</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
+      <Standard_Name rdf:about="sea_water_mass_per_unit_area_expressed_as_thickness">
+        <skos:definition>"Thickness" means the vertical extent of a layer. The quantity with standard name sea_water_mass_per_unit_area_expressed_as_thickness is the thickness of the water column from sea floor to surface, minus any contribution to column thickness from steric changes. The sea water density used to convert mass to thickness is assumed to be the density of water of standard temperature T=0°C and practical salinity S=35.0. Otherwise it should be provided as an auxiliary scalar using the standard name sea_water_density. The sum of the quantities with standard names sea_water_mass_per_unit_area_expressed_as_thickness and steric_change_in_sea_surface_height_above_sea_floor is the total thickness of the sea water column. Sea_water_mass_per_unit_area is the mass per unit area of the sea water contained within each grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of "region".</skos:definition>
+        <canonical_units>m</canonical_units>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
@@ -15720,6 +15804,12 @@ totals are summed to obtain the index.</skos:definition>
       </Standard_Name>
     </skos:narrower>
     <skos:narrower>
+      <Standard_Name rdf:about="mole_concentration_of_particulate_organic_matter_expressed_as_silicon_in_sea_water">
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". The phrase "expressed_as" is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A.</skos:definition>
+        <canonical_units>mol m-3</canonical_units>
+      </Standard_Name>
+    </skos:narrower>
+    <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water">
         <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y.  A chemical or biological species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'.The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. 'Calcareous phytoplankton' are phytoplankton that produce calcite. Phytoplankton are autotrophic prokaryotic or eukaryotic algae that live near the water surface where there is sufficient light to support photosynthesis. Calcite is a mineral that is a polymorphof calcium carbonate. The chemical formula of calcite is CaCO3. Standard names also existfor aragonite, another polymorph of calcium carbonate.</skos:definition>
         <canonical_units>mol m-3</canonical_units>
@@ -16404,7 +16494,7 @@ totals are summed to obtain the index.</skos:definition>
     </skos:narrower>
     <skos:narrower>
       <Standard_Name rdf:about="mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water">
-        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Dissolved inorganic phosphorus" means phosphate ions in solution.</skos:definition>
+        <skos:definition>Mole concentration means number of moles per unit volume, also called "molarity", and is used in the construction "mole_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Dissolved inorganic phosphorus" means the sum of all dissolved inorganic phosphorus in solution (including phosphate, hydrogen phosphate, dihydrogen phosphate, and phosphoric acid).</skos:definition>
         <canonical_units>mol m-3</canonical_units>
       </Standard_Name>
     </skos:narrower>
