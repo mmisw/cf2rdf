@@ -10,9 +10,9 @@ import scala.xml.Node
  *
  * @param xmlIn       Input XML
  * @param namespace   Namespace for the generated ontology
- * @param mapper      Optional mapper
+ * @param nvsFilenameOpt  Filename with NVS ontology
  */
-class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
+class Converter(xmlIn: Node, namespace: String, nvsFilenameOpt: Option[String]) {
 
   /** some general properties from the input */
   val props: Map[String,String] = {
@@ -26,10 +26,18 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
    * @return  Resulting Jena model
    */
   def convert: Model = {
+    val versionNumberOpt = props.get("version_number")
+    val lastModifiedOpt = props.get("last_modified")
+
     val M = new ModelConstructor(namespace,
-      props.get("version_number"),
-      props.get("last_modified")
-    )
+      versionNumberOpt,
+      lastModifiedOpt)
+
+    val mapper = nvsFilenameOpt map { nvsFilename ⇒
+      new OrrNvsMapper(nvsFilename,
+        versionNumberOpt,
+        lastModifiedOpt)
+    }
 
     for (entry <- xmlIn \\ "entry") {
       stats.numEntries += 1

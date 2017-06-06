@@ -21,10 +21,10 @@ object cf2rdf extends App {
   val rdfFilename   = baseFilename + ".rdf"
   val statsFilename = baseFilename + ".conv-stats.txt"
 
-  val mapper = if (config.hasPath("nvs")) Some(new OrrNvsMapper(config.getString("nvs"))) else None
+  val nvsFilenameOpt = if (config.hasPath("nvs")) Some(config.getString("nvs")) else None
 
   val xmlIn = scala.xml.XML.loadFile(xmlFilename)
-  val converter = new Converter(xmlIn, namespace, mapper)
+  val converter = new Converter(xmlIn, namespace, nvsFilenameOpt)
   val model = converter.convert
 
   def getStats: String = {

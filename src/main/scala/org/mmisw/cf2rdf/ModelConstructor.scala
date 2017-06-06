@@ -32,43 +32,43 @@ class ModelConstructor(namespace: String,
 
   private val ontology = model.createOntology("http://mmisw.org/ont/cf/parameter")
 
-  addStringProperty(Omv.name, "Climate and Forecast (CF) Standard Names" +
+  ontology.addProperty(Omv.name, "Climate and Forecast (CF) Standard Names" +
     (if (versionNumberOpt.isDefined) s" (v.${versionNumberOpt.get})" else ""))
 
-  addStringProperty(Omv.description,
+  ontology.addProperty(Omv.description,
     "Ontology representation of the Climate and Forecast (CF) standard names parameter vocabulary," +
       " which is intended for use with climate and forecast data in the atmosphere, surface and ocean domains." +
       " Every CF parameter is captured as a SKOS concept.")
 
-  addStringProperty(Omv.hasCreator, "MMI")
+  ontology.addProperty(Omv.hasCreator, "MMI")
+  ontology.addProperty(OmvMmi.hasContentCreator, "CF Metadata")
 
-  addStringProperty(Omv.keywords, {
+  ontology.addProperty(Omv.keywords, {
     List(
       "NetCDF", "CF", "Climate and Forecast", "self-describing", "standard names", "Canonical Units"
     ).mkString(", ")
   })
 
-  addStringProperty(Omv.documentation, "http://cfconventions.org/standard-names.html")
-  addStringProperty(Omv.hasContributor, "http://cfconventions.org/Data/cf-standard-names/docs/standard-name-contributors.html")
-  addStringProperty(Omv.reference, "http://marinemetadata.org/orrcf")
+  ontology.addProperty(Omv.documentation, "http://cfconventions.org/standard-names.html")
+  ontology.addProperty(Omv.hasContributor, "http://cfconventions.org/Data/cf-standard-names/docs/standard-name-contributors.html")
+  ontology.addProperty(Omv.reference, "http://marinemetadata.org/orrcf")
 
-  addStringProperty(Omv.acronym, "CF-standard-name")
+  ontology.addProperty(Omv.acronym, "CF-standard-name")
 
   lastModifiedOpt foreach { lm ⇒
-    addStringProperty(OmvMmi.origVocLastModified, lm)
-    addStringProperty(Omv.creationDate, lm)
+    ontology.addProperty(OmvMmi.origVocLastModified, lm)
+    ontology.addProperty(Omv.creationDate, lm)
   }
 
   versionNumberOpt foreach { vn ⇒
-    addStringProperty(OmvMmi.origVocVersionId, vn)
-    addStringProperty(OmvMmi.origVocUri, {
+    ontology.addProperty(OmvMmi.origVocVersionId, vn)
+    ontology.addProperty(OmvMmi.origVocUri, {
       s"https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/$vn/src/cf-standard-name-table.xml"
     })
   }
 
-  addStringProperty(OmvMmi.hasResourceType, "http://mmisw.org/ont/mmi/resourcetype/parameter")
-  addStringProperty(OmvMmi.hasContentCreator, "CF Metadata")
-  addStringProperty(OmvMmi.origMaintainerCode, "cf")
+  ontology.addProperty(OmvMmi.hasResourceType, "http://mmisw.org/ont/mmi/resourcetype/parameter")
+  ontology.addProperty(OmvMmi.origMaintainerCode, "cf")
 
   def createConcept(uri: String): Resource = {
     val concept = model.createResource(uri, standardNameClass)
@@ -91,12 +91,6 @@ class ModelConstructor(namespace: String,
     }
     else {
       stats.numWithNoDefinitions += 1
-    }
-  }
-
-  private def addStringProperty(property: Property, value: String) {
-    if (value.trim.length > 0) {
-      ontology.addProperty(property, value.trim)
     }
   }
 }

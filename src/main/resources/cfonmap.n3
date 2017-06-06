@@ -1,7 +1,9 @@
 @prefix :      <http://mmisw.org/ont/mmi/cfonmap/> .
+@prefix omvm:  <http://mmisw.org/ont/mmi/20081020/ontologyMetadata/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix omv:   <http://omv.ontoware.org/2005/05/ontology#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix nvs:   <http://vocab.nerc.ac.uk/collection/P07/current/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
@@ -2685,6 +2687,21 @@ orr:volume_extinction_coefficient_in_air_due_to_cloud_particles
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/VPQ3SQPJ/> .
 
 orr:grid_latitude  skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0634/> .
+
+<http://mmisw.org/ont/mmi/cfonmap>
+        a                         owl:Ontology ;
+        omvm:hasContentCreator    "MMI" ;
+        omvm:hasResourceType      "http://mmisw.org/ont/mmi/resourcetype/parameter" ;
+        omvm:origMaintainerCode   "mmi" ;
+        omvm:origVocLastModified  "2017-05-23T11:17:23Z" ;
+        omv:acronym               "cfontmap" ;
+        omv:creationDate          "2017-05-23T11:17:23Z" ;
+        omv:description           "Uses skos:exactMatch to link the IRIs of the CF standard names between the RDF versions at the MMI ORR and NERC NVS repositories." ;
+        omv:documentation         "https://github.com/mmisw/cf2rdf" ;
+        omv:hasCreator            "MMI" ;
+        omv:keywords              "NetCDF, CF, Climate and Forecast, self-describing, standard names, Canonical Units" ;
+        omv:name                  "ORR-NVS CF standard name mapping (v.44)" ;
+        omv:reference             "https://github.com/mmisw/cf2rdf" .
 
 orr:downward_x_stress_at_sea_ice_base
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0697/> .

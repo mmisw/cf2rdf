@@ -3,7 +3,7 @@
 - capture the traditional metadata properties right in the translation so the resulting
   ontology can be registered without additional editing at the ORR.
   Exercising this with latest CF v44.
-- TODO similar generation for the mapping ontology
+- capture the traditional metadata properties also for the mapping ontology
 - TODO use ORR client library when available - for now just copying Omv and OvmMmi vocabularies
 
 - resolve #3 "upgrade jena library"
