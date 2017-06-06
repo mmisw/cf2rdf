@@ -16,16 +16,18 @@ object cf2rdf extends App {
   val xmlFilename   = config.getString("xml")
   val namespace     = config.getString("namespace")
 
-  val rdfFilename   = xmlFilename.replaceAll("\\.xml$", ".rdf")
-  val statsFilename = xmlFilename.replaceAll("\\.xml$", ".conv-stats.txt")
+  val baseFilename   = xmlFilename.replaceAll("\\.xml$", "")
 
-  val mapper = Option(if (config.hasPath("nvs")) new OrrNvsMapper(config.getString("nvs")) else null)
+  val rdfFilename   = baseFilename + ".rdf"
+  val statsFilename = baseFilename + ".conv-stats.txt"
+
+  val mapper = if (config.hasPath("nvs")) Some(new OrrNvsMapper(config.getString("nvs"))) else None
 
   val xmlIn = scala.xml.XML.loadFile(xmlFilename)
   val converter = new Converter(xmlIn, namespace, mapper)
   val model = converter.convert
 
-  def getStats = {
+  def getStats: String = {
     val propsStr = (converter.props map (kv => s"${kv._1}: ${kv._2}")) mkString "; "
     s"""cf2rdf conversion
          |input:  $xmlFilename
@@ -35,7 +37,7 @@ object cf2rdf extends App {
          | $propsStr
          |
          |conversion stats:
-         |${converter.stats}
+         |$stats
       """.stripMargin
   }
 
