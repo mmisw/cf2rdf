@@ -5,6 +5,7 @@ import java.nio.charset.StandardCharsets
 
 import org.apache.jena.ontology.OntModelSpec
 import org.apache.jena.rdf.model.{ModelFactory, Resource}
+import org.apache.jena.vocabulary.SKOS
 
 import scala.collection.JavaConversions._
 
@@ -21,7 +22,7 @@ class OrrNvsMapper(nvsFilename: String) {
   model.setNsPrefix("orr", orrCfNamespace)
   model.setNsPrefix("nvs", nvsCfNamespace)
 
-  model.setNsPrefix("skos", Skos.NS)
+  model.setNsPrefix("skos", SKOS.uri)
 
   private val map = loadNvs()
 
@@ -31,7 +32,7 @@ class OrrNvsMapper(nvsFilename: String) {
     val cfName: String = orrTerm.getLocalName
     for (nvsUri <- map.get(cfName)) {
       val nvsTerm: Resource = model.createResource(nvsUri)
-      model.add(model.createStatement(orrTerm, Skos.exactMatch, nvsTerm))
+      model.add(model.createStatement(orrTerm, SKOS.exactMatch, nvsTerm))
       termsAdded += 1
     }
   }

@@ -1,8 +1,8 @@
 package org.mmisw.cf2rdf
 
 import org.apache.jena.ontology.OntModelSpec
-import org.apache.jena.rdf.model.{Model, Property, Resource, ModelFactory}
-import org.apache.jena.vocabulary.{XSD, OWL, RDF, RDFS}
+import org.apache.jena.rdf.model.{Model, ModelFactory, Property, Resource}
+import org.apache.jena.vocabulary._
 
 import scala.xml.Node
 
@@ -41,7 +41,7 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
 
       //concept.addProperty(RDFS.comment, description);
 
-      M.currentTopConcept.addProperty(Skos.narrower, concept)
+      M.currentTopConcept.addProperty(SKOS.narrower, concept)
 
       mapper.foreach(_.addOrrTerm(concept))
     }
@@ -66,9 +66,9 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
 
     val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM)
     model.setNsPrefix("", namespace)
-    model.setNsPrefix("skos", Skos.NS)
+    model.setNsPrefix("skos", SKOS.uri)
     model.setNsPrefix("omvmmi", omvmmi)
-    model.createResource(Skos.NS + "Concept", RDFS.Class)
+    model.createResource(SKOS.uri + "Concept", RDFS.Class)
 
     val origVocVersionId    = model.createProperty(omvmmi + "origVocVersionId")
     val origVocLastModified = model.createProperty(omvmmi + "origVocLastModified")
@@ -78,7 +78,7 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
     val canonical_units = model.createProperty(namespace + "canonical_units")
 
     model.add(model.createStatement(standardNameClass, RDF.`type`, OWL.Class))
-    model.add(model.createStatement(standardNameClass, RDFS.subClassOf, Skos.Concept))
+    model.add(model.createStatement(standardNameClass, RDFS.subClassOf, SKOS.Concept))
     model.add(model.createStatement(standardNameClass, RDFS.label, "Standard Name"))
     model.add(model.createStatement(canonical_units, RDF.`type`, OWL.DatatypeProperty))
     model.add(model.createStatement(canonical_units, RDFS.domain, standardNameClass))
@@ -117,7 +117,7 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
 
     def addDefinition(concept: Resource, definition: String) {
       if ( definition.length > 0 ) {
-        concept.addProperty(Skos.definition, definition)
+        concept.addProperty(SKOS.definition, definition)
       }
       else {
         stats.numWithNoDefinitions += 1
