@@ -1,19 +1,18 @@
 package org.mmisw.cf2rdf
 
-import com.hp.hpl.jena.rdf.model.Model
-import com.hp.hpl.jena.rdf.model.ModelFactory
-import com.hp.hpl.jena.rdf.model.Resource
-import com.hp.hpl.jena.vocabulary.OWL
-import com.hp.hpl.jena.vocabulary.RDF
-import com.hp.hpl.jena.vocabulary.RDFS
-import com.hp.hpl.jena.vocabulary.XSD
+import org.apache.jena.rdf.model.Model
+import org.apache.jena.rdf.model.ModelFactory
+import org.apache.jena.rdf.model.Resource
+import org.apache.jena.vocabulary.OWL
+import org.apache.jena.vocabulary.RDF
+import org.apache.jena.vocabulary.RDFS
+import org.apache.jena.vocabulary.XSD
 
 /**
  * SKOS vocabulary elements. Adapted from the original java version in the old "watchdog" project.
  *
  * @todo move this object to a more appropriate place.
  *
- * @author Carlos Rueda
  * @see http://www.w3.org/2004/02/skos/core#
  */
 object Skos {

@@ -1,8 +1,8 @@
 package org.mmisw.cf2rdf
 
-import com.hp.hpl.jena.ontology.OntModelSpec
-import com.hp.hpl.jena.rdf.model.{Model, Property, Resource, ModelFactory}
-import com.hp.hpl.jena.vocabulary.{XSD, OWL, RDF, RDFS}
+import org.apache.jena.ontology.OntModelSpec
+import org.apache.jena.rdf.model.{Model, Property, Resource, ModelFactory}
+import org.apache.jena.vocabulary.{XSD, OWL, RDF, RDFS}
 
 import scala.xml.Node
 
@@ -12,8 +12,6 @@ import scala.xml.Node
  * @param xmlIn       Input XML
  * @param namespace   Namespace for the generated ontology
  * @param mapper
- *
- * @author Carlos Rueda
  */
 class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
 

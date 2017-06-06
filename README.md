@@ -1,4 +1,4 @@
-## MMI cf2rdf tool ##
+## cf2rdf tool ##
 
 Conversion of [CF Standard Names](http://cfconventions.org/documents.html) vocabulary to RDF.
 
@@ -16,11 +16,11 @@ First you need to download the latest version of the XML file. Using your browse
 Example using curl for the download:
 
 ```shell
-$ FOUND_XML=https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/36/src/cf-standard-name-table.xml
+$ FOUND_XML=https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/43/src/cf-standard-name-table.xml
 $ curl "$FOUND_XML" -o src/main/resources/cf-standard-name-table.xml
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100 2348k  100 2348k    0     0   893k      0  0:00:02  0:00:02 --:--:--  893k
+100 2517k  100 2517k    0     0  1821k      0  0:00:01  0:00:01 --:--:-- 1820k
 ```
 
 For the ORR-NVS mapping ontology, also download the NVS RDF:

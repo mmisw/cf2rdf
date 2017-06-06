@@ -1,14 +1,15 @@
 package org.mmisw.cf2rdf
 
 import java.io.PrintWriter
+
 import com.typesafe.config.ConfigFactory
+import org.apache.jena.system.JenaSystem
 
 /**
  * Main cf2rdf program.
- *
- * @author Carlos Rueda
  */
 object cf2rdf extends App {
+  JenaSystem.init()
 
   val config = ConfigFactory.load().getConfig("cf2rdf")
 

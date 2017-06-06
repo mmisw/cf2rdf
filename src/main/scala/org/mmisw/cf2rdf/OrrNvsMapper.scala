@@ -1,20 +1,21 @@
 package org.mmisw.cf2rdf
 
-import java.io.FileInputStream
+import java.io.{ByteArrayInputStream, FileInputStream, StringReader}
+import java.nio.charset.StandardCharsets
 
-import com.hp.hpl.jena.ontology.OntModelSpec
-import com.hp.hpl.jena.rdf.model.{ModelFactory, Resource}
+import org.apache.jena.ontology.OntModelSpec
+import org.apache.jena.rdf.model.{ModelFactory, Resource}
 
 import scala.collection.JavaConversions._
 
 
 class OrrNvsMapper(nvsFilename: String) {
 
-  val mapNamespace   = "http://mmisw.org/ont/mmi/cfonmap/"
-  val orrCfNamespace = "http://mmisw.org/ont/cf/parameter/"
-  val nvsCfNamespace = "http://vocab.nerc.ac.uk/collection/P07/current/"
+  private val mapNamespace   = "http://mmisw.org/ont/mmi/cfonmap/"
+  private val orrCfNamespace = "http://mmisw.org/ont/cf/parameter/"
+  private val nvsCfNamespace = "http://vocab.nerc.ac.uk/collection/P07/current/"
 
-  val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM)
+  private val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM)
 
   model.setNsPrefix("",    mapNamespace)
   model.setNsPrefix("orr", orrCfNamespace)
@@ -22,11 +23,11 @@ class OrrNvsMapper(nvsFilename: String) {
 
   model.setNsPrefix("skos", Skos.NS)
 
-  val map = loadNvs()
+  private val map = loadNvs()
 
-  var termsAdded = 0
+  private var termsAdded = 0
 
-  def addOrrTerm(orrTerm: Resource) {
+  def addOrrTerm(orrTerm: Resource): Unit = {
     val cfName: String = orrTerm.getLocalName
     for (nvsUri <- map.get(cfName)) {
       val nvsTerm: Resource = model.createResource(nvsUri)
@@ -35,7 +36,7 @@ class OrrNvsMapper(nvsFilename: String) {
     }
   }
 
-  def done() = {
+  def done(): (Int, String) = {
     val outFilename = "src/main/resources/cfonmap.n3"
     val out = new java.io.FileOutputStream(outFilename)
     model.getWriter("N3").write(model, out, null)
@@ -43,7 +44,7 @@ class OrrNvsMapper(nvsFilename: String) {
   }
 
 
-  private def loadNvs() = {
+  private def loadNvs(): Map[String, String] = {
 
     val url = "http://vocab.nerc.ac.uk/collection/P07/current/"
 
@@ -53,13 +54,33 @@ class OrrNvsMapper(nvsFilename: String) {
     val member = nvsModel.createProperty("http://www.w3.org/2004/02/skos/core#member")
     val prefLabel = nvsModel.createProperty("http://www.w3.org/2004/02/skos/core#prefLabel")
 
-    if (true) {
-      //println(s"Loading $nvsFilename")
-      nvsModel.read(new FileInputStream(nvsFilename), url, "RDF/XML")
+    //println(s"Loading $nvsFilename")
+    val originalInputStream = new FileInputStream(nvsFilename)
+
+    val replaceSpaces = true
+
+    if (replaceSpaces) {
+      val fixedLines = scala.collection.mutable.ListBuffer[String]()
+      val re = """(.*)rdf:resource="(.*) (.*)"(.*)""".r
+      val src = io.Source.fromInputStream(originalInputStream, "utf8")
+      val fixed: String = (src.getLines() map {
+        case line@re(p1, p2, p3, p4) ⇒
+          fixedLines += line
+          s"""${p1}rdf:resource="$p2%20$p3"$p4"""
+        case line ⇒ line
+      }).mkString("\n")
+
+      if (fixedLines.nonEmpty) {
+          println(
+            s"""
+               |Replaced %20 for space in the following rdf:resource IRIs from $nvsFilename
+               |${fixedLines.mkString("\t", "\n\t", "")}
+             """.stripMargin)
+      }
+      nvsModel.read(new ByteArrayInputStream(fixed.getBytes(StandardCharsets.UTF_8)), url, "RDF/XML")
     }
     else {
-      //println(s"Loading $url")
-      nvsModel.read(url, "RDF/XML")
+      nvsModel.read(originalInputStream , url, "RDF/XML")
     }
     //println(s"done loading.")
 
