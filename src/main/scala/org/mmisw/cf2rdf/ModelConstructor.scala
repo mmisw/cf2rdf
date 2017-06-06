@@ -1,28 +1,27 @@
 package org.mmisw.cf2rdf
 
-import org.apache.jena.ontology.OntModelSpec
+import org.apache.jena.ontology.{OntModel, OntModelSpec}
 import org.apache.jena.rdf.model.{ModelFactory, Property, Resource}
 import org.apache.jena.vocabulary._
+import org.mmisw.orr.ont.vocabulary.{Omv, OmvMmi}
 
-class ModelConstructor(namespace: String) {
-  // to capture some "original vocabulary" metadata, in particular, version_number and
-  // last_modified (in omvmmi:origVocVersionId and omvmmi:origVocLastModified, resp).
-  // (see https://marinemetadata.org/community/teams/ont/mmirepository/communityontmetadata;
-  // origVocLastModified actually just introduced in this update of the converter.)
-  val omvmmi = "http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+class ModelConstructor(namespace: String,
+                       versionNumberOpt: Option[String],
+                       lastModifiedOpt: Option[String]
+                      ) {
 
-  val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM)
+  val model: OntModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM)
+
   model.setNsPrefix("", namespace)
   model.setNsPrefix("skos", SKOS.uri)
-  model.setNsPrefix("omvmmi", omvmmi)
+  model.setNsPrefix("omv", Omv.NS)
+  model.setNsPrefix("omvm", OmvMmi.NS)
+
   model.createResource(SKOS.uri + "Concept", RDFS.Class)
 
-  val origVocVersionId    = model.createProperty(omvmmi + "origVocVersionId")
-  val origVocLastModified = model.createProperty(omvmmi + "origVocLastModified")
-
-  val standardNameClass: Resource = model.createResource(namespace + "Standard_Name")
-  val currentTopConcept = createConcept(namespace + "parameter")
-  val canonical_units = model.createProperty(namespace + "canonical_units")
+  private val standardNameClass: Resource = model.createResource(namespace + "Standard_Name")
+  val currentTopConcept: Resource = createConcept(namespace + "parameter")
+  private val canonical_units = model.createProperty(namespace + "canonical_units")
 
   model.add(model.createStatement(standardNameClass, RDF.`type`, OWL.Class))
   model.add(model.createStatement(standardNameClass, RDFS.subClassOf, SKOS.Concept))
@@ -31,21 +30,45 @@ class ModelConstructor(namespace: String) {
   model.add(model.createStatement(canonical_units, RDFS.domain, standardNameClass))
   model.add(model.createStatement(canonical_units, RDFS.range, XSD.xstring))
 
-  val ontology = model.createOntology("")
+  private val ontology = model.createOntology("http://mmisw.org/ont/cf/parameter")
 
-  def addStringProperty(property: Property, value: String) {
-    if (value.trim.length > 0) {
-      ontology.addProperty(property, value.trim)
-    }
+  addStringProperty(Omv.name, "Climate and Forecast (CF) Standard Names" +
+    (if (versionNumberOpt.isDefined) s" (v.${versionNumberOpt.get})" else ""))
+
+  addStringProperty(Omv.description,
+    "Ontology representation of the Climate and Forecast (CF) standard names parameter vocabulary," +
+      " which is intended for use with climate and forecast data in the atmosphere, surface and ocean domains." +
+      " Every CF parameter is captured as a SKOS concept.")
+
+  addStringProperty(Omv.hasCreator, "MMI")
+
+  addStringProperty(Omv.keywords, {
+    List(
+      "NetCDF", "CF", "Climate and Forecast", "self-describing", "standard names", "Canonical Units"
+    ).mkString(", ")
+  })
+
+  addStringProperty(Omv.documentation, "http://cfconventions.org/standard-names.html")
+  addStringProperty(Omv.hasContributor, "http://cfconventions.org/Data/cf-standard-names/docs/standard-name-contributors.html")
+  addStringProperty(Omv.reference, "http://marinemetadata.org/orrcf")
+
+  addStringProperty(Omv.acronym, "CF-standard-name")
+
+  lastModifiedOpt foreach { lm ⇒
+    addStringProperty(OmvMmi.origVocLastModified, lm)
+    addStringProperty(Omv.creationDate, lm)
   }
 
-  def addVersionNumber(version_number: String) {
-    addStringProperty(origVocVersionId, version_number)
+  versionNumberOpt foreach { vn ⇒
+    addStringProperty(OmvMmi.origVocVersionId, vn)
+    addStringProperty(OmvMmi.origVocUri, {
+      s"https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/$vn/src/cf-standard-name-table.xml"
+    })
   }
 
-  def addLastModified(last_modified: String) {
-    addStringProperty(origVocLastModified, last_modified)
-  }
+  addStringProperty(OmvMmi.hasResourceType, "http://mmisw.org/ont/mmi/resourcetype/parameter")
+  addStringProperty(OmvMmi.hasContentCreator, "CF Metadata")
+  addStringProperty(OmvMmi.origMaintainerCode, "cf")
 
   def createConcept(uri: String): Resource = {
     val concept = model.createResource(uri, standardNameClass)
@@ -71,4 +94,9 @@ class ModelConstructor(namespace: String) {
     }
   }
 
+  private def addStringProperty(property: Property, value: String) {
+    if (value.trim.length > 0) {
+      ontology.addProperty(property, value.trim)
+    }
+  }
 }

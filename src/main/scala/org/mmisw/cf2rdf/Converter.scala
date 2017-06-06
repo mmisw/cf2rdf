@@ -26,9 +26,10 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
    * @return  Resulting Jena model
    */
   def convert: Model = {
-    val M = new ModelConstructor(namespace)
-    M.addVersionNumber(props.getOrElse("version_number", ""))
-    M.addLastModified(props.getOrElse("last_modified", ""))
+    val M = new ModelConstructor(namespace,
+      props.get("version_number"),
+      props.get("last_modified")
+    )
 
     for (entry <- xmlIn \\ "entry") {
       stats.numEntries += 1
@@ -46,7 +47,7 @@ class Converter(xmlIn: Node, namespace: String, mapper: Option[OrrNvsMapper]) {
       mapper.foreach(_.addOrrTerm(concept))
     }
 
-    mapper.foreach { mapper =>
+    mapper foreach { mapper =>
       val (t, f) = mapper.done()
       stats.mappingTermsAdded = t
       stats.mappingOutputFilename = Some(f)

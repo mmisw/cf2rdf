@@ -1590,11 +1590,11 @@ orr:mass_fraction_of_nox_expressed_as_nitrogen_in_air
 orr:tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_land_transport
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/IBFDDBJF/> .
 
-orr:histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid
-        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12N210/> .
-
 orr:tendency_of_mass_content_of_water_vapor_in_atmosphere_layer
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/BBAH2132/> .
+
+orr:histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid
+        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12N210/> .
 
 orr:tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_forest_fires
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/BAFAHFFC/> .
@@ -2994,6 +2994,9 @@ orr:tendency_of_atmosphere_moles_of_nitrogen_dioxide
 
 orr:thickness_of_convective_snowfall_amount
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0140/> .
+
+orr:mole_concentration_of_carbonate_expressed_as_carbon_at_equilibrium_with_pure_aragonite_in_sea_water
+        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/QZFO8L1Q/> .
 
 orr:mole_concentration_of_limonene_in_air
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12N481/> .
@@ -5040,6 +5043,9 @@ orr:geostrophic_eastward_sea_water_velocity
 orr:tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFV8N84/> .
 
+orr:specific_heat_capacity_of_sea_water
+        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/N0XT6JHS/> .
+
 orr:northward_ocean_heat_transport
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0483/> .
 
@@ -6446,6 +6452,9 @@ orr:lwe_thickness_of_convective_snowfall_amount
 
 orr:tendency_of_atmosphere_moles_of_methane
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12S50/> .
+
+orr:mole_concentration_of_carbonate_expressed_as_carbon_at_equilibrium_with_pure_calcite_in_sea_water
+        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/85V2Y3OS/> .
 
 orr:specific_kinetic_energy_of_sea_water
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFV8N79/> .
