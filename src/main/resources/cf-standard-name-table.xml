@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <standard_name_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cf-standard-name-table-1.1.xsd">
-   <version_number>45</version_number>
-   <last_modified>2017-06-27T14:50:00Z</last_modified>
+   <version_number>46</version_number>
+   <last_modified>2017-07-25T09:41:29Z</last_modified>
    <institution>Centre for Environmental Data Analysis</institution>
    <contact>support@ceda.ac.uk</contact>
 
@@ -66,56 +66,63 @@
       <canonical_units>Pa</canonical_units>
       <grib>1</grib>
       <amip>plev</amip>
-      <description></description>
+      <description>Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_anomaly">
       <canonical_units>Pa</canonical_units>
       <grib>26</grib>
       <amip></amip>
-      <description>&quot;anomaly&quot; means difference from climatology.</description>
+      <description>The term &quot;anomaly&quot; means difference from climatology. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_at_cloud_base">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>cloud_base refers to the base of the lowest cloud.</description>
+      <description>The phrase &quot;cloud_base&quot; refers to the base of the lowest cloud. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_at_cloud_top">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>cloud_top refers to the top of the highest cloud.</description>
+      <description>The phrase &quot;cloud_top&quot; refers to the top of the highest cloud. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_at_convective_cloud_base">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>cloud_base refers to the base of the lowest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model.</description>
+      <description>The phrase &quot;cloud_base&quot; refers to the base of the lowest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_at_convective_cloud_top">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>cloud_top refers to the top of the highest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model.</description>
+      <description>The phrase &quot;cloud_top&quot; refers to the top of the highest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_at_freezing_level">
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description></description>
+      <description>Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_pressure_at_mean_sea_level">
       <canonical_units>Pa</canonical_units>
       <grib>2 E151</grib>
       <amip>psl</amip>
-      <description>Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL. &quot;Mean sea level&quot; means the time mean of sea surface elevation at a given location over an arbitrary period sufficient to eliminate the tidal signals.</description>
+      <description>Air pressure at sea level is the quantity often abbreviated as MSLP or PMSL. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation. &quot;Mean sea level&quot; means the time mean of sea surface elevation at a given location over an arbitrary period sufficient to eliminate the tidal signals.</description>
+   </entry>
+  
+   <entry id="air_pressure_at_top_of_atmosphere_model">
+      <canonical_units>Pa</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Top of atmosphere model&quot; means the upper boundary of the top layer of an atmosphere model. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="air_temperature">
@@ -195,6 +202,13 @@
       <description>Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.</description>
    </entry>
   
+   <entry id="altitude_at_top_of_atmosphere_model">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level. &quot;Top of atmosphere model&quot; means the upper boundary of the top layer of an atmosphere model.</description>
+   </entry>
+  
    <entry id="altitude_at_top_of_dry_convection">
       <canonical_units>m</canonical_units>
       <grib></grib>
@@ -213,7 +227,7 @@
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Amplitude is the magnitude of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period should be used to specify the period of the sinusoidal wave.</description>
+      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Amplitude is the magnitude of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period should be used to specify the period of the sinusoidal wave. Because global average sea level change quantifies the change in volume of the world ocean, it is not calculated necessarily by considering local changes in mean sea level.</description>
    </entry>
   
    <entry id="angle_of_emergence">
@@ -346,7 +360,7 @@
       <canonical_units>1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. &quot;Absorption optical thickness&quot; means that part of the atmosphere optical thickness that is caused by the absorption of incident radiation. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. &quot;Ambient_aerosol&quot; means that the aerosol is measured or modelled at the ambient state of pressure, temperature and relative humidity that exists in its immediate environment. &quot;Ambient aerosol particles&quot; are aerosol particles that have taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the particles. To specify the relative humidity and temperature at which the quantity described by the standard name applies, provide scalar coordinate variables with standard names of &quot;relative_humidity&quot; and &quot;air_temperature&quot;. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</description>
+      <description>The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. &quot;Absorption optical thickness&quot; means that part of the atmosphere optical thickness that is caused by the absorption of incident radiation. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. &quot;Ambient_aerosol&quot; means that the aerosol is measured or modelled at the ambient state of pressure, temperature and relative humidity that exists in its immediate environment. &quot;Ambient aerosol particles&quot; are aerosol particles that have taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the particles. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase.</description>
    </entry>
   
    <entry id="atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles">
@@ -374,18 +388,14 @@
       <canonical_units>J kg -1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Convective(ly) available potential energy (often abbreviated CAPE) is a stability measure calculated by integrating the positive temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from the surface to its equilibrium level. CAPE exists under conditions of potential instability, and measures the potential energy per unit mass that would be released by the unstable parcel if it were able to convect upwards to equilibrium.
-</description>
+      <description>Convective(ly) available potential energy (often abbreviated CAPE) is a stability measure calculated by integrating the positive temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from the surface to its equilibrium level. CAPE exists under conditions of potential instability, and measures the potential energy per unit mass that would be released by the unstable parcel if it were able to convect upwards to equilibrium.</description>
    </entry>
   
    <entry id="atmosphere_convective_inhibition">
       <canonical_units>J kg -1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Convective inhibition is the amount of energy per unit mass required to overcome the negatively buoyant energy exerted by the environment on a parcel of air.  Convective inhibition is often abbreviated as &quot;CIN&quot; or &quot;CINH&quot;.  It is calculated by integrating the negative temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from a given starting height to its equilibrium level. A coordinate variable of original_air_pressure_of_lifted_parcel should be specified to indicate the starting height of the lifted parcel.
-
-
-</description>
+      <description>Convective inhibition is the amount of energy per unit mass required to overcome the negatively buoyant energy exerted by the environment on a parcel of air.  Convective inhibition is often abbreviated as &quot;CIN&quot; or &quot;CINH&quot;.  It is calculated by integrating the negative temperature difference between the surrounding atmosphere and a parcel of air lifted adiabatically from a given starting height to its equilibrium level. A coordinate variable of original_air_pressure_of_lifted_parcel should be specified to indicate the starting height of the lifted parcel.</description>
    </entry>
   
    <entry id="atmosphere_convective_inhibition_wrt_surface">
@@ -819,7 +829,7 @@
       <canonical_units>kg m-2</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="atmosphere_mass_content_of_ethane">
@@ -2243,7 +2253,7 @@ totals are summed to obtain the index.</description>
       <canonical_units></canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The Automated Tropical Cyclone Forecasting System (ATCF) storm identifier is an 8 character string which identifies a tropical cyclone. The storm identifier has the form BBCCYYYY, where BB is the ocean basin, specifically: AL - North Atlantic basin, north of the Equator; SL - South Atlantic basin, south of the Equator; EP - North East Pacific basin, eastward of 140 degrees west longitude; CP - North Central Pacific basin, between the dateline and 140 degrees west longitude; WP -North West Pacific basin, westward of the dateline; IO - North Indian Ocean basin, north of the Equator between 40 and 100 degrees east longitude; SH - South Pacific Ocean basin and South Indian Ocean basin. CC is the cyclone number. Numbers 01 through 49 are reserved for tropical and subtropical cyclones. A cyclone number is assigned to each tropical or subtropical cyclone in each basin as it develops. Numbers are assigned in chronological order. Numbers 50 through 79 are reserved for internal use by operational forecast centers. Numbers 80 through 89 are reserved for training, exercises and testing. Numbers 90 through 99 are reserved for tropical disturbances having the potential to become tropical or subtropical cyclones. The 90&#39;s are assigned sequentially and reused throughout the calendar year. YYYY is the four-digit year. This is calendar year for the northern hemisphere. For the southern hemisphere, the year begins July 1, with calendar year plus one. Reference: Miller, R.J., Schrader, A.J., Sampson, C.R., &amp; Tsui, T.L. (1990), The Automated Tropical Cyclone Forecasting System (ATCF), American Meteorological Society Computer Techniques, 5, 653–660.</description>
+      <description>The Automated Tropical Cyclone Forecasting System (ATCF) storm identifier is an 8 character string which identifies a tropical cyclone. The storm identifier has the form BBCCYYYY, where BB is the ocean basin, specifically: AL - North Atlantic basin, north of the Equator; SL - South Atlantic basin, south of the Equator; EP - North East Pacific basin, eastward of 140 degrees west longitude; CP - North Central Pacific basin, between the dateline and 140 degrees west longitude; WP - North West Pacific basin, westward of the dateline; IO - North Indian Ocean basin, north of the Equator between 40 and 100 degrees east longitude; SH - South Pacific Ocean basin and South Indian Ocean basin. CC is the cyclone number. Numbers 01 through 49 are reserved for tropical and subtropical cyclones. A cyclone number is assigned to each tropical or subtropical cyclone in each basin as it develops. Numbers are assigned in chronological order. Numbers 50 through 79 are reserved for internal use by operational forecast centers. Numbers 80 through 89 are reserved for training, exercises and testing. Numbers 90 through 99 are reserved for tropical disturbances having the potential to become tropical or subtropical cyclones. The 90&#39;s are assigned sequentially and reused throughout the calendar year. YYYY is the four-digit year. This is calendar year for the northern hemisphere. For the southern hemisphere, the year begins July 1, with calendar year plus one. Reference: Miller, R.J., Schrader, A.J., Sampson, C.R., &amp; Tsui, T.L. (1990), The Automated Tropical Cyclone Forecasting System (ATCF), American Meteorological Society Computer Techniques, 5, 653 - 660.</description>
    </entry>
   
    <entry id="backscattering_ratio">
@@ -2852,7 +2862,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. &quot;Depth_below_X&quot; means the vertical distance below the named surface X.</description>
+      <description>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention. &quot;Depth_below_X&quot; means the vertical distance below the named surface X.</description>
    </entry>
   
    <entry id="depth_below_sea_floor">
@@ -2887,7 +2897,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>In some atmosphere models, the difference of air pressure from model reference is a prognostic variable, instead of the air pressure itself. The model reference air pressure is a model-dependent constant.</description>
+      <description>In some atmosphere models, the difference of air pressure from model reference is a prognostic variable, instead of the air pressure itself. The model reference air pressure is a model-dependent constant. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="diffuse_downwelling_shortwave_flux_in_air">
@@ -2985,7 +2995,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>A velocity is a vector quantity. “Downward&quot; indicates a vector component which is positive when directed downward (negative upward). Downward air velocity is the vertical component of the 3D air velocity vector. The standard name upward_air_velocity may be used for a vector component with the opposite sign convention.</description>
+      <description>A velocity is a vector quantity.&quot;Downward&quot; indicates a vector component which is positive when directed downward (negative upward). Downward air velocity is the vertical component of the 3D air velocity vector. The standard name upward_air_velocity may be used for a vector component with the opposite sign convention.</description>
    </entry>
   
    <entry id="downward_dry_static_energy_flux_due_to_diffusion">
@@ -3629,9 +3639,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Various stability and convective potential indices are calculated by &quot;lifting&quot; a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere).  original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the pressure heights at the start and end of lifting, respectively.
-
-</description>
+      <description>Various stability and convective potential indices are calculated by &quot;lifting&quot; a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere). The quantities with standard names original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the ambient air pressure at the start and end of lifting, respectively. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="fire_area">
@@ -3757,7 +3765,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation.  A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy.</description>
+      <description>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="geopotential">
@@ -3827,21 +3835,21 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level.</description>
+      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Because global average sea level change quantifies the change in volume of the world ocean, it is not calculated necessarily by considering local changes in mean sea level.</description>
    </entry>
   
    <entry id="global_average_steric_sea_level_change">
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Global average steric sea level change is caused by changes in sea water density due to changes in temperature (thermosteric) and salinity (halosteric). Zero sea level change is an arbitrary level.</description>
+      <description>Global average steric sea level change is caused by changes in sea water density due to changes in temperature (thermosteric) and salinity (halosteric). This in turn results in a change in volume of the world ocean. Zero sea level change is an arbitrary level. Because global average sea level change quantifies the change in volume of the world ocean, it is not calculated necessarily by considering local changes in mean sea level.</description>
    </entry>
   
    <entry id="global_average_thermosteric_sea_level_change">
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Global average thermosteric sea level change is the part caused by change in density due to change in temperature i.e. thermal expansion. Zero sea level change is an arbitrary level.</description>
+      <description>Global average thermosteric sea level change is the part caused by change in density due to change in temperature i.e. thermal expansion. This in turn results in a change in volume of the world ocean. Zero sea level change is an arbitrary level. Because global average sea level change quantifies the change in volume of the world ocean, it is not calculated necessarily by considering local changes in mean sea level.</description>
    </entry>
   
    <entry id="grid_latitude">
@@ -4005,11 +4013,32 @@ totals are summed to obtain the index.</description>
       <description>Height is the vertical distance above the surface.</description>
    </entry>
   
+   <entry id="height_above_geopotential_datum">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. The &quot;geopotential datum&quot; is any estimated surface of constant geopotential used as a datum i.e. a reference level; for the geoid as a datum, specific standard names are available. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
+   </entry>
+  
+   <entry id="height_above_geopotential_datum_at_top_of_atmosphere_model">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. The &quot;geopotential datum&quot; is any estimated surface of constant geopotential used as a datum i.e. a reference level; for the geoid as a datum, specific standard names are available. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention. &quot;Top of atmosphere model&quot; means the upper boundary of the top layer of an atmosphere model.</description>
+   </entry>
+  
+   <entry id="height_above_mean_sea_level">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. &quot;Mean sea level&quot; means the time mean of sea surface elevation at a given location over an arbitrary period sufficient to eliminate the tidal signals.</description>
+   </entry>
+  
    <entry id="height_above_reference_ellipsoid">
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Height is the vertical distance above a surface. A reference ellipsoid is a mathematical figure that approximates the geoid. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy.</description>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. A reference ellipsoid is a mathematical figure that approximates the geoid. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="height_above_sea_floor">
@@ -4051,14 +4080,14 @@ totals are summed to obtain the index.</description>
       <canonical_units>1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Scattering of radiation is its deflection from its incident path without loss of energy.  Backwards scattering refers to the sum of scattering into all backward angles i.e. scattering_angle exceeding pi/2 radians. A scattering_angle should not be specified with this quantity.  &quot;Backscattering ratio&quot; is the ratio of the  quantity with standard name volume_attenuated_backwards_scattering_function_in_air to the quantity with standard name volume_attenuated_backwards_scattering_function_in_air_assuming_no_aerosol_or_cloud. &quot;histogram_of_X[_over_Z]&quot; means histogram (i.e. number of counts for each  range of X) of variations (over Z) of X.   The data variable should have an  axis for X.</description>
+      <description>Scattering of radiation is its deflection from its incident path without loss of energy.  Backwards scattering refers to the sum of scattering into all backward angles i.e. scattering_angle exceeding pi/2 radians. A scattering_angle should not be specified with this quantity. &quot;Backscattering ratio&quot; is the ratio of the quantity with standard name volume_attenuated_backwards_scattering_function_in_air to the quantity with standard name volume_attenuated_backwards_scattering_function_in_air_assuming_no_aerosol_or_cloud. &quot;histogram_of_X[_over_Z]&quot; means histogram (i.e. number of counts for each range of X) of variations (over Z) of X. The data variable should have an axis for X. A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid">
       <canonical_units>1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Equivalent reflectivity factor&quot;  is the radar reflectivity factor that is calculated from the measured radar return power assuming the target is composed of liquid water droplets whose diameter is less than one tenth of the radar wavelength, i.e., treating the droplets as Rayleigh scatterers.  The actual radar reflectivity factor would depend on the size distribution and composition of the particles within the target volume and these are  often unknown. &quot;histogram_of_X[_over_Z]&quot; means histogram (i.e. number of counts for each  range of X) of variations (over Z) of X.   The data variable should have an  axis for X.  A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy.</description>
+      <description>&quot;Equivalent reflectivity factor&quot; is the radar reflectivity factor that is calculated from the measured radar return power assuming the target is composed of liquid water droplets whose diameter is less than one tenth of the radar wavelength, i.e., treating the droplets as Rayleigh scatterers. The actual radar reflectivity factor would depend on the size distribution and composition of the particles within the target volume and these are often unknown. &quot;histogram_of_X[_over_Z]&quot; means histogram (i.e. number of counts for each  range of X) of variations (over Z) of X. The data variable should have an axis for X. A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="horizontal_atmosphere_dry_energy_transport">
@@ -4324,7 +4353,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>Pa s-1</canonical_units>
       <grib>39 E135</grib>
       <amip>wap</amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. The Lagrangian tendency of a quantity is its rate of change following the motion of the fluid, also called the &quot;material derivative&quot; or &quot;convective derivative&quot;. The Lagrangian tendency of air pressure, often called &quot;omega&quot;, plays the role of the upward component of air velocity when air pressure is being used as the vertical coordinate. If the vertical air velocity is upwards, it is negative when expressed as a tendency of air pressure; downwards is positive.</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. The Lagrangian tendency of a quantity is its rate of change following the motion of the fluid, also called the &quot;material derivative&quot; or &quot;convective derivative&quot;. The Lagrangian tendency of air pressure, often called &quot;omega&quot;, plays the role of the upward component of air velocity when air pressure is being used as the vertical coordinate. If the vertical air velocity is upwards, it is negative when expressed as a tendency of air pressure; downwards is positive. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="lagrangian_tendency_of_atmosphere_sigma_coordinate">
@@ -4373,7 +4402,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>“Land ice” means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. &quot;Specific mass balance&quot; means the net rate at which ice is added per unit area. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. &quot;Basal specific mass balance&quot; means the net rate at which ice is added per unit area at the land ice base.</description>
+      <description>&quot;Land ice&quot; means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. In accordance with common usage in geophysical disciplines, &quot;flux&quot; implies per unit area, called &quot;flux density&quot; in physics. &quot;Specific mass balance&quot; means the net rate at which ice is added per unit area. A negative value means loss of ice. For an area-average, the cell_methods attribute should be used to specify whether the average is over the area of the whole grid cell or the area of land ice only. &quot;Basal specific mass balance&quot; means the net rate at which ice is added per unit area at the land ice base.</description>
    </entry>
   
    <entry id="land_ice_basal_upward_velocity">
@@ -5172,7 +5201,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>kg m-3</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="mass_concentration_of_ethane_in_air">
@@ -6187,7 +6216,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="mass_fraction_of_ethane_in_air">
@@ -6635,7 +6664,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Mass fraction is used in the construction &quot;mass_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. &quot;Pm10 aerosol&quot; means atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 10 micrometers. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>Mass fraction is used in the construction &quot;mass_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. &quot;Pm10 aerosol&quot; means atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 10 micrometers. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="mass_fraction_of_pm10_nitrate_dry_aerosol_particles_in_air">
@@ -6733,7 +6762,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Mass fraction is used in the construction &quot;mass_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. &quot;Pm2p5 aerosol&quot; means atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 2.5 micrometers. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>Mass fraction is used in the construction &quot;mass_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. &quot;Pm2p5 aerosol&quot; means atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 2.5 micrometers. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="mass_fraction_of_pm2p5_nitrate_dry_aerosol_particles_in_air">
@@ -8290,6 +8319,27 @@ totals are summed to obtain the index.</description>
       <description>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of carbon tetrachloride is CCl4.</description>
    </entry>
   
+   <entry id="mole_fraction_of_carbon_tetrafluoride_in_air">
+      <canonical_units>1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole fraction is used in the construction &quot;mole_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. The chemical formula for carbon tetrafluoride is CF4. The IUPAC name for carbon tetrafluoride is tetrafluoromethane.</description>
+   </entry>
+  
+   <entry id="mole_fraction_of_carbonyl_fluoride_in_air">
+      <canonical_units>1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole fraction is used in the construction &quot;mole_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. The chemical formula of carbonyl fluoride is COF2. The IUPAC name for carbonyl fluoride is carbonyl difluoride.</description>
+   </entry>
+  
+   <entry id="mole_fraction_of_carbonyl_sulfide_in_air">
+      <canonical_units>1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole fraction is used in the construction &quot;mole_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. The chemical formula for carbonyl sulfide is COS. The IUPAC name for carbonyl sulfide is carbon oxide sulfide.</description>
+   </entry>
+  
    <entry id="mole_fraction_of_cfc113a_in_air">
       <canonical_units>1</canonical_units>
       <grib></grib>
@@ -8792,6 +8842,13 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.</description>
+   </entry>
+  
+   <entry id="mole_fraction_of_sulfur_hexafluoride_in_air">
+      <canonical_units>1</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>Mole fraction is used in the construction &quot;mole_fraction_of_X_in_Y&quot;, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. The chemical formula of sulfur hexafluoride is SF6.</description>
    </entry>
   
    <entry id="mole_fraction_of_toluene_in_air">
@@ -9743,7 +9800,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Ocean rigid lid pressure&quot; means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid.</description>
+      <description>&quot;Ocean rigid lid pressure&quot; means the pressure at the surface of an ocean model assuming that it is bounded above by a rigid lid. &quot;Sea surface height&quot; is a time-varying quantity. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="ocean_salt_x_transport">
@@ -10002,7 +10059,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Various stability and convective potential indices are calculated by &quot;lifting&quot; a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere).  original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the pressure heights at the start and end of lifting, respectively.</description>
+      <description>Various stability and convective potential indices are calculated by &quot;lifting&quot; a parcel of air: moving it dry adiabatically from a starting height (often the surface) to the Lifting Condensation Level, and then wet adiabatically from there to an ending height (often the top of the data/model/atmosphere). The quantities with standard names original_air_pressure_of_lifted_parcel and final_air_pressure_of_lifted_parcel are the ambient air pressure at the start and end of lifting, respectively. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="partial_pressure_of_carbon_dioxide_in_sea_water">
@@ -10030,7 +10087,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>degree</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Phase is the initial angle of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period should be used to specify the period of the sinusoidal wave.</description>
+      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. Phase is the initial angle of a wave modelled by a sinusoidal function. A coordinate variable of harmonic_period should be used to specify the period of the sinusoidal wave. Because global average sea level change quantifies the change in volume of the world ocean, it is not calculated necessarily by considering local changes in mean sea level.</description>
    </entry>
   
    <entry id="photolysis_rate_of_nitrogen_dioxide">
@@ -10150,8 +10207,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>degree</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. Platform view angle is the angle between the line of sight from the platform and the direction straight vertically down. Zero view angle means looking directly beneath the platform. There is no standardized sign convention for platform_view_angle. A standard name also exists for sensor_view_angle. For some viewing geometries the sensor and the platform cannot be assumed to be close enough to neglect the difference in calculated view angle.
-</description>
+      <description>Standard names for platform describe the motion and orientation of the vehicle from which observations are made e.g. aeroplane, ship or satellite. Platform view angle is the angle between the line of sight from the platform and the direction straight vertically down. Zero view angle means looking directly beneath the platform. There is no standardized sign convention for platform_view_angle. A standard name also exists for sensor_view_angle. For some viewing geometries the sensor and the platform cannot be assumed to be close enough to neglect the difference in calculated view angle.</description>
    </entry>
   
    <entry id="platform_yaw_angle">
@@ -10525,6 +10581,13 @@ totals are summed to obtain the index.</description>
       <description>Realization is used to label a dimension that can be thought of asa statistical sample, e.g., labelling members of a model ensemble.</description>
    </entry>
   
+   <entry id="reference_air_pressure_for_atmosphere_vertical_coordinate">
+      <canonical_units>Pa</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>For models using a dimensionless vertical coordinate, for example, sigma, hybrid sigma-pressure or eta, the values of the vertical coordinate at the model levels are calculated relative to a reference level. &quot;Reference air pressure&quot; is the air pressure at the model reference level. It is a model-dependent constant.</description>
+   </entry>
+  
    <entry id="reference_sea_water_density_for_boussinesq_approximation">
       <canonical_units>kg m-3</canonical_units>
       <grib></grib>
@@ -10655,7 +10718,14 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip>zobt</amip>
-      <description>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation.</description>
+      <description>&quot;Depth_below_X&quot; means the vertical distance below the named surface X. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
+   </entry>
+  
+   <entry id="sea_floor_depth_below_geopotential_datum">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Depth_below_X&quot; means the vertical distance below the named surface X. The &quot;geopotential datum&quot; is any estimated surface of constant geopotential used as a datum i.e. a reference level; for the geoid as a datum, specific standard names are available. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="sea_floor_depth_below_mean_sea_level">
@@ -10663,6 +10733,13 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>&quot;Depth_below_X&quot; means the vertical distance below the named surface X. &quot;Mean sea level&quot; means the time mean of sea surface elevation at a given location over an arbitrary period sufficient to eliminate the tidal signals.</description>
+   </entry>
+  
+   <entry id="sea_floor_depth_below_reference_ellipsoid">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Depth_below_X&quot; means the vertical distance below the named surface X. A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="sea_floor_depth_below_sea_surface">
@@ -10844,14 +10921,21 @@ totals are summed to obtain the index.</description>
       <canonical_units>K</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The sea surface foundation temperature is the water temperature that is not influenced by a thermally stratified layer of diurnal temperature variability (either by daytime warming or nocturnal cooling). The foundation temperature is named to indicate that it is the temperature from which the growth of the diurnal thermocline develops each day, noting that on some occasions with a deep mixed layer there is no clear foundation temperature in the surface layer. In general, sea surface foundation temperature will be similar to a night time minimum or pre-dawn value at depths of between approximately 1 and 5 meters. In the absence of any diurnal signal, the foundation temperature is considered equivalent to the quantity with standard name sea_surface_subskin_temperature. The sea surface foundation temperature defines a level in the upper water column that varies in depth, space, and time depending on the local balance between thermal stratification and turbulent energy and is expected to change slowly over the course of a day. If possible, a data variable with the standard name sea_surface_foundation_temperature should be used with a scalar vertical coordinate variable to specify the depth of the foundation level. Sea surface foundation temperature is measured at the base of the diurnal thermocline or as close to the water surface as possible in the absence of thermal stratification. Only in situ contact thermometry is able to measure the sea surface foundation temperature. Analysis procedures must be used to estimate sea surface foundation temperature value from radiometric satellite measurements of the quantities with standard names sea_surface_skin_temperature and sea_surface_subskin_temperature.  Sea surface foundation temperature provides a connection with the historical concept of a &quot;bulk&quot; sea surface temperature considered representative of the oceanic mixed layer temperature that is typically represented by any sea temperature measurement within the upper ocean over a depth range of 1 to approximately 20 meters. The general term, &quot;bulk&quot; sea surface temperature, has the standard name sea_surface_temperature with no associated vertical coordinate axis. Sea surface foundation temperature provides a more precise, well-defined quantity than &quot;bulk&quot; sea surface temperature and, consequently, is more representative of the mixed layer temperature.  The temperature of sea water at a particular depth (other than the foundation level) should be reported using the standard name sea_water_temperature and, wherever possible, supplying a vertical coordinate axis or scalar coordinate variable.</description>
+      <description>The sea surface foundation temperature is the water temperature that is not influenced by a thermally stratified layer of diurnal temperature variability (either by daytime warming or nocturnal cooling). The foundation temperature is named to indicate that it is the temperature from which the growth of the diurnal thermocline develops each day, noting that on some occasions with a deep mixed layer there is no clear foundation temperature in the surface layer. In general, sea surface foundation temperature will be similar to a night time minimum or pre-dawn value at depths of between approximately 1 and 5 meters. In the absence of any diurnal signal, the foundation temperature is considered equivalent to the quantity with standard name sea_surface_subskin_temperature. The sea surface foundation temperature defines a level in the upper water column that varies in depth, space, and time depending on the local balance between thermal stratification and turbulent energy and is expected to change slowly over the course of a day. If possible, a data variable with the standard name sea_surface_foundation_temperature should be used with a scalar vertical coordinate variable to specify the depth of the foundation level. Sea surface foundation temperature is measured at the base of the diurnal thermocline or as close to the water surface as possible in the absence of thermal stratification. Only in situ contact thermometry is able to measure the sea surface foundation temperature. Analysis procedures must be used to estimate sea surface foundation temperature value from radiometric satellite measurements of the quantities with standard names sea_surface_skin_temperature and sea_surface_subskin_temperature. Sea surface foundation temperature provides a connection with the historical concept of a &quot;bulk&quot; sea surface temperature considered representative of the oceanic mixed layer temperature that is typically represented by any sea temperature measurement within the upper ocean over a depth range of 1 to approximately 20 meters. The general term, &quot;bulk&quot; sea surface temperature, has the standard name sea_surface_temperature with no associated vertical coordinate axis. Sea surface foundation temperature provides a more precise, well defined quantity than &quot;bulk&quot; sea surface temperature and, consequently, is more representative of the mixed layer temperature. The temperature of sea water at a particular depth (other than the foundation level) should be reported using the standard name sea_water_temperature and, wherever possible, supplying a vertical coordinate axis or scalar coordinate variable.</description>
    </entry>
   
    <entry id="sea_surface_height_above_geoid">
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Height_above_X&quot; means the vertical distance above the named surface X. &quot;Sea surface height&quot; is a time-varying quantity. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation.  By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_mean_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</description>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. &quot;Sea surface height&quot; is a time-varying quantity. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_mean_sea_level. The standard name for the height of the sea surface above the reference ellipsoid is sea_surface_height_above_reference_ellipsoid.</description>
+   </entry>
+  
+   <entry id="sea_surface_height_above_geopotential_datum">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. &quot;Sea surface height&quot; is a time-varying quantity. The &quot;geopotential datum&quot; is any estimated surface of constant geopotential used as a datum i.e. a reference level; for the geoid as a datum, specific standard names are available. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="sea_surface_height_above_mean_sea_level">
@@ -10865,7 +10949,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. &quot;Sea surface height&quot; is a time-varying quantity. A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The standard name for the height of the sea surface above the geoid is sea_surface_height_above_geoid. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_mean_sea_level.</description>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. &quot;Sea surface height&quot; is a time-varying quantity. A reference ellipsoid is a regular mathematical figure that approximates the irregular shape of the geoid. A number of reference ellipsoids are defined for use in the field of geodesy. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention. The standard name for the height of the sea surface above the geoid is sea_surface_height_above_geoid. The standard name for the height of the sea surface above mean sea level is sea_surface_height_above_mean_sea_level.</description>
    </entry>
   
    <entry id="sea_surface_height_amplitude_due_to_earth_tide">
@@ -10977,14 +11061,14 @@ totals are summed to obtain the index.</description>
       <canonical_units>K</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The sea surface skin temperature is the temperature measured by an infrared radiometer typically operating at wavelengths in the range 3.7 - 12 micrometers. It represents the temperature within the conductive diffusion-dominated sub-layer at a depth of approximately 10 - 20 micrometers below the air-sea interface. Measurements of this quantity are subject to a large potential diurnal cycle including cool skin layer effects (especially at night under clear skies and low wind speed conditions) and warm layer effects in the daytime.</description>
+      <description>The sea surface skin temperature is the temperature measured by an infrared radiometer typically operating at wavelengths in the range 3.7 - 12 micrometers. It represents the temperature within the conductive diffusion-dominated sub-layer at a depth of approximately 10 - 20 micrometers below the air-sea interface. Measurements of this quantity are subject to a large potential diurnal cycle including cool skin layer effects (especially at night under clear skies and low wind speed conditions) and warm layer effects in the daytime.</description>
    </entry>
   
    <entry id="sea_surface_subskin_temperature">
       <canonical_units>K</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The sea surface subskin temperature is the temperature at the base of the conductive laminar sub-layer of the ocean surface, that is, at a depth of approximately 1 - 1.5 millimeters below the air-sea interface. For practical purposes, this quantity can be well approximated to the measurement of surface temperature by a microwave radiometer operating in the 6 - 11 gigahertz frequency range, but the relationship is neither direct nor invariant to changing physical conditions or to the specific geometry of the microwave measurements. Measurements of this quantity are subject to a large potential diurnal cycle due to thermal stratification of the upper ocean layer in low wind speed high solar irradiance conditions.</description>
+      <description>The sea surface subskin temperature is the temperature at the base of the conductive laminar sub-layer of the ocean surface, that is, at a depth of approximately 1 - 1.5 millimeters below the air-sea interface. For practical purposes, this quantity can be well approximated to the measurement of surface temperature by a microwave radiometer operating in the 6 - 11 gigahertz frequency range, but the relationship is neither direct nor invariant to changing physical conditions or to the specific geometry of the microwave measurements. Measurements of this quantity are subject to a large potential diurnal cycle due to thermal stratification of the upper ocean layer in low wind speed high solar irradiance conditions.</description>
    </entry>
   
    <entry id="sea_surface_swell_wave_from_direction">
@@ -11355,7 +11439,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Thickness&quot; means the vertical extent of a layer. The quantity with standard name sea_water_mass_per_unit_area_expressed_as_thickness is the thickness of the water column from sea floor to surface, minus any contribution to column thickness from steric changes. The sea water density used to convert mass to thickness is assumed to be the density of water of standard temperature T=0°C and practical salinity S=35.0. Otherwise it should be provided as an auxiliary scalar using the standard name sea_water_density. The sum of the quantities with standard names sea_water_mass_per_unit_area_expressed_as_thickness and steric_change_in_sea_surface_height is the total thickness of the sea water column. Sea_water_mass_per_unit_area is the mass per unit area of the sea water contained within each grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of &quot;region&quot;.</description>
+      <description>&quot;Thickness&quot; means the vertical extent of a layer. The quantity with standard name sea_water_mass_per_unit_area_expressed_as_thickness is the thickness of the water column from sea floor to surface, minus any contribution to column thickness from steric changes. The sea water density used to convert mass to thickness is assumed to be the density of water of standard temperature zero degrees Celsius and practical salinity S=35.0 unless an auxiliary scalar coordinate variable with standard name sea_water_density is used to specify an alternative value. The sum of the quantities with standard names sea_water_mass_per_unit_area_expressed_as_thickness and steric_change_in_sea_surface_height is the total thickness of the sea water column. Sea_water_mass_per_unit_area is the mass per unit area of the sea water contained within each grid cell. The extent of an individual grid cell is defined by the horizontal coordinates and any associated coordinate bounds or by a string valued auxiliary coordinate variable with a standard name of &quot;region&quot;.</description>
    </entry>
   
    <entry id="sea_water_neutral_density">
@@ -12036,7 +12120,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>Pa2 s-2</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;square_of_X&quot; means X*X. &quot;tendency_of_X&quot; means derivative of X with respect to time. The Lagrangian tendency of a quantity is its rate of change following the motion of the fluid, also called the &quot;material derivative&quot; or &quot;convective derivative&quot;. The Lagrangian tendency of air pressure, often called &quot;omega&quot;, plays the role of the upward component of air velocity when air pressure is being used as the vertical coordinate. If the vertical air velocity is upwards, it is negative when expressed as a tendency of air pressure; downwards is positive.</description>
+      <description>The phrase &quot;square_of_X&quot; means X*X. &quot;tendency_of_X&quot; means derivative of X with respect to time. The Lagrangian tendency of a quantity is its rate of change following the motion of the fluid, also called the &quot;material derivative&quot; or &quot;convective derivative&quot;. The Lagrangian tendency of air pressure, often called &quot;omega&quot;, plays the role of the upward component of air velocity when air pressure is being used as the vertical coordinate. If the vertical air velocity is upwards, it is negative when expressed as a tendency of air pressure; downwards is positive. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="square_of_northward_wind">
@@ -12057,7 +12141,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m2</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean.) In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation.  &quot;Sea surface height&quot; is a time-varying quantity.  &quot;square_of_X&quot; means X*X.</description>
+      <description>The phrase &quot;square_of_X&quot; means X*X. &quot;Height_above_X&quot; means the vertical distance above the named surface X. &quot;Sea surface height&quot; is a time-varying quantity. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention. By definition of the geoid, the global average of the time-mean sea surface height (i.e. mean sea level) above the geoid must be zero.</description>
    </entry>
   
    <entry id="square_of_sea_surface_temperature">
@@ -12099,7 +12183,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Sea surface height&quot; is a time-varying quantity. The steric change in sea surface height is the change in height that a water column of standard temperature T=0°C and practical salinity S=35.0 would undergo when its temperature and salinity are changed to the observed values. The sum of the quantities with standard names thermosteric_change_in_sea_surface_height and halosteric_change_in_sea_surface_height is the total steric change in the water column height, which has the standard name of steric_change_in_sea_surface_height. The sum of the quantities with standard names sea_water_mass_per_unit_area_expressed_as_thickness and steric_change_in_sea_surface_height is the total thickness of the sea water column.</description>
+      <description>&quot;Sea surface height&quot; is a time-varying quantity. The steric change in sea surface height is the change in height that a water column of standard temperature zero degrees Celsius and practical salinity S=35.0 would undergo when its temperature and salinity are changed to the observed values. The sum of the quantities with standard names thermosteric_change_in_sea_surface_height and halosteric_change_in_sea_surface_height is the total steric change in the water column height, which has the standard name of steric_change_in_sea_surface_height. The sum of the quantities with standard names sea_water_mass_per_unit_area_expressed_as_thickness and steric_change_in_sea_surface_height is the total thickness of the sea water column.</description>
    </entry>
   
    <entry id="stratiform_cloud_area_fraction">
@@ -12225,7 +12309,7 @@ totals are summed to obtain the index.</description>
       <canonical_units>Pa</canonical_units>
       <grib>E134</grib>
       <amip>ps</amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere.</description>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="surface_albedo">
@@ -12772,6 +12856,13 @@ totals are summed to obtain the index.</description>
       <grib></grib>
       <amip></amip>
       <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. A velocity is a vector quantity. &quot;y&quot; indicates a vector component along the grid y-axis, positive with increasing y. &quot;Geostrophic&quot; indicates that geostrophic balance is assumed, i.e. that the pressure gradient force and the Coriolis force are balanced and the large scale fluid flow is parallel to the isobars. &quot;Mean sea level&quot; means the time mean of sea surface elevation at a given location over an arbitrary period sufficient to eliminate the tidal signals. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. (The volume enclosed between the geoid and the sea floor equals the mean volume of water in the ocean). In an ocean GCM the geoid is the surface of zero depth, or the rigid lid if the model uses that approximation. The quantity with standard name surface_geostrophic_sea_water_y_velocity_assuming_mean_sea_level_for_geoid is the variable part of surface_geostrophic_sea_water_y_velocity. The assumption that sea level is equal to the geoid means that the stationary component of ocean circulation is equal to zero.</description>
+   </entry>
+  
+   <entry id="surface_height_above_geopotential_datum">
+      <canonical_units>m</canonical_units>
+      <grib></grib>
+      <amip></amip>
+      <description>&quot;Height_above_X&quot; means the vertical distance above the named surface X. The surface called &quot;surface&quot; means the lower boundary of the atmosphere. The &quot;geopotential datum&quot; is any estimated surface of constant geopotential used as a datum i.e. a reference level; for the geoid as a datum, specific standard names are available. To specify which geoid or geopotential datum is being used as a reference level, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.</description>
    </entry>
   
    <entry id="surface_litter_carbon_content">
@@ -13383,7 +13474,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>Pa s-1</canonical_units>
       <grib>3</grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="tendency_of_air_temperature">
@@ -14230,98 +14321,98 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Dry deposition&quot; is the sum of turbulent deposition and gravitational settling. &quot;tendency_of_X&quot; means derivative of X  with respect to time. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Dry deposition&quot; is the sum of turbulent deposition and gravitational settling. &quot;tendency_of_X&quot; means derivative of X  with respect to time. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth).  &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth).  &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_agricultural_waste_burning">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol partilces&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Agricultural waste burning&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 4F as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol partilces&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Agricultural waste burning&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 4F as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_energy_production_and_distribution">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;energy production and distribution&quot; sector comprises fuel combustion activities related to energy industries and fugitive emissions from fuels. It may also include any not-classified or &quot;other&quot; combustion, which is commonly included in energy-related inventory data. &quot;Energy production and distribution&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A1 and 1B as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;energy production and distribution&quot; sector comprises fuel combustion activities related to energy industries and fugitive emissions from fuels. It may also include any not-classified or &quot;other&quot; combustion, which is commonly included in energy-related inventory data. &quot;Energy production and distribution&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A1 and 1B as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_forest_fires">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;forest fires&quot; sector comprises the burning (natural and human-induced) of living or dead vegetation in forests. &quot;Forest fires&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 5 as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;forest fires&quot; sector comprises the burning (natural and human-induced) of living or dead vegetation in forests. &quot;Forest fires&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 5 as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_industrial_processes_and_combustion">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;industrial processes and combustion&quot; sector comprises fuel combustion activities related to manufacturing industries and construction, industrial processes related to mineral products, the chemical industry, metal production, the production of pulp, paper, food and drink, and non-energy industry use of lubricants and waxes. It may also include any not-classified or &quot;other&quot; combustion, which is commonly included in industry-related inventory data. &quot;Industrial processes and combustion&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A2, 2A, 2B, 2C, 2D and 2G as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;industrial processes and combustion&quot; sector comprises fuel combustion activities related to manufacturing industries and construction, industrial processes related to mineral products, the chemical industry, metal production, the production of pulp, paper, food and drink, and non-energy industry use of lubricants and waxes. It may also include any not-classified or &quot;other&quot; combustion, which is commonly included in industry-related inventory data. &quot;Industrial processes and combustion&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A2, 2A, 2B, 2C, 2D and 2G as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_land_transport">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;land transport&quot; sector includes fuel combustion activities related to road transportation, railways and other transportation.  &quot;Land transport&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A3b, 1A3c and 1A3e as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;land transport&quot; sector includes fuel combustion activities related to road transportation, railways and other transportation.  &quot;Land transport&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A3b, 1A3c and 1A3e as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_maritime_transport">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;maritime transport&quot; sector includes fuel combustion activities related to maritime transport. &quot;Maritime transport&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 1A3d as defined in the 2006 IPCC guidelines for national greenhouse gas Inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;maritime transport&quot; sector includes fuel combustion activities related to maritime transport. &quot;Maritime transport&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 1A3d as defined in the 2006 IPCC guidelines for national greenhouse gas Inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_residential_and_commercial_combustion">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The mass is the total mass of the particles. The &quot;residential and commercial combustion&quot; sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or &quot;other&quot; combustion, which is commonly included in the inventory data. &quot;Residential and commercial combustion&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The mass is the total mass of the particles. The &quot;residential and commercial combustion&quot; sector comprises fuel combustion activities related to the commercial/institutional sector, the residential sector and the agriculture/forestry/fishing sector. It may also include any not-classified or &quot;other&quot; combustion, which is commonly included in the inventory data. &quot;Residential and commercial combustion&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 1A4a, 1A4b and 1A4c as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_savanna_and_grassland_fires">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;savanna and grassland fires&quot; sector comprises the burning (natural and human-induced) of living or dead vegetation in non-forested areas. It excludes field burning of agricultural residues. &quot;Savanna and grassland fires&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 5 as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;savanna and grassland fires&quot; sector comprises the burning (natural and human-induced) of living or dead vegetation in non-forested areas. It excludes field burning of agricultural residues. &quot;Savanna and grassland fires&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 5 as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_waste_treatment_and_disposal">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;waste treatment and disposal&quot; sector comprises solid waste disposal on land, wastewater handling, waste incineration and other waste disposal. &quot;Waste treatment and disposal&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 6A, 6B, 6C and 6D as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;waste treatment and disposal&quot; sector comprises solid waste disposal on land, wastewater handling, waste incineration and other waste disposal. &quot;Waste treatment and disposal&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source categories 6A, 6B, 6C and 6D as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_gravitational_settling">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  &quot;tendency_of_X&quot; means derivative of X with respect to time. The sum of turbulent deposition and gravitational settling is dry deposition. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  &quot;tendency_of_X&quot; means derivative of X with respect to time. The sum of turbulent deposition and gravitational settling is dry deposition. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_turbulent_deposition">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The mass is the total mass of the molecules. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The sum of turbulent deposition and gravitational settling is dry deposition. &quot;tendency_of_X&quot; means derivative of X with respect to time. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used. The mass is the total mass of the molecules. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. The sum of turbulent deposition and gravitational settling is dry deposition. &quot;tendency_of_X&quot; means derivative of X with respect to time. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition">
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Wet deposition&quot; means deposition by precipitation. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. &quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Wet deposition&quot; means deposition by precipitation. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_land_transport">
@@ -16204,7 +16295,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>kg m-2 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
+      <description>&quot;Content&quot; indicates a quantity per unit area. The &quot;atmosphere content&quot; of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including &quot;content_of_atmosphere_layer&quot; are used. The mass is the total mass of the particles. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
    </entry>
   
    <entry id="tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_gravitational_settling">
@@ -17464,7 +17555,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>m year-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. &quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
+      <description>Global average sea level change is due to change in volume of the water in the ocean, caused by mass and/or density change, or to change in the volume of the ocean basins, caused by tectonics etc. It is sometimes called &quot;eustatic&quot;, which is a term that also has other definitions. It differs from the change in the global average sea surface height relative to the centre of the Earth by the global average vertical movement of the ocean floor. Zero sea level change is an arbitrary level. &quot;tendency_of_X&quot; means derivative of X with respect to time. Because global average sea level change quantifies the change in volume of the world ocean, it is not calculated necessarily by considering local changes in mean sea level.</description>
    </entry>
   
    <entry id="tendency_of_kinetic_energy_content_of_atmosphere_layer_due_to_advection">
@@ -17499,7 +17590,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>kg m-3 s-1</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;aviation&quot; sector includes fuel combustion activities related to civil aviation. &quot;Aviation&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 1A3a as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, “elemental carbon” is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
+      <description>&quot;tendency_of_X&quot; means derivative of X with respect to time. Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as &quot;nitrogen&quot; or a phrase such as &quot;nox_expressed_as_nitrogen&quot;. The mass is the total mass of the particles. The specification of a physical process by the phrase &quot;due_to_&quot; process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. &quot;Emission&quot; means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. the surface of the earth). &quot;Emission&quot; is a process entirely distinct from &quot;re-emission&quot; which is used in some standard names. &quot;Aerosol&quot; means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol takes up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the aerosol. &quot;Dry aerosol particles&quot; means aerosol particles without any water uptake. The &quot;aviation&quot; sector includes fuel combustion activities related to civil aviation. &quot;Aviation&quot; is the term used in standard names to describe a collection of emission sources. A variable which has this value for the standard_name attribute should be accompanied by a comment attribute which lists the source categories and provides a reference to the categorization scheme, for example, &quot;IPCC (Intergovernmental Panel on Climate Change) source category 1A3a as defined in the 2006 IPCC guidelines for national greenhouse gas inventories&quot;. Chemically, &quot;elemental carbon&quot; is the carbonaceous fraction of particulate matter that is thermally stable in an inert atmosphere to high temperatures near 4000K and can only be gasified by oxidation starting at temperatures above 340 C. It is assumed to be inert and non-volatile under atmospheric conditions and insoluble in any solvent (Ogren and Charlson, 1983).</description>
    </entry>
   
    <entry id="tendency_of_mass_concentration_of_nitrogen_dioxide_in_air_due_to_emission_from_aviation">
@@ -18689,7 +18780,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>Pa s-1</canonical_units>
       <grib>E158</grib>
       <amip></amip>
-      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;tendency_of_X&quot; means derivative of X with respect to time.</description>
+      <description>The surface called &quot;surface&quot; means the lower boundary of the atmosphere. &quot;tendency_of_X&quot; means derivative of X with respect to time. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="tendency_of_surface_snow_amount">
@@ -18801,7 +18892,7 @@ final_air_pressure_of_lifted_parcel should be specified to indicate the specific
       <canonical_units>m</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description>&quot;Sea surface height&quot; is a time-varying quantity. The thermosteric change in sea surface height is the change in height that a water column of standard temperature T=0°C would undergo when its temperature is changed to the observed value. The sum of the quantities with standard names thermosteric_change_in_sea_surface_height and halosteric_change_in_sea_surface_height is the total steric change in the water column height, which has the standard name of steric_change_in_sea_surface_height.</description>
+      <description>&quot;Sea surface height&quot; is a time-varying quantity. The thermosteric change in sea surface height is the change in height that a water column having standard temperature zero degrees Celsius would undergo when its temperature is changed to the observed value. The sum of the quantities with standard names thermosteric_change_in_sea_surface_height and halosteric_change_in_sea_surface_height is the total steric change in the water column height, which has the standard name of steric_change_in_sea_surface_height.</description>
    </entry>
   
    <entry id="thickness_of_convective_rainfall_amount">
@@ -19188,7 +19279,7 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
       <canonical_units>Pa</canonical_units>
       <grib></grib>
       <amip></amip>
-      <description></description>
+      <description>Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.</description>
    </entry>
   
    <entry id="tropopause_air_temperature">
@@ -20166,14 +20257,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     <entry_id>isotropic_shortwave_radiance_in_air</entry_id>
   </alias>
   
-  <alias id="omega">
-    <entry_id>lagrangian_tendency_of_air_pressure</entry_id>
-  </alias>
-  
-  <alias id="vertical_air_velocity_expressed_as_tendency_of_pressure">
-    <entry_id>lagrangian_tendency_of_air_pressure</entry_id>
-  </alias>
-  
   <alias id="upward_air_velocity_expressed_as_tendency_of_sigma">
     <entry_id>lagrangian_tendency_of_atmosphere_sigma_coordinate</entry_id>
   </alias>
@@ -20192,10 +20275,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
   
   <alias id="electromagnetic_wavelength">
     <entry_id>radiation_wavelength</entry_id>
-  </alias>
-  
-  <alias id="sea_floor_depth">
-    <entry_id>sea_floor_depth_below_geoid</entry_id>
   </alias>
   
   <alias id="specific_potential_energy">
@@ -21070,30 +21149,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     <entry_id>net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_picophytoplankton</entry_id>
   </alias>
   
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_dry_deposition">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition</entry_id>
-  </alias>
-  
-  <alias id="atmosphere_mass_content_of_black_carbon_dry_aerosol">
-    <entry_id>atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles</entry_id>
-  </alias>
-  
-  <alias id="mass_fraction_of_black_carbon_dry_aerosol_in_air">
-    <entry_id>mass_fraction_of_elemental_carbon_dry_aerosol_particles_in_air</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_gravitational_settling">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_gravitational_settling</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_turbulent_deposition">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_turbulent_deposition</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_wet_deposition">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition</entry_id>
-  </alias>
-  
   <alias id="atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol">
     <entry_id>atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles</entry_id>
   </alias>
@@ -21244,10 +21299,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
   
   <alias id="mass_concentration_of_particulate_organic_matter_dry_aerosol_in_air">
     <entry_id>mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air</entry_id>
-  </alias>
-  
-  <alias id="mass_concentration_of_black_carbon_dry_aerosol_in_air">
-    <entry_id>mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air</entry_id>
   </alias>
   
   <alias id="atmosphere_optical_thickness_due_to_water_in_ambient_aerosol">
@@ -21462,56 +21513,12 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     <entry_id>tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_particles_due_to_emission</entry_id>
   </alias>
   
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_savanna_and_grassland_fires">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_savanna_and_grassland_fires</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_waste_treatment_and_disposal">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_waste_treatment_and_disposal</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_agricultural_waste_burning">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_agricultural_waste_burning</entry_id>
-  </alias>
-  
   <alias id="tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_land_transport">
     <entry_id>tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_land_transport</entry_id>
   </alias>
   
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_energy_production_and_distribution">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_energy_production_and_distribution</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_forest_fires">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_forest_fires</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_industrial_processes_and_combustion">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_industrial_processes_and_combustion</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_land_transport">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_land_transport</entry_id>
-  </alias>
-  
   <alias id="tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_agricultural_waste_burning">
     <entry_id>tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_agricultural_waste_burning</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_mass_concentration_of_black_carbon_dry_aerosol_in_air_due_to_emission_from_aviation">
-    <entry_id>tendency_of_mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air_due_to_emission_from_aviation</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_maritime_transport">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_maritime_transport</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_residential_and_commercial_combustion">
-    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_residential_and_commercial_combustion</entry_id>
   </alias>
   
   <alias id="tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_energy_production_and_distribution">
@@ -21602,14 +21609,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     <entry_id>tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes</entry_id>
   </alias>
   
-  <alias id="atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol_particles">
-    <entry_id>atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles</entry_id>
-  </alias>
-  
-  <alias id="atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol">
-    <entry_id>atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles</entry_id>
-  </alias>
-  
   <alias id="atmosphere_mass_content_of_seasalt_dry_aerosol_particles">
     <entry_id>atmosphere_mass_content_of_sea_salt_dry_aerosol_particles</entry_id>
   </alias>
@@ -21664,14 +21663,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
   
   <alias id="tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_dry_deposition">
     <entry_id>tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_particles_due_to_emission">
-    <entry_id>tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission</entry_id>
-  </alias>
-  
-  <alias id="tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_emission">
-    <entry_id>tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission</entry_id>
   </alias>
   
   <alias id="tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_particles_due_to_gravitational_settling">
@@ -21794,18 +21785,6 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
     <entry_id>tendency_of_sea_surface_height_above_mean_sea_level</entry_id>
   </alias>
   
-  <alias id="air_pressure_at_sea_level">
-    <entry_id>air_pressure_at_mean_sea_level</entry_id>
-  </alias>
-  
-  <alias id="sea_surface_elevation_anomaly">
-    <entry_id>sea_surface_height_above_geoid</entry_id>
-  </alias>
-  
-  <alias id="sea_surface_elevation">
-    <entry_id>sea_surface_height_above_geoid</entry_id>
-  </alias>
-  
   <alias id="surface_northward_geostrophic_sea_water_velocity">
     <entry_id>surface_geostrophic_northward_sea_water_velocity</entry_id>
   </alias>
@@ -21824,6 +21803,118 @@ monitored sensor. This TOA brightness temperature difference is a measure of the
   
   <alias id="tendency_of_atmosphere_mass_content_of_nitrogen_due_to_deposition">
     <entry_id>tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</entry_id>
+  </alias>
+  
+  <alias id="atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol_particles">
+    <entry_id>atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles</entry_id>
+  </alias>
+  
+  <alias id="atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol">
+    <entry_id>atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_particles_due_to_emission">
+    <entry_id>tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_emission">
+    <entry_id>tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission</entry_id>
+  </alias>
+  
+  <alias id="sea_surface_elevation_anomaly">
+    <entry_id>sea_surface_height_above_geoid</entry_id>
+  </alias>
+  
+  <alias id="sea_surface_elevation">
+    <entry_id>sea_surface_height_above_geoid</entry_id>
+  </alias>
+  
+  <alias id="sea_floor_depth">
+    <entry_id>sea_floor_depth_below_geoid</entry_id>
+  </alias>
+  
+  <alias id="air_pressure_at_sea_level">
+    <entry_id>air_pressure_at_mean_sea_level</entry_id>
+  </alias>
+  
+  <alias id="omega">
+    <entry_id>lagrangian_tendency_of_air_pressure</entry_id>
+  </alias>
+  
+  <alias id="vertical_air_velocity_expressed_as_tendency_of_pressure">
+    <entry_id>lagrangian_tendency_of_air_pressure</entry_id>
+  </alias>
+  
+  <alias id="mass_concentration_of_black_carbon_dry_aerosol_in_air">
+    <entry_id>mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air</entry_id>
+  </alias>
+  
+  <alias id="atmosphere_mass_content_of_black_carbon_dry_aerosol">
+    <entry_id>atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles</entry_id>
+  </alias>
+  
+  <alias id="mass_fraction_of_black_carbon_dry_aerosol_in_air">
+    <entry_id>mass_fraction_of_elemental_carbon_dry_aerosol_particles_in_air</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_dry_deposition">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_agricultural_waste_burning">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_agricultural_waste_burning</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_energy_production_and_distribution">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_energy_production_and_distribution</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_forest_fires">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_forest_fires</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_industrial_processes_and_combustion">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_industrial_processes_and_combustion</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_land_transport">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_land_transport</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_maritime_transport">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_maritime_transport</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_residential_and_commercial_combustion">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_residential_and_commercial_combustion</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_savanna_and_grassland_fires">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_savanna_and_grassland_fires</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_waste_treatment_and_disposal">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_waste_treatment_and_disposal</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_gravitational_settling">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_gravitational_settling</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_turbulent_deposition">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_turbulent_deposition</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_wet_deposition">
+    <entry_id>tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition</entry_id>
+  </alias>
+  
+  <alias id="tendency_of_mass_concentration_of_black_carbon_dry_aerosol_in_air_due_to_emission_from_aviation">
+    <entry_id>tendency_of_mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air_due_to_emission_from_aviation</entry_id>
   </alias>
  
 

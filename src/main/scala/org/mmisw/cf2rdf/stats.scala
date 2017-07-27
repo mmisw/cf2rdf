@@ -18,7 +18,7 @@ object stats {
        |
          |Mapping ontology:
        |  mappingTermsAdded     = $mappingTermsAdded
-       |  mappingOutputFilename = ${mappingOutputFilename.get}
+       |  mappingOutputFilename = ${mappingOutputFilename.getOrElse("(not generated)")}
        """.stripMargin
 
 }
