@@ -1,6 +1,6 @@
 package org.mmisw.cf2rdf
 
-import java.io.{ByteArrayInputStream, FileInputStream, StringReader}
+import java.io.{ByteArrayInputStream, FileInputStream}
 import java.nio.charset.StandardCharsets
 
 import org.apache.jena.ontology.OntModelSpec
@@ -8,7 +8,7 @@ import org.apache.jena.rdf.model.{ModelFactory, Resource}
 import org.apache.jena.vocabulary.SKOS
 import org.mmisw.orr.ont.vocabulary.{Omv, OmvMmi}
 
-import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 
 
 class OrrNvsMapper(nvsFilename: String,
@@ -127,13 +127,13 @@ class OrrNvsMapper(nvsFilename: String,
     var map = Map[String, String]()
 
     var numMembers = 0
-    members foreach { member =>
+    members.asScala foreach { member =>
       numMembers += 1
       //println(s"$member")
 
       val resource = member.asInstanceOf[Resource]
       val prefLabels = nvsModel.listObjectsOfProperty(resource, prefLabel)
-      prefLabels foreach { labelNode =>
+      prefLabels.asScala foreach { labelNode =>
         if (labelNode.isLiteral) {
           val literal = labelNode.asLiteral
           val lexicalForm = literal.getLexicalForm
