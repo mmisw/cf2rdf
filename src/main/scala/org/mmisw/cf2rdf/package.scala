@@ -15,7 +15,8 @@ package object cf2rdf {
 
   def createOutputFile(filename: String): File = {
     val file = new File(filename)
-    file.getParentFile.mkdirs()
+    val parent = file.getParentFile
+    if(parent != null) parent.mkdirs()
     file
   }
 }

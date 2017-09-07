@@ -1,4 +1,4 @@
-lazy val cf2rdfVersion = setVersion("0.3.0")
+lazy val cf2rdfVersion = setVersion("0.4.0")
 val scalaV             = "2.12.2"
 val cfgV               = "0.0.7"
 val scalajHttpV        = "2.3.0"
@@ -7,6 +7,8 @@ val scalametaParadiseV = "3.0.0-M8"
 val scalaXmlV          = "1.0.6"
 val jenaV              = "3.3.0"
 val slf4jSimpleV       = "1.7.25"
+val json4sV            = "3.5.3"
+val jodaTimeV          = "2.9.9"
 
 name := "cf2rdf"
 organization := "org.mmisw"
@@ -22,7 +24,11 @@ libraryDependencies ++= Seq(
   "com.typesafe"             %  "config"          % typesafeConfigV,
   "org.apache.jena"          %  "jena"            % jenaV,
   "org.apache.jena"          %  "jena-tdb"        % jenaV, //(*)
-  "org.slf4j"                %  "slf4j-simple"    % slf4jSimpleV
+  "org.slf4j"                %  "slf4j-simple"    % slf4jSimpleV,
+  "org.json4s"              %%  "json4s-native"   % json4sV,
+  "org.json4s"              %%  "json4s-ext"      % json4sV,
+  "joda-time"                %  "joda-time"       % jodaTimeV
+
 
   //(*) https://jena.apache.org/download/maven.html:
   //  "...use of <type>pom</type> ... does not work in all tools.

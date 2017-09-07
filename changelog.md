@@ -1,3 +1,9 @@
+2017-09-07 0.4.0
+
+- cf2rdf can now register the generated ontologies
+- much simpler mechanism to specify the parameters to the program by explicitly
+  using a configuration file visible to the user.
+ 
 2017-09-06 0.3.0
 
 - overall revision, improved implementation, and simpler full execution 

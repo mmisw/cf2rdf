@@ -7,7 +7,8 @@ case class Cf2RdfCfg(
                       cfVersion: String,
                       xmlUrl: String,
                       destXml: String,
-                      destStats: String
+                      destStats: String,
+                      orr: Option[OrrCfg]
                     ) {
   object rdf {
     val iri:      String = $
@@ -26,3 +27,13 @@ case class Cf2RdfCfg(
     val filename: String = $
   }
 }
+
+@Cfg
+case class OrrCfg(
+                   endpoint:     String = "https://mmisw.org/ont/api",
+                   userName:     String,
+                   password:     String,
+                   orgName:      String = "mmi",
+                   visibility:   String = "public",
+                   status:       String = "stable"
+                 )
