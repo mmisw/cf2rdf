@@ -1,6 +1,6 @@
 cf2rdf conversion
 input:  https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/46/src/cf-standard-name-table.xml
-output: src/main/resources/cf-standard-name-table.rdf
+output: cf2rdf_output/cf-standard-name-table.rdf
 
 vocabulary properties from input file:
  version_number: 46; last_modified: 2017-07-25T09:41:29Z
@@ -13,5 +13,5 @@ numWithNoDefinitions = 26
 
 Mapping ontology:
   mappingTermsAdded     = 2889
-  mappingOutputFilename = src/main/resources/cfonmap.n3
+  mappingOutputFilename = cf2rdf_output/cfonmap.n3
        
