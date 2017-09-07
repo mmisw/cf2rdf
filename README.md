@@ -1,48 +1,52 @@
 ## cf2rdf tool ##
 
-Conversion of [CF Standard Names](http://cfconventions.org/documents.html) vocabulary to RDF.
+Conversion of the [CF Standard Names](http://cfconventions.org/documents.html) 
+vocabulary to RDF,
+and generation of mapping with the corresponding NVS ontology. 
 
 
-### Running the conversion ###
+### Running ###
 
-First you need to download the latest version of the XML file. Using your browser:
+The [sbt tool](http://www.scala-sbt.org/download.html) is used to execute it.
 
-- visit the [cf-convention.github.io Github repository](https://github.com/cf-convention/cf-convention.github.io)
-- follow the links until you find the latest version of the XML file in the Github space. For example,
-  https://github.com/cf-convention/cf-convention.github.io/blob/master/Data/cf-standard-names/28/src/cf-standard-name-table.xml
-- click the "Raw" representation to download the file
-- copy that file under `src/main/resources/`.
+The `cf2rdf` program reads in execution parameters from `src/main/resources/application.conf`.
 
-Example using curl for the download:
-
-```shell
-$ FOUND_XML=https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/43/src/cf-standard-name-table.xml
-$ curl "$FOUND_XML" -o src/main/resources/cf-standard-name-table.xml
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 2517k  100 2517k    0     0  1821k      0  0:00:01  0:00:01 --:--:-- 1820k
-```
-
-For the ORR-NVS mapping ontology, also download the NVS RDF:
+With all default parameters, except for the CF version number, which 
+can be indicated via the `cf2rdf.cfVersion` system property, 
+the whole conversion and generation of mapping with the NVS ontology
+can be run with this single command:
 
 ```shell
-$ curl "http://vocab.nerc.ac.uk/collection/P07/current/" -o src/main/resources/nvs_P07.rdf
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100 4771k    0 4771k    0     0   237k      0 --:--:--  0:00:20 --:--:--  885k
-```
+$ sbt -Dcf2rdf.cfVersion=46 run
 
-Then run the `cf2rdf` program to generate the RDF version of the CF vocabulary
-and also the mapping ontology.
-This program is run with the [sbt tool](http://www.scala-sbt.org/download.html):
+Downloading https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/46/src/cf-standard-name-table.xml
 
+Downloading http://vocab.nerc.ac.uk/collection/P07/current/
 
-```shell
-$ sbt run
-cf2rdf conversion
-input:  src/main/resources/cf-standard-name-table.xml
-output: src/main/resources/cf-standard-name-table.rdf
-...
+Replaced %20 for space in the following rdf:resource IRIs from src/main/resources/nvs_P07.rdf
+	<owl:sameAs rdf:resource="http://mmisw.org/ont/cf/parameter/mole_fraction_of_chlorine dioxide_in_air"/>
+	<owl:sameAs rdf:resource="http://mmisw.org/ont/cf/parameter/mole_fraction_of_chlorine monoxide_in_air"/>
+	<owl:sameAs rdf:resource="http://mmisw.org/ont/cf/parameter/mole_fraction_of_dichlorine peroxide_in_air"/>
+	<owl:sameAs rdf:resource="http://mmisw.org/ont/cf/parameter/mole_fraction_of_hypochlorous acid_in_air"/>
+	<owl:sameAs rdf:resource="http://mmisw.org/ont/cf/parameter/rate_of_ hydroxyl_radical_destruction_due_to_reaction_with_nmvoc"/>
+
+Summary: (saved in src/main/resources/cf-standard-name-table.conv-stats.txt)
+	cf2rdf conversion
+	input:  https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/46/src/cf-standard-name-table.xml
+	output: src/main/resources/cf-standard-name-table.rdf
+
+	vocabulary properties from input file:
+	 version_number: 46; last_modified: 2017-07-25T09:41:29Z
+
+	conversion stats:
+	numConcepts = 2890
+	numEntries = 2889
+	numWithNoCanonicalUnits = 9
+	numWithNoDefinitions = 26
+
+	Mapping ontology:
+	  mappingTermsAdded     = 2889
+	  mappingOutputFilename = src/main/resources/cfonmap.n3
 ```
 
 The latest conversion report is [here](src/main/resources/cf-standard-name-table.conv-stats.txt).
@@ -52,4 +56,3 @@ The generated ontologies are:
 - [cfonmap.n3](src/main/resources/cfonmap.n3)
 
 
-This program reads in configuration parameters from `src/main/resources/application.conf`.

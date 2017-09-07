@@ -2,6 +2,7 @@ package org.mmisw.cf2rdf
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.vocabulary._
+import org.mmisw.cf2rdf.config.cfg
 
 import scala.xml.Node
 
@@ -9,15 +10,13 @@ import scala.xml.Node
  * CF standard names vocabulary to RDF converter.
  *
  * @param xmlIn       Input XML
- * @param namespace   Namespace for the generated ontology
- * @param nvsFilenameOpt  Filename with NVS ontology
  */
-class Converter(xmlIn: Node, namespace: String, nvsFilenameOpt: Option[String]) {
+class Converter(xmlIn: Node) {
 
   /** some general properties from the input */
   val props: Map[String,String] = {
     val keys = List("version_number", "last_modified") //, "institution", "contact")
-    (keys map (k => k -> (xmlIn \ k).text.trim)).toMap
+    (keys map (k ⇒ k -> (xmlIn \ k).text.trim)).toMap
   }
 
   /**
@@ -29,17 +28,13 @@ class Converter(xmlIn: Node, namespace: String, nvsFilenameOpt: Option[String]) 
     val versionNumberOpt = props.get("version_number")
     val lastModifiedOpt = props.get("last_modified")
 
-    val M = new ModelConstructor(namespace,
-      versionNumberOpt,
-      lastModifiedOpt)
+    val namespace = cfg.rdf.iri + "/"
 
-    val mapper = nvsFilenameOpt map { nvsFilename ⇒
-      new OrrNvsMapper(nvsFilename,
-        versionNumberOpt,
-        lastModifiedOpt)
-    }
+    val M = new ModelConstructor(namespace, lastModifiedOpt)
 
-    for (entry <- xmlIn \\ "entry") {
+    val mapper = new OrrNvsMapper(lastModifiedOpt)
+
+    for (entry ← xmlIn \\ "entry") {
       stats.numEntries += 1
 
       val id = entry.attribute("id").get
@@ -52,14 +47,12 @@ class Converter(xmlIn: Node, namespace: String, nvsFilenameOpt: Option[String]) 
 
       M.currentTopConcept.addProperty(SKOS.narrower, concept)
 
-      mapper.foreach(_.addOrrTerm(concept))
+      mapper.addOrrTerm(concept)
     }
 
-    mapper foreach { mapper =>
-      val (t, f) = mapper.done()
-      stats.mappingTermsAdded = t
-      stats.mappingOutputFilename = Some(f)
-    }
+    val (t, f) = mapper.done()
+    stats.mappingTermsAdded = t
+    stats.mappingOutputFilename = Some(f)
 
     M.model
   }

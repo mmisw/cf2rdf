@@ -1,12 +1,12 @@
 package org.mmisw.cf2rdf
 
+import org.mmisw.cf2rdf.config.cfg
 import org.apache.jena.ontology.{OntModel, OntModelSpec}
-import org.apache.jena.rdf.model.{ModelFactory, Property, Resource}
+import org.apache.jena.rdf.model.{ModelFactory, Resource}
 import org.apache.jena.vocabulary._
 import org.mmisw.orr.ont.vocabulary.{Omv, OmvMmi}
 
 class ModelConstructor(namespace: String,
-                       versionNumberOpt: Option[String],
                        lastModifiedOpt: Option[String]
                       ) {
 
@@ -30,10 +30,10 @@ class ModelConstructor(namespace: String,
   model.add(model.createStatement(canonical_units, RDFS.domain, standardNameClass))
   model.add(model.createStatement(canonical_units, RDFS.range, XSD.xstring))
 
-  private val ontology = model.createOntology("http://mmisw.org/ont/cf/parameter")
+  private val ontology = model.createOntology(cfg.rdf.iri)
 
-  ontology.addProperty(Omv.name, "Climate and Forecast (CF) Standard Names" +
-    (if (versionNumberOpt.isDefined) s" (v.${versionNumberOpt.get})" else ""))
+  ontology.addProperty(Omv.name,
+    s"Climate and Forecast (CF) Standard Names (v.${cfg.cfVersion})")
 
   ontology.addProperty(Omv.description,
     "Ontology representation of the Climate and Forecast (CF) standard names parameter vocabulary," +
@@ -50,7 +50,8 @@ class ModelConstructor(namespace: String,
   })
 
   ontology.addProperty(Omv.documentation, "http://cfconventions.org/standard-names.html")
-  ontology.addProperty(Omv.hasContributor, "http://cfconventions.org/Data/cf-standard-names/docs/standard-name-contributors.html")
+  ontology.addProperty(Omv.hasContributor,
+    "http://cfconventions.org/Data/cf-standard-names/docs/standard-name-contributors.html")
   ontology.addProperty(Omv.reference, "http://marinemetadata.org/orrcf")
 
   ontology.addProperty(Omv.acronym, "CF-standard-name")
@@ -60,14 +61,12 @@ class ModelConstructor(namespace: String,
     ontology.addProperty(Omv.creationDate, lm)
   }
 
-  versionNumberOpt foreach { vn ⇒
-    ontology.addProperty(OmvMmi.origVocVersionId, vn)
-    ontology.addProperty(OmvMmi.origVocUri, {
-      s"https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/$vn/src/cf-standard-name-table.xml"
-    })
-  }
+  ontology.addProperty(OmvMmi.origVocVersionId, cfg.cfVersion)
+  ontology.addProperty(OmvMmi.origVocUri, cfg.xmlUrl)
 
-  ontology.addProperty(OmvMmi.hasResourceType, "http://mmisw.org/ont/mmi/resourcetype/parameter")
+  ontology.addProperty(OmvMmi.hasResourceType,
+    "http://mmisw.org/ont/mmi/resourcetype/parameter")
+
   ontology.addProperty(OmvMmi.origMaintainerCode, "cf")
 
   def createConcept(uri: String): Resource = {

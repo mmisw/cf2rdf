@@ -1,3 +1,15 @@
+2017-09-06 0.3.0
+
+- overall revision, improved implementation, and simpler full execution 
+  - upgrade various dependencies; tool version captured in build.sbt
+  - more parameters captured in application configuration
+  - cf2rdf now takes care of downloading the XML and the NVS RDF files
+  - with all default parameters, except for the CF version number, which 
+    can be indicated via the `cf2rdf.cfVersion` system property, 
+    the whole conversion and generation of mapping with NVS ontology
+    can be run with this single command:
+    `$ sbt -Dcf2rdf.cfVersion=46 run`
+
 2017-06-06
 
 - capture the traditional metadata properties right in the translation so the resulting

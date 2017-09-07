@@ -1,62 +1,78 @@
 package org.mmisw.cf2rdf
-
+import config.cfg
 import java.io.PrintWriter
 
-import com.typesafe.config.ConfigFactory
+import org.apache.jena.rdf.model.Model
 import org.apache.jena.system.JenaSystem
+
+import scalaj.http.{Http, HttpResponse}
 
 /**
  * Main cf2rdf program.
  */
-object cf2rdf extends App {
+object cf2rdf {
   JenaSystem.init()
 
-  val config = ConfigFactory.load().getConfig("cf2rdf")
+  def main(args: Array[String]): Unit = {
+    download(cfg.xmlUrl, cfg.destXml)
+    download(cfg.nvs.rdfUrl, cfg.nvs.rdfFilename)
 
-  val xmlFilename   = config.getString("xml")
-  val namespace     = config.getString("namespace")
+    val xmlIn = scala.xml.XML.loadFile(cfg.destXml)
+    val converter = new Converter(xmlIn)
+    val model = converter.convert
 
-  val baseFilename   = xmlFilename.replaceAll("\\.xml$", "")
+    saveModel(model)
 
-  val rdfFilename   = baseFilename + ".rdf"
-  val statsFilename = baseFilename + ".conv-stats.txt"
-
-  val nvsFilenameOpt = if (config.hasPath("nvs")) Some(config.getString("nvs")) else None
-
-  val xmlIn = scala.xml.XML.loadFile(xmlFilename)
-  val converter = new Converter(xmlIn, namespace, nvsFilenameOpt)
-  val model = converter.convert
-
-  def getStats: String = {
-    val propsStr = (converter.props map (kv => s"${kv._1}: ${kv._2}")) mkString "; "
-    s"""cf2rdf conversion
-         |input:  $xmlFilename
-         |output: $rdfFilename
+    val statsStr = {
+      val propsStr = (converter.props map (kv ⇒ s"${kv._1}: ${kv._2}")) mkString "; "
+      s"""cf2rdf conversion
+         |input:  ${cfg.xmlUrl}
+         |output: ${cfg.rdf.filename}
          |
          |vocabulary properties from input file:
          | $propsStr
          |
          |conversion stats:
          |$stats
-      """.stripMargin
+         |""".stripMargin
+    }
+
+    writeStats(statsStr)
+    println(s"\nSummary: (saved in ${cfg.destStats})\n\t" + statsStr.replaceAll("\n", "\n\t"))
   }
 
-  def saveModel() {
-    val writer = model.getWriter("RDF/XML-ABBREV")
+  private def download(url: String, filename: String): Unit = {
+    println(s"Downloading $url")
+    val response: HttpResponse[String] = Http(url)
+      .method("GET")
+      .timeout(connTimeoutMs = 5*1000, readTimeoutMs = 60*1000)
+      .asString
+
+    val contents = if (response.code == 200) response.body
+    else throw new Exception(
+      s"""Error downloading $url
+         |Code=${response.code}: ${response.statusLine}
+         |${response.body}
+         |""".stripMargin)
+
+    val pw = new PrintWriter(filename)
+    pw.print(contents)
+    pw.close()
+    println()
+  }
+
+  private def saveModel(model: Model) {
+    val namespace = cfg.rdf.iri + "/"
+    val writer = model.getWriter(cfg.rdf.format)
     writer.setProperty("showXmlDeclaration", "true")
     writer.setProperty("relativeURIs", "same-document,relative")
     writer.setProperty("xmlbase", namespace)
-    writer.write(model, new java.io.FileOutputStream(rdfFilename), null)
+    writer.write(model, new java.io.FileOutputStream(cfg.rdf.filename), null)
   }
 
-  def writeStats(statsStr: String) {
-    val pw = new PrintWriter(statsFilename)
+  private def writeStats(statsStr: String) {
+    val pw = new PrintWriter(cfg.destStats)
     pw.printf(statsStr)
     pw.close()
   }
-
-  saveModel()
-  val statsStr = getStats
-  writeStats(statsStr)
-  println(statsStr)
 }

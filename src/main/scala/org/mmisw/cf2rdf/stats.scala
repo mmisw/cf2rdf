@@ -10,13 +10,13 @@ object stats {
   var mappingTermsAdded = 0
   var mappingOutputFilename: Option[String] = None
 
-  override def toString =
+  override def toString: String =
     s"""numConcepts = $numConcepts
        |numEntries = $numEntries
        |numWithNoCanonicalUnits = $numWithNoCanonicalUnits
        |numWithNoDefinitions = $numWithNoDefinitions
        |
-         |Mapping ontology:
+       |Mapping ontology:
        |  mappingTermsAdded     = $mappingTermsAdded
        |  mappingOutputFilename = ${mappingOutputFilename.getOrElse("(not generated)")}
        """.stripMargin
