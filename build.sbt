@@ -33,6 +33,9 @@ addCompilerPlugin(
   ("org.scalameta" % "paradise" % scalametaParadiseV).cross(CrossVersion.full)
 )
 
+mainClass in assembly := Some("org.mmisw.cf2rdf.cf2rdf")
+assemblyJarName in assembly := s"cf2rdf-$cf2rdfVersion.jar"
+
 def setVersion(version: String): String = {
   println(s"cf2rdf $version")
   IO.write(file("src/main/resources/reference.conf"), s"cf2rdf.version = $version")

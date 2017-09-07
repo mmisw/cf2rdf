@@ -76,7 +76,7 @@ class OrrNvsMapper(lastModifiedOpt: Option[String]) {
   }
 
   def done(): (Int, String) = {
-    val out = new java.io.FileOutputStream(cfg.mapping.filename)
+    val out = new java.io.FileOutputStream(createOutputFile(cfg.mapping.filename))
     model.getWriter(cfg.mapping.format).write(model, out, null)
     (termsAdded, cfg.mapping.filename)
   }
@@ -92,8 +92,7 @@ class OrrNvsMapper(lastModifiedOpt: Option[String]) {
     val member = nvsModel.createProperty("http://www.w3.org/2004/02/skos/core#member")
     val prefLabel = nvsModel.createProperty("http://www.w3.org/2004/02/skos/core#prefLabel")
 
-    //println(s"Loading $nvsFilename")
-    val originalInputStream = new FileInputStream(cfg.nvs.rdfFilename)
+    val originalInputStream = new FileInputStream(createOutputFile(cfg.nvs.rdfFilename))
 
     val replaceSpaces = true
 

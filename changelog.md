@@ -4,11 +4,12 @@
   - upgrade various dependencies; tool version captured in build.sbt
   - more parameters captured in application configuration
   - cf2rdf now takes care of downloading the XML and the NVS RDF files
+  - now assembling/releasing executable JAR
   - with all default parameters, except for the CF version number, which 
-    can be indicated via the `cf2rdf.cfVersion` system property, 
+    can be indicated via the `CF_VERSION` en var, 
     the whole conversion and generation of mapping with NVS ontology
     can be run with this single command:
-    `$ sbt -Dcf2rdf.cfVersion=46 run`
+    `$ CF_VERSION=46 java -jar cf2rdf-x.y.z.jar`
 
 2017-06-06
 

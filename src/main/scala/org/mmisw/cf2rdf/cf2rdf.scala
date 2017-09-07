@@ -37,7 +37,7 @@ object cf2rdf {
          |""".stripMargin
     }
 
-    writeStats(statsStr)
+    writeFile(statsStr, cfg.destStats)
     println(s"\nSummary: (saved in ${cfg.destStats})\n\t" + statsStr.replaceAll("\n", "\n\t"))
   }
 
@@ -55,7 +55,7 @@ object cf2rdf {
          |${response.body}
          |""".stripMargin)
 
-    val pw = new PrintWriter(filename)
+    val pw = new PrintWriter(createOutputFile(filename))
     pw.print(contents)
     pw.close()
     println()
@@ -67,12 +67,7 @@ object cf2rdf {
     writer.setProperty("showXmlDeclaration", "true")
     writer.setProperty("relativeURIs", "same-document,relative")
     writer.setProperty("xmlbase", namespace)
-    writer.write(model, new java.io.FileOutputStream(cfg.rdf.filename), null)
-  }
-
-  private def writeStats(statsStr: String) {
-    val pw = new PrintWriter(cfg.destStats)
-    pw.printf(statsStr)
-    pw.close()
+    val out = new java.io.FileOutputStream(createOutputFile(cfg.rdf.filename))
+    writer.write(model, out, null)
   }
 }
