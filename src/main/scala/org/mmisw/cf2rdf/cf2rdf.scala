@@ -14,13 +14,19 @@ object cf2rdf {
   JenaSystem.init()
 
   def main(args: Array[String]): Unit = {
+    downloadFiles()
+    generateAndSaveRdf()
+  }
+
+  private def downloadFiles(): Unit = {
     download(cfg.xmlUrl, cfg.destXml)
     download(cfg.nvs.rdfUrl, cfg.nvs.rdfFilename)
+  }
 
+  private def generateAndSaveRdf(): Unit = {
     val xmlIn = scala.xml.XML.loadFile(cfg.destXml)
     val converter = new Converter(xmlIn)
     val model = converter.convert
-
     saveModel(model)
 
     val statsStr = {

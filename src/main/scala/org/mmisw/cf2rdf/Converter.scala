@@ -25,7 +25,6 @@ class Converter(xmlIn: Node) {
    * @return  Resulting Jena model
    */
   def convert: Model = {
-    val versionNumberOpt = props.get("version_number")
     val lastModifiedOpt = props.get("last_modified")
 
     val namespace = cfg.rdf.iri + "/"
@@ -50,9 +49,8 @@ class Converter(xmlIn: Node) {
       mapper.addOrrTerm(concept)
     }
 
-    val (t, f) = mapper.done()
-    stats.mappingTermsAdded = t
-    stats.mappingOutputFilename = Some(f)
+    stats.mappingTermsAdded = mapper.done()
+    stats.mappingOutputFilename = Some(cfg.mapping.filename)
 
     M.model
   }

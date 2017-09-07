@@ -75,10 +75,10 @@ class OrrNvsMapper(lastModifiedOpt: Option[String]) {
     }
   }
 
-  def done(): (Int, String) = {
+  def done(): Int = {
     val out = new java.io.FileOutputStream(createOutputFile(cfg.mapping.filename))
     model.getWriter(cfg.mapping.format).write(model, out, null)
-    (termsAdded, cfg.mapping.filename)
+    termsAdded
   }
 
 
