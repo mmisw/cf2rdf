@@ -12,7 +12,7 @@ import org.json4s.native.Serialization.writePretty
 import scalaj.http.{Http, HttpResponse, MultiPart}
 
 
-class Registerer(orr: OrrCfg) {
+class Registerer(orr: OrrCfg, cfVersion: String) {
   private implicit val jsonFormats: Formats = DefaultFormats ++ JodaTimeSerializers.all
 
   def registerOntologies(): Unit = {
@@ -22,16 +22,16 @@ class Registerer(orr: OrrCfg) {
 
   def registerRdf(): Unit = {
     register(cfg.rdf.iri,
-      s"Climate and Forecast (CF) Standard Names (v.${cfg.cfVersion})",
-      log = s"reflect version number ${cfg.cfVersion}",
+      s"Climate and Forecast (CF) Standard Names (v.$cfVersion)",
+      log = s"reflect version number $cfVersion",
       cfg.rdf.filename
     )
   }
 
   def registerMapping(): Unit = {
     register(cfg.mapping.iri,
-      s"ORR-NVS CF standard name mapping (v.${cfg.cfVersion})",
-      log = s"reflect version number ${cfg.cfVersion}",
+      s"ORR-NVS CF standard name mapping (v.$cfVersion)",
+      log = s"reflect version number $cfVersion",
       cfg.mapping.filename
     )
   }

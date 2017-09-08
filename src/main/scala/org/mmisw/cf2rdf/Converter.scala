@@ -11,13 +11,7 @@ import scala.xml.Node
  *
  * @param xmlIn       Input XML
  */
-class Converter(xmlIn: Node) {
-
-  /** some general properties from the input */
-  val props: Map[String,String] = {
-    val keys = List("version_number", "last_modified") //, "institution", "contact")
-    (keys map (k ⇒ k -> (xmlIn \ k).text.trim)).toMap
-  }
+class Converter(xmlIn: Node, xmlProps: Map[String,String]) {
 
   /**
    * Does the conversion
@@ -25,13 +19,15 @@ class Converter(xmlIn: Node) {
    * @return  Resulting Jena model
    */
   def convert: Model = {
-    val lastModifiedOpt = props.get("last_modified")
+    val lastModifiedOpt = xmlProps.get("last_modified")
 
     val namespace = cfg.rdf.iri + "/"
 
-    val M = new ModelConstructor(namespace, lastModifiedOpt)
+    val cfVersionOpt = xmlProps.get("version_number")
 
-    val mapper = new OrrNvsMapper(lastModifiedOpt)
+    val M = new ModelConstructor(namespace, cfVersionOpt, lastModifiedOpt)
+
+    val mapper = new OrrNvsMapper(cfVersionOpt, lastModifiedOpt)
 
     for (entry ← xmlIn \\ "entry") {
       stats.numEntries += 1

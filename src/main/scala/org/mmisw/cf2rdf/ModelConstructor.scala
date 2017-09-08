@@ -7,6 +7,7 @@ import org.apache.jena.vocabulary._
 import org.mmisw.orr.ont.vocabulary.{Omv, OmvMmi}
 
 class ModelConstructor(namespace: String,
+                       cfVersionOpt: Option[String],
                        lastModifiedOpt: Option[String]
                       ) {
 
@@ -32,8 +33,17 @@ class ModelConstructor(namespace: String,
 
   private val ontology = model.createOntology(cfg.rdf.iri)
 
-  ontology.addProperty(Omv.name,
-    s"Climate and Forecast (CF) Standard Names (v.${cfg.cfVersion})")
+  cfVersionOpt match {
+    case Some(cfVersion) ⇒
+      ontology.addProperty(Omv.name,
+        s"Climate and Forecast (CF) Standard Names (v.$cfVersion)")
+
+      ontology.addProperty(OmvMmi.origVocVersionId, cfVersion)
+
+    case None ⇒
+      ontology.addProperty(Omv.name,
+        s"Climate and Forecast (CF) Standard Names")
+  }
 
   ontology.addProperty(Omv.description,
     "Ontology representation of the Climate and Forecast (CF) standard names parameter vocabulary," +
@@ -61,7 +71,6 @@ class ModelConstructor(namespace: String,
     ontology.addProperty(Omv.creationDate, lm)
   }
 
-  ontology.addProperty(OmvMmi.origVocVersionId, cfg.cfVersion)
   ontology.addProperty(OmvMmi.origVocUri, cfg.xmlUrl)
 
   ontology.addProperty(OmvMmi.hasResourceType,

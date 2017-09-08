@@ -4,7 +4,6 @@ import carueda.cfg._
 
 @Cfg
 case class Cf2RdfCfg(
-                      cfVersion: String,
                       xmlUrl: String,
                       destXml: String,
                       destStats: String,

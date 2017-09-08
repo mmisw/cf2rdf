@@ -7,9 +7,5 @@ import com.typesafe.config.ConfigFactory
 package object config {
   val configFile = new File("cf2rdf.conf")
 
-  lazy val cfg: Cf2RdfCfg = {
-    val c = Cf2RdfCfg(ConfigFactory.parseFile(configFile).resolve())
-    println(s"cfg = $c\n")
-    c
-  }
+  lazy val cfg: Cf2RdfCfg = Cf2RdfCfg(ConfigFactory.parseFile(configFile).resolve())
 }

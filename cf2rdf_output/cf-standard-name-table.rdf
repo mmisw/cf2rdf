@@ -20,10 +20,10 @@
     <omvm:hasResourceType>http://mmisw.org/ont/mmi/resourcetype/parameter</omvm:hasResourceType>
     <omv:description>Ontology representation of the Climate and Forecast (CF) standard names parameter vocabulary, which is intended for use with climate and forecast data in the atmosphere, surface and ocean domains. Every CF parameter is captured as a SKOS concept.</omv:description>
     <omv:name>Climate and Forecast (CF) Standard Names (v.46)</omv:name>
+    <omvm:origVocUri>https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml</omvm:origVocUri>
     <omv:reference>http://marinemetadata.org/orrcf</omv:reference>
     <omv:acronym>CF-standard-name</omv:acronym>
     <omv:keywords>NetCDF, CF, Climate and Forecast, self-describing, standard names, Canonical Units</omv:keywords>
-    <omvm:origVocUri>https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/46/src/cf-standard-name-table.xml</omvm:origVocUri>
     <omv:documentation>http://cfconventions.org/standard-names.html</omv:documentation>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>

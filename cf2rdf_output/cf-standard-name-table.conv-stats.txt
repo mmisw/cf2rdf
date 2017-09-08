@@ -1,5 +1,5 @@
 cf2rdf conversion
-input:  https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/46/src/cf-standard-name-table.xml
+input:  https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml
 output: ./cf2rdf_output/cf-standard-name-table.rdf
 
 vocabulary properties from input file:

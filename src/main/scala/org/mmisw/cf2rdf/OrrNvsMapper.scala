@@ -12,7 +12,7 @@ import org.mmisw.orr.ont.vocabulary.{Omv, OmvMmi}
 import scala.collection.JavaConverters._
 
 
-class OrrNvsMapper(lastModifiedOpt: Option[String]) {
+class OrrNvsMapper(cfVersionOpt: Option[String], lastModifiedOpt: Option[String]) {
 
   private val mapNamespace   = cfg.mapping.iri + "/"
   private val orrCfNamespace = cfg.rdf.iri + "/"
@@ -30,8 +30,15 @@ class OrrNvsMapper(lastModifiedOpt: Option[String]) {
 
   private val ontology = model.createOntology(cfg.mapping.iri)
 
-  ontology.addProperty(Omv.name,
-    s"ORR-NVS CF standard name mapping (v.${cfg.cfVersion})")
+  cfVersionOpt match {
+    case Some(cfVersion) ⇒
+      ontology.addProperty(Omv.name,
+        s"ORR-NVS CF standard name mapping (v.$cfVersion)")
+
+    case None ⇒
+      ontology.addProperty(Omv.name,
+        s"ORR-NVS CF standard name mapping")
+  }
 
   ontology.addProperty(Omv.description,
     "Uses skos:exactMatch to link the IRIs of the CF standard names between the" +

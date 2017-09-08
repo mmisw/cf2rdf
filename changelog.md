@@ -1,3 +1,9 @@
+2017-09-07 0.5.0
+
+- add watchdog option, suitable to be used in a cronjob.
+  This checks for current remote CF version and triggers conversion/registration 
+  in case of new version, based on comparison with latest processed file.
+
 2017-09-07 0.4.0
 
 - cf2rdf can now register the generated ontologies
