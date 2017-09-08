@@ -12,7 +12,7 @@ import org.json4s.native.Serialization.writePretty
 import scalaj.http.{Http, HttpResponse, MultiPart}
 
 
-class Registerer(orr: OrrCfg, userName: String, password: String) {
+class Registerer(orr: OrrCfg) {
   private implicit val jsonFormats: Formats = DefaultFormats ++ JodaTimeSerializers.all
 
   def registerOntologies(): Unit = {
@@ -57,7 +57,7 @@ class Registerer(orr: OrrCfg, userName: String, password: String) {
     val response: HttpResponse[String] = Http(route)
       .timeout(connTimeoutMs = 5*1000, readTimeoutMs = 60*1000)
       .postMulti(MultiPart("file", "filename", "text/plain", contents.getBytes))
-      .auth(userName, password)
+      .auth(orr.userName, orr.password)
       .method(method)
       .asString
 
@@ -77,7 +77,7 @@ class Registerer(orr: OrrCfg, userName: String, password: String) {
       "iri" → iri
       , "name" → name
       , "log" → log
-      , "userName" → userName
+      , "userName" → orr.userName
       , "orgName" → orr.orgName
       , "visibility" → orr.visibility
       , "status" → orr.status
@@ -92,7 +92,7 @@ class Registerer(orr: OrrCfg, userName: String, password: String) {
 
     val response: HttpResponse[String] = Http(route)
       .timeout(connTimeoutMs = 5*1000, readTimeoutMs = 60*1000)
-      .auth(userName, password)
+      .auth(orr.userName, orr.password)
       .postData(data)
       .header("Content-type", "application/json")
       .method(method)

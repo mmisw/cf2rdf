@@ -92,15 +92,8 @@ object cf2rdf {
     println(s"\nSummary: (saved in ${cfg.destStats})\n\t" + statsStr.replaceAll("\n", "\n\t"))
   }
 
-  private def registerOntologies(): Unit = {
-    def requiredEnvVar(name: String): String = {
-      val value = sys.env.getOrElse(name, throw new Exception(s"Undefined $name env var"))
-      value
-    }
-    val userName = requiredEnvVar("ORR_USERNAME")
-    val password = requiredEnvVar("ORR_PASSWORD")
-    cfg.orr foreach { new Registerer(_, userName, password).registerOntologies() }
-  }
+  private def registerOntologies(): Unit =
+    cfg.orr foreach { new Registerer(_).registerOntologies() }
 
   private def download(url: String, filename: String): Unit = {
     println(s"Downloading $url")
