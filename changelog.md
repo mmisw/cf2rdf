@@ -1,3 +1,7 @@
+2017-09-08 0.6.0
+
+- watchdog adjustments
+
 2017-09-07 0.5.0
 
 - add watchdog option, suitable to be used in a cronjob.

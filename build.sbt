@@ -1,4 +1,4 @@
-lazy val cf2rdfVersion = setVersion("0.5.0")
+lazy val cf2rdfVersion = setVersion("0.6.0")
 val scalaV             = "2.12.2"
 val cfgV               = "0.0.7"
 val scalajHttpV        = "2.3.0"

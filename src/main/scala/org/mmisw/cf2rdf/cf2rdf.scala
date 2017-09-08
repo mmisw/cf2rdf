@@ -21,7 +21,7 @@ object cf2rdf {
       val givenStepNames = collection.mutable.SortedSet[String]()
       args foreach { stepName ⇒
         if (!steps.contains(stepName)) {
-          println(s"invalid step $stepName.  Valid steps: ${stepNameOrder.mkString(", ")}")
+          System.err.println(s"invalid step $stepName.  Valid steps: ${stepNameOrder.mkString(", ")}")
           sys.exit(1)
         }
         givenStepNames += stepName
@@ -31,7 +31,7 @@ object cf2rdf {
         stepNameOrder.filter(givenStepNames.contains) foreach { steps(_)() }
       }
       else {
-        println(s"""
+        System.err.println(s"""
                |Usage:
                |   cf2rdf generate-conf [--overwrite]
                |   cf2rdf watchdog
@@ -45,7 +45,7 @@ object cf2rdf {
     val filename = "cf2rdf.conf"
     val file = new File(filename)
     if (file.exists() && !args.contains("--overwrite")) {
-      println(s"$file exists.  Use --overwrite to overwrite")
+      System.err.println(s"$file exists.  Use --overwrite to overwrite")
       sys.exit(1)
     }
     val conf = scala.io.Source.fromInputStream(
