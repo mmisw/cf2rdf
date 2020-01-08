@@ -38,8 +38,10 @@ $ java -jar cf2rdf-x.y.z.jar download convert register
 
 ```
 
-The latest conversion report is [here](cf2rdf_output/cf-standard-name-table.conv-stats.txt).
+The generated ontology files are:
+- `cf2rdf_output/cf-standard-name-table.rdf`
+- `cf2rdf_output/cfonmap.n3`
 
-The generated ontologies are:
-- [cf-standard-name-table.rdf](cf2rdf_output/cf-standard-name-table.rdf)
-- [cfonmap.n3](cf2rdf_output/cfonmap.n3)
+Which get automatically uploaded (via separate mechanism) as:
+- https://mmisw.org/ont/cf/parameter
+- https://mmisw.org/ont/mmi/cfonmap
