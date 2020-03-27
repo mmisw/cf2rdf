@@ -1,10 +1,12 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/mmisw/cf2rdf/badge.svg?targetFile=build.sbt)](https://snyk.io/test/github/mmisw/cf2rdf?targetFile=build.sbt)
+
 ## cf2rdf
 
 The cf2rdf tool performs the following operations:
 
 - conversion of the [CF Standard Names](http://cfconventions.org/documents.html) vocabulary to RDF;
 - generation of mapping with the corresponding NVS ontology;
-- registration of the generated ontologies into an ORR instance. 
+- registration of the generated ontologies into an ORR instance.
 
 
 ## Running
@@ -17,7 +19,7 @@ cf2rdf expects a number of parameters for its regular execution. These parameter
 indicated in a local `cf2rdf.conf` file on the current directory. A template of such file, with
 a description of the various parameters, can be generated as follows:
 
-```shell 
+```shell
 $ java -jar cf2rdf-x.y.z.jar generate-conf
 ```
 
@@ -25,15 +27,15 @@ Edit `cf2rdf.conf` as needed.
 
 As command-line arguments for the regular execution, cf2rdf expects either the
 `watchdog` argument to check for current remote CF version and trigger conversion
-and registration in case of new version (based on comparison with latest processed file): 
+and registration in case of new version (based on comparison with latest processed file):
 
-```shell 
+```shell
 $ java -jar cf2rdf-x.y.z.jar watchdog
 ```
 
 or the desired specific steps to be performed, for example:
-  
-```shell 
+
+```shell
 $ java -jar cf2rdf-x.y.z.jar download convert register
 
 ```
