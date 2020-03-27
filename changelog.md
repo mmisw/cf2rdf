@@ -5,6 +5,35 @@
 
   Good testing with `$ sbt "run download convert"`
 
+- fix `assembly`.
+
+        $ java -jar target/scala-2.12/cf2rdf-0.6.1.jar download convert
+        Downloading https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml
+                    -> ./cf2rdf_output/cf-standard-name-table.xml
+
+        Downloading http://vocab.nerc.ac.uk/collection/P07/current/
+                    -> ./cf2rdf_output/nvs_P07.rdf
+
+        [main] WARN org.apache.jena.riot - [line: 1, col: 121] {W119} A processing instruction is in RDF content. No processing was done.
+
+        Summary: (saved in ./cf2rdf_output/cf-standard-name-table.conv-stats.txt)
+            cf2rdf conversion
+            input:  https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml
+            output: ./cf2rdf_output/cf-standard-name-table.rdf
+
+            vocabulary properties from input file:
+             version_number: 72; last_modified: 2020-03-10T11:52:02Z
+
+            conversion stats:
+            numConcepts = 4419
+            numEntries = 4418
+            numWithNoCanonicalUnits = 12
+            numWithNoDefinitions = 19
+
+            Mapping ontology:
+              mappingTermsAdded     = 4418
+              mappingOutputFilename = ./cf2rdf_output/cfonmap.n3
+
 2017-09-08 0.6.0
 
 - watchdog adjustments

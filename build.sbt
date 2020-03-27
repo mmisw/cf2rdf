@@ -41,6 +41,11 @@ addCompilerPlugin(
 
 mainClass in assembly := Some("org.mmisw.cf2rdf.cf2rdf")
 assemblyJarName in assembly := s"cf2rdf-$cf2rdfVersion.jar"
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", "MANIFEST.MF") => MergeStrategy.discard
+  case path if path.endsWith("module-info.class") => MergeStrategy.discard
+  case _ => MergeStrategy.first
+}
 
 def setVersion(version: String): String = {
   println(s"cf2rdf $version")
