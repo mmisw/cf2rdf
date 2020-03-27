@@ -3,15 +3,15 @@ input:  https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/
 output: ./cf2rdf_output/cf-standard-name-table.rdf
 
 vocabulary properties from input file:
- version_number: 46; last_modified: 2017-07-25T09:41:29Z
+ version_number: 72; last_modified: 2020-03-10T11:52:02Z
 
 conversion stats:
-numConcepts = 2890
-numEntries = 2889
-numWithNoCanonicalUnits = 9
-numWithNoDefinitions = 26
+numConcepts = 4419
+numEntries = 4418
+numWithNoCanonicalUnits = 12
+numWithNoDefinitions = 19
 
 Mapping ontology:
-  mappingTermsAdded     = 2889
+  mappingTermsAdded     = 4418
   mappingOutputFilename = ./cf2rdf_output/cfonmap.n3
        

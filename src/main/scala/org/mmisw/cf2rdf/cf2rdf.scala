@@ -1,7 +1,7 @@
 package org.mmisw.cf2rdf
 import java.io.File
 
-import org.apache.jena.system.JenaSystem
+import org.apache.jena.sys.JenaSystem
 import org.mmisw.cf2rdf.config.cfg
 
 /**

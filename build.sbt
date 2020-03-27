@@ -1,11 +1,11 @@
-lazy val cf2rdfVersion = setVersion("0.6.0")
+lazy val cf2rdfVersion = setVersion("0.6.1")
 val scalaV             = "2.12.2"
 val cfgV               = "0.0.7"
 val scalajHttpV        = "2.3.0"
 val typesafeConfigV    = "1.2.1"
 val scalametaParadiseV = "3.0.0-M8"
 val scalaXmlV          = "1.0.6"
-val jenaV              = "3.3.0"
+val jenaV              = "3.14.0"
 val slf4jSimpleV       = "1.7.25"
 val json4sV            = "3.5.3"
 val jodaTimeV          = "2.9.9"
