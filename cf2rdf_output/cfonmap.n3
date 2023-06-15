@@ -1,12 +1,12 @@
 @prefix :      <http://mmisw.org/ont/mmi/cfonmap/> .
 @prefix omvm:  <http://mmisw.org/ont/mmi/20081020/ontologyMetadata/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix omv:   <http://omv.ontoware.org/2005/05/ontology#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix nvs:   <http://vocab.nerc.ac.uk/collection/P07/current/> .
+@prefix omv:   <http://omv.ontoware.org/2005/05/ontology#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nvs:   <http://vocab.nerc.ac.uk/collection/P07/current/> .
 @prefix orr:   <http://mmisw.org/ont/cf/parameter/> .
 
 orr:tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_dry_deposition
@@ -2333,14 +2333,11 @@ orr:radioactivity_concentration_of_18F_in_air
 orr:upward_latent_heat_flux_in_air
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/GJJDHHIB/> .
 
-orr:mole_concentration_of_alpha_pinene_in_air
-        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12N422/> .
-
 orr:number_concentration_of_coarse_mode_ambient_aerosol_particles_in_air
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/M9TNZCKV/> .
 
-orr:atmosphere_absolute_vorticity
-        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0003/> .
+orr:mole_concentration_of_alpha_pinene_in_air
+        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12N422/> .
 
 orr:mass_fraction_of_primary_particulate_organic_matter_dry_aerosol_particles_in_air
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/PDWSOGYJ/> .
@@ -4248,14 +4245,14 @@ orr:integral_wrt_time_of_radioactivity_concentration_of_134mCs_in_air
         omvm:hasContentCreator    "MMI" ;
         omvm:hasResourceType      "http://mmisw.org/ont/mmi/resourcetype/parameter" ;
         omvm:origMaintainerCode   "mmi" ;
-        omvm:origVocLastModified  "2020-03-10T11:52:02Z" ;
+        omvm:origVocLastModified  "2023-04-25T10:43:33Z" ;
         omv:acronym               "cfontmap" ;
-        omv:creationDate          "2020-03-10T11:52:02Z" ;
+        omv:creationDate          "2023-04-25T10:43:33Z" ;
         omv:description           "Uses skos:exactMatch to link the IRIs of the CF standard names between the RDF versions at the MMI ORR and NERC NVS repositories." ;
         omv:documentation         "https://github.com/mmisw/cf2rdf" ;
         omv:hasCreator            "MMI" ;
         omv:keywords              "NetCDF, CF, Climate and Forecast, self-describing, standard names, Canonical Units" ;
-        omv:name                  "ORR-NVS CF standard name mapping (v.72)" ;
+        omv:name                  "ORR-NVS CF standard name mapping (v.81)" ;
         omv:reference             "https://github.com/mmisw/cf2rdf" .
 
 orr:fugacity_of_carbon_dioxide_in_sea_water
@@ -6054,8 +6051,6 @@ orr:downward_x_stress_at_sea_water_surface
 
 orr:radioactivity_concentration_of_118In_in_air
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/717J48JP/> .
-
-orr:snow_density  skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0338/> .
 
 orr:height_above_reference_ellipsoid
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFV10N14/> .
@@ -10246,9 +10241,6 @@ orr:surface_radioactivity_content_of_218At
 orr:radioactivity_concentration_of_237U_in_air
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/JQHNLRWP/> .
 
-orr:atmosphere_relative_vorticity
-        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0765/> .
-
 orr:tendency_of_atmosphere_potential_energy_content_due_to_advection
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0192/> .
 
@@ -10260,9 +10252,6 @@ orr:surface_radioactivity_content_of_243Am
 
 orr:surface_geostrophic_sea_water_y_velocity_assuming_mean_sea_level_for_geoid
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/7QLFZGQ2/> .
-
-orr:biological_taxon_identifier
-        skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/YU6AEXR7/> .
 
 orr:ocean_heat_x_transport_due_to_diffusion
         skos:exactMatch  <http://vocab.nerc.ac.uk/collection/P07/current/CF12N542/> .
